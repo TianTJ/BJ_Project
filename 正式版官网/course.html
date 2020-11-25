@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>逗看</title>
+<style> 
+	body{
+		text-align:center
+	}
+	*{margin:0;padding:0}
+	.head{
+		position:absolute;
+		width:100%;
+		height:40px;
+		top:0px;
+	}
+	.logo_img{
+		position:absolute;
+		left:25px;
+	}
+	.content{
+        position:relative;
+		width:1190px;
+		margin: 0px auto auto auto;
+		padding: 0;
+		text-align: center;
+		overflow:hidden;
+	}
+	.contet_head{
+		width:100%;height:300px;
+	}
+	.title{
+		position:absolute;
+		top:150px;
+		left:380px;
+	}
+	.introduce{
+		overflow:hidden;
+		width:1186px;height:1164px;
+		background:url(images/content_di.png) no-repeat ;
+		margin: 20px 0px 100px 2px;
+		text-align:center;
+	}
+	.course_line{
+		position:absolute;
+		width:100%;
+		top:1520px;
+		left:0px;
+	}
+	.pc_tx{
+		position: absolute;
+		left:70px;top:360px;	
+		font-family: "Microsoft Yahei","仿宋",sans-serif;
+		font-weight:bold;
+		font-size:150%;
+		color:#ff829e
+	}
+	#pc_red{
+		position: absolute;
+		left:55px;top:425px;	
+	}
+	.phone_tx{
+		position: absolute;
+		left:180px;top:360px;	
+		font-family: "Microsoft Yahei","仿宋",sans-serif;
+		font-weight:bold;
+		font-size:150%;
+		color:#6d6d6d
+	}
+	#phone_red{
+		position: absolute;
+		left:175px;top:425px;	
+	}
+	.content_list{
+		position: absolute;
+		left:55px;top:495px;	
+		width:800px;
+		text-align:left
+	}
+	.content_list li{
+		height: 60px;
+		line-height: 30px;
+		list-style-type:none;
+		font-family: "Microsoft Yahei","仿宋",sans-serif;
+		font-weight:bold;
+		font-size:150%;
+		color:#6d6d6d
+	}
+	.time_list{
+		position: absolute;
+		right:55px;top:495px;	
+		width:200px;
+		text-align:left
+	}
+	.time_list li{
+		height: 60px;
+		line-height: 30px;
+		list-style-type:none;
+		font-family: "Microsoft Yahei","仿宋",sans-serif;
+		font-weight:bold;
+		font-size:150%;
+		color:#6d6d6d
+	}
+</style>
+<link rel="shortcut icon" type="image/x-icon" href="images/title_icon.ico" />
+</head>
+<body bgcolor="#ffffff">
+<div class="content">
+	<div class="head">
+		<a class="logo">
+			<a href="index.html"><img src="images/logo.png" style="cursor:pointer" class="logo_img"/></a>
+		</a>
+	</div>
+	<div class="contet_head">
+		<img class="title" src="images/course_img.png" alt=""/>
+	</div>
+	<div class="introduce">
+		<a class="pc_tx" id="pc_tx" onclick="change(1)">P&ensp;C</a>
+		<img src="images/red_line.png" alt="" id="pc_red"/>
+		<a class="phone_tx" id="phone_tx" onclick="change(2)">手机</a>
+		<img src="images/red_line.png" alt="" id="phone_red"/>
+		
+		<ul class="content_list">
+		  <li>如何下载制作工具V1.0.1</li>
+		  <li>如何下载制作工具V1.0.1</li>
+		  <li>如何下载制作工具V1.0.1</li>
+		   <li>如何下载制作工具V1.0.1</li>
+		  <li>如何下载制作工具V1.0.1</li>
+		  <li>如何下载制作工具V1.0.1</li>
+		   <li>如何下载制作工具V1.0.1</li>
+		  <li>如何下载制作工具V1.0.1</li>
+		  <li>如何下载制作工具V1.0.1</li>
+		   <li>如何下载制作工具V1.0.1</li>
+		  <li>如何下载制作工具V1.0.1</li>
+		  <li>如何下载制作工具V1.0.1</li> 
+		  <li>如何下载制作工具V1.0.1</li>
+		  <li>如何下载制作工具V1.0.1</li>
+		  <li>如何下载制作工具V1.0.1</li>
+		</ul>
+		<ul class="time_list">
+		  <li>2018-10-10</li>
+		  <li>2018-10-10</li>
+		  <li>2018-10-10</li>
+		</ul>
+	</div>
+	<a class="line"><img src="images/course_line.png" alt="" class="course_line"/></a>
+	<div class="blank_div"></div>
+</div>
+
+<script type="text/javascript">
+	
+
+	var phone_line = document.getElementById("phone_red");
+	phone_line.style.display = "none"
+	var phone_tx = document.getElementById("phone_tx");
+	var pc_line = document.getElementById("pc_red");
+	var pc_tx = document.getElementById("pc_tx");
+	function change(type){
+		if(type==1){
+			phone_line.style.display = "none"
+			pc_line.style.display = ""
+			phone_tx.style.color = "#6d6d6d"
+			pc_tx.style.color = "#ff829e"
+		}else{
+			phone_line.style.display = ""
+			pc_line.style.display = "none"
+			phone_tx.style.color = "#ff829e"
+			pc_tx.style.color = "#6d6d6d"
+		}
+	}
+</script>
+</body>
+</html>

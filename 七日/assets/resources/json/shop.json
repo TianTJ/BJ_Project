@@ -1,0 +1,62 @@
+[
+  {
+    "grade": "101",
+    "commodityname": "1元,10猫爪",
+    "number": "10",
+    "firstpurchase": "",
+    "describe": "",
+    "discount": "",
+    "concession_description": "",
+    "money": "1"
+  },
+  {
+    "grade": "102",
+    "commodityname": "6元,60猫爪",
+    "number": "60",
+    "firstpurchase": "60",
+    "describe": "首充,+送60",
+    "discount": "3",
+    "concession_description": "+5%,+送3",
+    "money": "6"
+  },
+  {
+    "grade": "103",
+    "commodityname": "18元,180猫爪",
+    "number": "180",
+    "firstpurchase": "180",
+    "describe": "首充,+送180",
+    "discount": "18",
+    "concession_description": "+10%,+送18",
+    "money": "18"
+  },
+  {
+    "grade": "104",
+    "commodityname": "30元,300猫爪",
+    "number": "300",
+    "firstpurchase": "300",
+    "describe": "首充,+送300",
+    "discount": "60",
+    "concession_description": "+20%,+送60",
+    "money": "30"
+  },
+  {
+    "grade": "105",
+    "commodityname": "60元,600猫爪",
+    "number": "600",
+    "firstpurchase": "600",
+    "describe": "首充,+送600",
+    "discount": "180",
+    "concession_description": "+30%,+送180",
+    "money": "60"
+  },
+  {
+    "grade": "106",
+    "commodityname": "120元,1200猫爪",
+    "number": "1200",
+    "firstpurchase": "1200",
+    "describe": "首充,+送1200",
+    "discount": "480",
+    "concession_description": "+40%,+送480",
+    "money": "120"
+  }
+]

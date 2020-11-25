@@ -1,0 +1,11 @@
+
+*{margin:0;padding:0}
+body{
+	text-align:center;
+    background: #fdf0f7;
+}
+#all{
+    position: relative;
+    width: 1125px;height: auto;
+    margin: 0 auto;
+} 

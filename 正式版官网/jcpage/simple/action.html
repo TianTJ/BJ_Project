@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="renderer" content="webkit"/>
+<meta name="force-rendering" content="webkit"/>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+<title>逗看</title>
+<style type="text/css"></style>
+<link rel="stylesheet" type="text/css" href="css/action.css"/>
+<script src="../../js/jquery-1.11.1.min.js"></script>
+<script src="../../js/clipboard.min.js"></script>
+</head>
+<body>
+	<div id="head_div">
+        <img src="images/action/head.png" class="head_img">
+    </div>
+	<div id="all">
+        <div class="one">
+            <div class="content">
+                <img src="images/action/1.png" class="img">
+                <img src="images/action/2.png" class="img">
+                <img src="images/action/3.png" class="img">
+                <img src="images/action/4.png" class="img">
+                <img src="images/action/end.png" class="img">
+                <div class="bottom" id="bottom_div">
+                    <img src="../../kanban/images/copy.png" class="copy">
+                    <font class="tx">复制群号</font>
+                </div>
+            </div>
+        </div>
+        <div id="tip">
+            <img src="../../kanban/images/tip.png" class="tipimg">
+            <font class="tx">复制成功</font>
+        </div>
+	</div>
+    <div id="top">
+        <img src="images/top.png">
+    </div>
+<script type="text/javascript">
+    $("#top").click(function(){
+		$("html, body").animate({scrollTop: 0},500);
+    })
+    
+    var hh = $("#all .bottom").width()
+
+    var hhh = $("#tip").width()
+    $("#all .one .copy").css({"left":hh/2-180+"px"})
+    $("#all .one .tx").css({"left":hh/2-150+"px"})
+    $("#all .tip .tipimg").css({"left":hhh/2-300+"px"})
+    var clipboard = new ClipboardJS('#all .one .copy',{
+        text: function() {
+            return '659740589';
+        }
+    });
+    clipboard.on('success', function(e) {
+        success_ani()
+    });
+    clipboard.on('error', function(e) {
+        console.log(e);
+    }); 
+    var is_touch = false
+    var success_ani = function(){
+        if(!is_touch){
+            is_touch = true
+            $("#tip").show()
+            $("#tip").animate({bottom:"1200px"},1000,function(){
+                $("#tip").hide()
+                $("#tip").css({bottom:"800px"})
+                is_touch = false
+            });
+        }
+    }
+    
+    $("#all .copy").mousedown(function(){
+        $("#all .one .copy").css({'transform':'scale(0.8)'})
+        $("#all .one .tx").css({'transform':'scale(0.8)'})
+        $("#all .one .copy").css({'-webkit-transform':'scale(0.8)'})
+        $("#all .one .tx").css({'-webkit-transform':'scale(0.8)'})
+    })
+    $("#all .copy").mouseup(function(){
+        $("#all .one .copy").css({'transform':'scale(1)'})
+        $("#all .one .tx").css({'transform':'scale(1)'})
+        $("#all .one .copy").css({'-webkit-transform':'scale(1)'})
+        $("#all .one .tx").css({'-webkit-transform':'scale(1)'})
+    })
+
+    $("#all .copy").bind('touchstart', function(){
+        $("#all .one .copy").css({'transform':'scale(0.8)'})
+        $("#all .one .tx").css({'transform':'scale(0.8)'})
+        $("#all .one .copy").css({'-webkit-transform':'scale(0.8)'})
+        $("#all .one .tx").css({'-webkit-transform':'scale(0.8)'})
+    }).bind('touchend', function(){
+        $("#all .one .copy").css({'transform':'scale(1)'})
+        $("#all .one .tx").css({'transform':'scale(1)'})
+        $("#all .one .copy").css({'-webkit-transform':'scale(1)'})
+        $("#all .one .tx").css({'-webkit-transform':'scale(1)'})
+    });
+</script>
+</body>
+</html>

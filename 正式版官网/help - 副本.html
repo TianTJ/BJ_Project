@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>逗看</title>
+<style> 
+	body{
+		text-align:center
+	}
+	*{margin:0;padding:0}
+	.s_t{
+		border: 1px solid red;
+	}
+	input{
+		width: 50px;
+		height: 20px;
+		border:none;
+	}
+	td{
+		width: 50px;
+		height: 20px;
+		
+	}
+	th{
+		background: rgb(255, 164, 164);
+	}
+	tr{
+		border: 1px solid black;
+	}
+</style>
+</head>
+<body bgcolor="#ffffff">
+	<table class='s_t' border="1">
+		<tr class="title"></tr>
+	</table>
+
+	<button type="button" id="add">添加</button>
+<script src="js/jquery-1.11.1.min.js"></script>
+<script type="text/javascript">
+	this.hang = 1
+	let self = this
+	$('.s_t').append('<tr class="value_'+this.hang+'"></tr>')
+	let str = ''
+	for(let i=1;i<=24;i++){
+		str = (i%2==0)?'计划':'实际'
+		$('.title').append('<th>'+str+'</th>')
+		$('.value_'+this.hang).append('<td class="'+this.hang+'_td_'+i+'"><input class="'+this.hang+'_input_'+i+'"></input></td>')
+	}
+
+	$('input').bind('input propertychange', function() {
+		let aaa = $(this).prop("class")
+		//获取到的class字符串 
+		//aaa为class字符串下标为0的值  bbb是class最后一位的值
+		$('.value_'+aaa+' .'+aaa+'_td_'+bbb)	//这个节点是当前input对应的tr直接赋值input的值
+	});
+	$('#add').click(function(){
+		self.hang++
+		$('.s_t').append('<tr class="value_"'+2+'></tr>')
+		for(let i=1;i<=24;i++){
+			$('.value_'+2).appendTo('<td class="'+2+'_td_'+i+'"><input class="'+2+'_input_'+i+'"></input></td>')
+		}
+	})
+</script>
+</body>
+</html>

@@ -1,0 +1,56 @@
+
+    get_pos_ection:function(pos){
+        let IDX
+        if((-225<=pos.x && pos.x<-135) && (225>=pos.y && pos.y>135)){
+            IDX = 0
+        }else if((-135<=pos.x && pos.x<-45) && (225>=pos.y && pos.y>135)){
+            IDX = 1
+        }else if((-45<=pos.x && pos.x<45) && (225>=pos.y && pos.y>135)){
+            IDX = 2
+        }else if((45<=pos.x && pos.x<135) && (225>=pos.y && pos.y>135)){
+            IDX = 3
+        }else if((135<=pos.x && pos.x<225) && (225>=pos.y && pos.y>135)){
+            IDX = 4
+        }else if((-215<=pos.x && pos.x<-135) && (135>=pos.y && pos.y>45)){
+            IDX = 5
+        }else if((-135<=pos.x && pos.x<-45) && (135>=pos.y && pos.y>45)){
+            IDX = 6
+        }else if((-45<=pos.x && pos.x<45) && (135>=pos.y && pos.y>45)){
+            IDX = 7
+        }else if((45<=pos.x && pos.x<135) && (135>=pos.y && pos.y>45)){
+            IDX = 8
+        }else if((135<=pos.x && pos.x<225) && (135>=pos.y && pos.y>45)){
+            IDX = 9
+        }else if((-215<=pos.x && pos.x<-135) && (45>=pos.y && pos.y>-45)){
+            IDX = 10
+        }else if((-135<=pos.x && pos.x<-45) && (45>=pos.y && pos.y>-45)){
+            IDX = 11
+        }else if((-45<=pos.x && pos.x<45) && (45>=pos.y && pos.y>-45)){
+            IDX = 12
+        }else if((45<=pos.x && pos.x<135) && (45>=pos.y && pos.y>-45)){
+            IDX = 13
+        }else if((135<=pos.x && pos.x<225) && (45>=pos.y && pos.y>-45)){
+            IDX = 14
+        }else if((-215<=pos.x && pos.x<-135) && (-45>=pos.y && pos.y>-135)){
+            IDX = 15
+        }else if((-135<=pos.x && pos.x<-45) && (-45>=pos.y && pos.y>-135)){
+            IDX = 16
+        }else if((-45<=pos.x && pos.x<45) && (-45>=pos.y && pos.y>-135)){
+            IDX = 17
+        }else if((45<=pos.x && pos.x<135) && (-45>=pos.y && pos.y>-135)){
+            IDX = 18
+        }else if((135<=pos.x && pos.x<225) && (-45>=pos.y && pos.y>-135)){
+            IDX = 19
+        }else if((-215<=pos.x && pos.x<-135) && (-135>=pos.y && pos.y>-225)){
+            IDX = 20
+        }else if((-135<=pos.x && pos.x<-45) && (-135>=pos.y && pos.y>-225)){
+            IDX = 21
+        }else if((-45<=pos.x && pos.x<45) && (-135>=pos.y && pos.y>-225)){
+            IDX = 22
+        }else if((45<=pos.x && pos.x<135) && (-135>=pos.y && pos.y>-225)){
+            IDX = 23
+        }else if((135<=pos.x && pos.x<225) && (-135>=pos.y && pos.y>-225)){
+            IDX = 24
+        }
+        return IDX
+    },

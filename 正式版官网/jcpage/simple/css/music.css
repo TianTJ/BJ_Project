@@ -1,0 +1,175 @@
+
+*{margin:0;padding:0}
+body{
+	text-align:center;
+    background: #fdf0f7;
+}
+#head_div{
+    position: relative;
+    width: 1125px;
+    text-align: center;
+    margin: 0 auto;
+}
+#head_div .head_img{
+    position: relative;
+    width: 100%;height: auto;
+}
+#all{
+    position: relative;
+    width: 1125px;height: auto;
+    top:-4px;
+    margin: 0 auto;
+} 
+#all .head{
+    background: #ffffff;
+    height: 174px;
+}
+#all .one{
+    position: relative;
+    width: 100%;height: auto;
+}
+#all .one .head{
+    position: relative;
+    width: 100%;
+}
+#all .one .bt{
+    position: absolute;
+    text-align: left;
+    font-family: "Microsoft Yahei","仿宋",sans-serif;
+    color: #4d4d4d;
+    font-size: 41px;
+    left:70px;top:60px;
+}
+#all .one .right{
+    position: absolute;
+    right:50px;top:70px;
+    transform: rotate(-90deg)
+}
+#all .line{
+    position: absolute;
+    width: 1027px;
+    height: 170px;
+    border-top: 2px solid #ededed;
+    border-bottom: 2px solid #ededed;
+    top:0px;;left: 49px;
+}
+#all .two{
+    position: relative;
+    width: 100%;height: auto;
+}
+#all .two .head{
+    position: relative;
+    width: 100%;
+}
+#all .two .bt{
+    position: absolute;
+    text-align: left;
+    font-family: "Microsoft Yahei","仿宋",sans-serif;
+    color: #4d4d4d;
+    font-size: 41px;
+    left:70px;top:60px;
+}
+#all .two .right{
+    position: absolute;
+    right:50px;top:70px;
+    transform: rotate(-90deg)
+}
+#all .three{
+    position: relative;
+    width: 100%;height: auto;
+}
+#all .three .head{
+    position: relative;
+    width: 100%;
+}
+#all .three .bt{
+    position: absolute;
+    text-align: left;
+    font-family: "Microsoft Yahei","仿宋",sans-serif;
+    color: #4d4d4d;
+    font-size: 41px;
+    left:70px;top:60px;
+}
+#all .three .right{
+    position: absolute;
+    right:50px;top:70px;
+    transform: rotate(-90deg)
+}
+#all .one .content {
+    position: relative;
+    width: 100%;height: auto;
+}
+#all .one .img{
+    position: relative;
+    width: 100%;left:0px;
+}
+#all .two .content {
+    position: relative;
+    width: 100%;height: auto;
+}
+#all .two .img{
+    position: relative;
+    width: 100%;left:0px;
+}
+#all .three .content {
+    position: relative;
+    width: 100%;height: auto;
+}
+#all .three .img{
+    position: relative;
+    width: 100%;left:0px;
+}
+#all .three .content {
+    position: relative;
+    width: 100%;height: auto;
+}
+#all .three .img{
+    position: relative;
+    width: 100%;left:0px;
+}
+#all .three .bottom{
+    position: absolute;
+    margin: 0 auto;
+    bottom: 250px;
+    height: 150px;
+    width: 100%;
+    transform:scale(1);
+}
+#all .three .copy{
+    position: absolute;
+    margin: 0 auto;
+    top: 3px;
+}
+#all .three .tx{
+    position: absolute;
+    margin: 0 auto;
+    top: 27px;
+    font-size: 48px;
+    color: #ffffff;
+    width: 300px;
+    height: 96px;
+    pointer-events: none
+}
+#top{
+    position: fixed;
+    bottom: 120px;
+    right: 50px;
+}
+#tip{
+    position: relative;
+    margin: 0 auto;
+    width: 90%;height: 60px;
+    z-index: 999;
+    bottom: 500px;
+    display: none;
+}
+#tip font{
+    position: absolute;
+    margin: 0 auto;
+    top: 2px;
+    font-size: 27pt;
+    color: #ffffff;
+    width: 100%;
+    height: 54px;
+    left:0;
+}

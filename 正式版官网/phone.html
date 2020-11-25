@@ -1,0 +1,744 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="renderer" content="webkit"/>
+<meta name="force-rendering" content="webkit"/>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+<meta name="viewport" content="user-scalable=0">
+<link rel="stylesheet" type="text/css" href="css/swiper.min.css">
+<script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
+<script type="text/javascript" src="js/jquery.rotate.min.js"></script>
+<script type="text/javascript" src="js/swiper.min.js"></script>
+<script type="text/javascript" src="js/common.js"></script>
+<script src="js/clipboard.min.js"></script>
+<title>逗看</title>
+<style type="text/css"> 
+	body{
+		text-align:center;
+		background:#ffffff;
+		height:100%;
+	} 
+	.img_event{
+		pointer-events: none
+	}
+	.head{
+		position: fixed;;
+		margin: 0 auto;
+		width:100%;
+		top:0px;
+		bottom:auto;
+		background:#ffffff;
+		text-align: center;
+		z-index: 25;
+	}
+	.head .img{
+		position: absolute;
+		width: 100%;
+		left:0px;
+		height: auto;
+	}
+	.head .loadapp{
+		position: absolute;
+		right: 20px;
+		height: auto;
+		z-index: 98;
+	} 
+	.middle{
+		position:relative;
+		margin: 0 auto;
+		width:100%;
+		top:200px;
+		text-align: center;
+	}
+	.middle .img{
+		position: absolute;
+		width: 100%;
+		left:0px;
+		height: auto;
+	}
+	.middle .now_load{
+		position: absolute;
+		bottom: 90px;
+		z-index: 24;
+	}
+	.middle .play_di{
+		position: absolute;
+		left:170px;
+		bottom: 350px;
+	}
+	.middle .play{
+		position: absolute;
+		left:225px;
+		bottom: 400px;
+	}
+	.gift{
+		position:relative;
+		margin: 0 auto;
+		width:100%;
+		top:273px;
+		text-align: center;
+	}
+	.gift p{
+		font-size: 36px;
+		color: #9eb7ff;
+		text-align: center;
+		width: 100%;
+	}
+	.gift .tx1{
+		position: absolute;
+		bottom: -110px;
+	}
+	.gift .tx2{
+		position: absolute;
+		bottom: -165px;
+	}
+	.gift .img{
+		position: absolute;
+		width: 100%;
+		left:0px;
+		height: auto;
+	}
+	.gift .libaolq{
+		position: absolute;
+		bottom: 0px;
+		height: auto;
+		z-index: 21;
+	}
+	.feature{
+		position:relative;
+		margin: 0 auto;
+		width:100%;
+		top:490px;
+		text-align: center;
+	}
+	.feature .img{
+		position: absolute;
+		width: 100%;
+		left:0px;
+		height: auto;
+	}
+	.figure{
+		position:relative;
+		margin: 0 auto;
+		width:100%;
+		top:553px;
+		text-align: center;
+	}
+	.figure .yd{
+		position: absolute;
+		bottom:100px;
+	}
+    .swiper-container {
+      width: 95%;
+      height: auto;
+      margin-left: auto;
+	  margin-right: auto;
+	  z-index: 0;
+    }
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      background: #fff;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      -webkit-justify-content: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      -webkit-align-items: center;
+      align-items: center;
+	}
+	.activity{
+		position:relative;
+		margin: 0 auto;
+		width:100%;
+		top:655px;
+		text-align: center;
+	}
+	.activity .img{
+		position: absolute;
+		width: 100%;
+		left:0px;
+		height: auto;
+	}
+	.share{
+		position:relative;
+		margin: 0 auto;
+		width:100%;
+		top:710px;
+		text-align: center;
+	}
+	.share .qq{
+		position: absolute;
+		left:22px;
+		z-index:21;
+	}
+	.share .weibo{
+		position: absolute;
+		right:22px;
+		z-index:21;
+	}
+	.share .weixin{
+		position: absolute;
+		z-index:21;
+		left:22px;
+		top:540px
+	}
+	.share .bili{
+		position: absolute;
+		z-index:21;
+		right:22px;
+		top:540px
+	}
+	.text{
+		position:relative;
+		margin: 0 auto;
+		width:100%;
+		top:827px;
+		bottom: 229px;
+		text-align: center;
+		height: 421px;
+	}
+	.text p{
+		font-size: 34.67px;
+		color: #999999;
+	}
+	#black_div{
+		position: fixed; 
+		background:rgba(0,0,0,0.75);
+		bottom:auto;
+		width:100%; 
+		height:100%; 
+		left:0%;top:0%;
+		text-align:center;
+	  	z-index: 99;
+	}
+	#black_div .img1{
+		position: absolute;
+		left:5%;
+		bottom: 27%;
+		width:90%;
+	}
+	#black_div .img2{
+		position: absolute;
+		left:53.5%;
+		bottom: 44%;
+	}
+	#black_div .img3{
+		position: absolute;
+		left:5%;
+		bottom: 32%;
+		width:90%;
+	}
+	#black_div .qqqimg{
+		position: absolute;
+		left:5%;
+		bottom: 32%;
+		width:90%;
+	}
+	#black_div p{
+		position: absolute;
+		font-size: 40px;
+		color: #9747e7;
+		left:45%;
+		bottom: 58%;
+		width: 400px;
+	}
+	#black_div .copy{
+		position: absolute;
+		right: 15%;
+		bottom:56%;
+	}
+	#black_div .copy1{
+		position: absolute;
+		right: 15%;
+		bottom:52%;
+	}
+	#cdk_tx{
+		opacity: 0;
+		-webkit-user-select: text;
+	}
+	#cdk_tx1{
+		opacity: 0;
+	}
+	#top_div{
+		position: fixed;
+		bottom:auto;
+		right: 0px;
+		bottom: 15%;
+		z-index: 9999;
+		opacity: 1;
+	}
+	.swiper-pagination{
+		opacity: 0;
+	}
+	.video_play{
+		position: relative; 
+		margin: 0 auto;
+		top:50px;
+		background: black
+	}
+	.cdk .btn{
+		position: absolute;
+		width: 140px;
+		height: 50px;
+		border: 1px solid red;
+		right: 15%;
+		bottom:56%;
+		opacity: 0;
+	}
+	.qqq .btn1{
+		position: absolute;
+		width: 140px;
+		height: 50px;
+		border: 1px solid red;
+		right: 15%;
+		bottom:52%;
+		opacity: 0;
+	}
+</style>
+</head>
+<body>
+<div id="black_div" @touchmove.prevent onclick="hide_black()">
+	<div class="wx">
+		<img src="phone/wx_di.png" class="img1 img_event">
+		<img src="phone/wxewm.png" class="img2">
+	</div>
+	<div class="cdk">
+		<img src="phone/dhm.png" class="img3 img_event">
+		<img src="phone/copy.png" class="copy" onclick="aaaaaaa()">
+		<p></p>
+		<button class="btn"></button>
+		<textarea id="cdk_tx"></textarea>
+	</div>
+	<div class="qqq">
+		<img src="phone/qqq.png" class="qqqimg img_event">
+		<img src="phone/copy.png" class="copy1">
+		<button class="btn1"></button>
+		<textarea id="cdk_tx1">659740589</textarea>
+	</div>
+	<video id="video_play" class="video_play" width="830" height="1477" controls>
+		<source src="video/phone.mp4" type="video/mp4">
+	</video>
+</div>
+<div class="head">
+	<img src='phone/head_di.png' class="img img_event">
+	<img src='phone/loadapp.png' class="loadapp" onclick="load_app()">
+</div>
+<div class="middle">
+	<img src='phone/c_d.png' class="img img_event">
+	<img src='phone/now_load.png' class="now_load" onclick="load_app()">
+	<img src='phone/play_di.png' class="play_di" id="play_di_d" onclick="play_video()">
+	<img src='phone/play.png' class="play" onclick="play_video()">
+</div>
+<div class="gift">
+	<img src='phone/libao.png' class="img img_event">
+	<img src='phone/libaolq.png' class="libaolq" onclick="lq()">
+	<p class="tx1">请前往逗看APP</p>
+	<p class="tx2">点击-我的界面-设置-输入兑换码，领取超值礼包！</p>
+</div>
+<div class="feature">
+	<img src='phone/feature.png' class="img img_event">
+</div>
+<div class="figure"> 
+	<div class="swiper-container">
+		<div class="swiper-wrapper">
+			<div class="swiper-slide">
+				<img src="phone/figure_1.png">
+			</div>
+			<div class="swiper-slide">
+				<img src="phone/figure_2.png">
+			</div>
+			<div class="swiper-slide">
+				<img src="phone/figure_3.png">
+			</div>
+			<div class="swiper-slide">
+				<img src="phone/figure_4.png">
+			</div>
+			<div class="swiper-slide">
+				<img src="phone/figure_5.png">
+			</div>
+		</div>
+		<div class="swiper-pagination"></div>
+		<div class="swiper-button-next">
+			<img src="phone/right.png" onclick="yd_add()">
+		</div>
+		<div class="swiper-button-prev">
+			<img src="phone/left.png" onclick="yd_minus()">
+		</div>
+	</div>
+	<img src="phone/wxz.png" class="yd1 yd">
+	<img src="phone/wxz.png" class="yd2 yd">
+	<img src="phone/wxz.png" class="yd3 yd">
+	<img src="phone/wxz.png" class="yd4 yd">
+	<img src="phone/wxz.png" class="yd5 yd">
+</div>
+<div class="activity">
+	<img src='phone/activity.png' class="img img_event">
+</div>
+<div class="share">
+	<img src='phone/qq.png' class="qq" onclick="share(1)">
+	<img src='phone/weibo.png' class="weibo" onclick="share(2)">
+	<img src='phone/weixin.png' class="weixin" onclick="share(3)">
+	<img src='phone/bili.png' class="bili" onclick="share(4)">
+</div>
+<div class="text">
+	<p>版权所有2016-2018逗看</p>
+	<p>北京神月创想文化有限公司</p>
+	<p>京ICP备：17028419号-4</p>
+</div>
+<div id="top_div">
+	<img src="phone/top.png"  class="top_img img_event"/>
+</div>
+<script type="text/javascript">
+	var clipboard = new ClipboardJS('#black_div .cdk .btn',{
+        text: function() {
+            return Phone_CDK[random_cdk];
+        }
+    });
+    clipboard.on('success', function(e) {
+		console.log(e);
+		alert("复制成功")
+    });
+    clipboard.on('error', function(e) {
+        console.log(e);
+    }); 
+	var clipboard = new ClipboardJS('#black_div .qqq .btn1',{
+		text: function() {
+			return Phone_CDK[random_cdk];
+		}
+	});
+	clipboard.on('success', function(e) {
+		console.log(e);
+		alert("复制成功")
+	});
+	clipboard.on('error', function(e) {
+		console.log(e);
+	}); 
+	//iponex 特殊处理
+	var u = navigator.userAgent;
+    var isIOS = !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/); //ios终端
+    if (isIOS) {        
+        if (screen.height == 812 && screen.width == 375){
+            $("#black_div .cdk p").css({"bottom":$(document.body).width()/2+520})
+            $("#black_div .cdk .copy").css({"bottom":$(document.body).width()/2+500})
+            $("#black_div .qqq .copy1").css({"bottom":$(document.body).width()/2+500})
+            $("#black_div .wx .img2").css({"bottom":$(document.body).width()/2+345})
+        }
+    }
+
+
+	var figure_idx = 1
+	var h_sc = $(document.body).width()/1080
+	$(".head").css({"height":186*h_sc})
+	$(".middle").css({"height":1236*h_sc})
+	$(".gift").css({"height":487*h_sc+110*h_sc})
+	$(".feature").css({"height":167*h_sc})
+	$(".figure").css({"height":1800*h_sc})
+	$(".activity").css({"height":140*h_sc})
+	$(".share").css({"height":1300*h_sc})
+	$(".middle .now_load").css({"left":$(document.body).width()/2-379.5})
+	$(".gift .libaolq").css({"left":$(document.body).width()/2-269.5})
+	$(".figure .yd1").css({"left":$(document.body).width()/2-117})
+	$(".figure .yd2").css({"left":$(document.body).width()/2-65})
+	$(".figure .yd3").css({"left":$(document.body).width()/2-13})
+	$(".figure .yd4").css({"left":$(document.body).width()/2+39})
+	$(".figure .yd5").css({"left":$(document.body).width()/2+92})
+
+	$("#black_div").hide()
+	$("#video_play").hide()
+	$("#black_div .wx").hide()
+	$("#black_div .cdk").hide()
+	$("#black_div .qqq").hide()
+	$("#cdk_tx").hide()
+	$("#cdk_tx1").hide()
+
+	var u = navigator.userAgent, app = navigator.appVersion;
+	var isAndroid = u.indexOf('Android') > -1 || u.indexOf('Linux') > -1; //g
+	var isIOS = !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/); //ios终端
+	
+	//轮播图
+	var swiper = new Swiper('.swiper-container', {
+      slidesPerView: 1,
+      spaceBetween: 30,
+      loop: true,
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    });
+
+	//分享
+	var share = function(id){
+		switch(id){
+			case 1:
+				$("#black_div .wx").hide()
+				$("#top_div").hide()
+				$("#video_play").hide()
+				$("#black_div .cdk").hide()
+				$("#black_div .qqq").show()
+				$("#black_div").show()
+				stop_scrol()
+				break
+			case 2:
+				window.open("https://weibo.com/u/6298624314")
+				break
+			case 3:
+				$("#black_div .wx").show()
+				$("#top_div").hide()
+				$("#video_play").hide()
+				$("#black_div .cdk").hide()
+				$("#black_div .qqq").hide()
+				$("#black_div").show()
+				stop_scrol()
+				break
+			case 4:
+				window.open("https://space.bilibili.com/389586039?from=search&seid=544997756296313779")
+				break
+		}
+	}
+	var hide_black = function(){
+		$("#black_div").hide()
+		$("#top_div").show()
+		move_scrol()
+	}
+	var random_cdk = ""
+    var clipboard = new ClipboardJS('#black_div .cdk .copy',{
+        text: function() {
+            return Phone_CDK[random_cdk];
+        }
+    });
+    clipboard.on('success', function(e) {
+		console.log(e);
+		alert("复制成功")
+    });
+    clipboard.on('error', function(e) {
+        console.log(e);
+    }); 
+    var clipboard = new ClipboardJS('#black_div .qqq .copy1',{
+        text: function() {
+            return Phone_CDK[random_cdk];
+        }
+    });
+    clipboard.on('success', function(e) {
+		console.log(e);
+		alert("复制成功")
+    });
+    clipboard.on('error', function(e) {
+        console.log(e);
+    }); 
+
+	var aaaaaaa = function(){
+		var t = $("#cdk_tx").text()
+		var textarea_copy = document.getElementById("cdk_tx");
+		textarea_copy.select(); 
+		document.execCommand("copy");
+		alert("复制成功！")
+	}
+	$("#black_div .cdk .copy").click(function(e){
+		
+	})
+	$("#black_div .qqq .copy1").click(function(e){
+		var textarea_copy = document.getElementById("cdk_tx1");
+		textarea_copy.select(); 
+		document.execCommand("copy");
+		alert("复制成功！")
+	}) 
+	var lq = function(){
+		random_cdk = Math.floor(Math.random()*100);
+		$("#cdk_tx").text(Phone_CDK[random_cdk])
+		$("#black_div p").text(Phone_CDK[random_cdk])
+		$("#black_div .wx").hide()
+		$("#video_play").hide()
+		$("#black_div .cdk").show()
+		$("#black_div").show()
+		stop_scrol()
+		$("#top_div").hide()
+		$("#black_div .qqq").hide()
+	}
+	var load_app = function(){
+		if (isAndroid) {
+			var t = new Date().getTime()
+			var wwin = window.open()
+			wwin.location.href = "http://config-100.xintiaoshijie.com/%E9%80%97%E7%9C%8B.apk?t="+t
+		}
+		if (isIOS) {
+			window.location.href = IOS_APK_URL
+		}
+	}
+	//旋转动画
+	var rotation = function (){
+	   $("#play_di_d").rotate({
+			angle:0, 
+			animateTo:360, 
+			callback: rotation,
+			easing: function (x,t,b,c,d){        
+				return c*(t/d)+b;
+			},
+			duration:15000
+	   });
+	}
+	rotation();
+
+	var play_video = function(){
+		$("#black_div .wx").hide()
+		$("#black_div").show()
+		stop_scrol()
+		$("#top_div").hide()
+		$("#video_play").show()
+		$("#black_div .cdk").hide()
+		$("#video_play").prop("src","video/phone.mp4")
+	}
+	$("#top_div").click(function(){
+		$("html, body").animate({scrollTop: 0},200);
+	})
+
+	//轮播图小圆点
+	var init_xyd = function(){
+		for(var i=1;i<=5;i++){
+			if(i==figure_idx){
+				$(".figure .yd"+i).attr("src","phone/xz.png")
+			}else $(".figure .yd"+i).attr("src","phone/wxz.png")
+		}
+	}
+	init_xyd()
+	var yd_add = function(){
+		figure_idx++
+		if(figure_idx == 6){
+			figure_idx = 1
+		}
+		init_xyd()
+	}
+	var yd_minus = function(){
+		figure_idx--
+		if(figure_idx == 0){
+			figure_idx = 5
+		}
+		init_xyd()
+	}
+	var mo=function(e){e.preventDefault()};
+	var stop_scrol = function(){
+		document.body.style.overflow='hidden';
+		document.addEventListener("touchmove",mo,false);//禁止页面滑动
+		$('#black_div').bind("touchmove",function(e){
+            e.preventDefault();
+     	});
+	}
+	var move_scrol = function(){
+		document.body.style.overflow='';//出现滚动条
+    	document.removeEventListener("touchmove",mo,false);
+	}
+var Phone_CDK = [
+"S344935",
+"S741344",
+"S340195",
+"S488542",
+"S852682",
+"S604882",
+"S967292",
+"S438604",
+"S245256",
+"S357719",
+"S475557",
+"S856840",
+"S907926",
+"S970038",
+"S295973",
+"S006745",
+"S792119",
+"S131441",
+"S322028",
+"S235023",
+"S074075",
+"S470025",
+"S862844",
+"S066425",
+"S308580",
+"S668388",
+"S902577",
+"S431841",
+"S965040",
+"S611036",
+"S453640",
+"S792847",
+"S940715",
+"S686736",
+"S822030",
+"S381083",
+"S124941",
+"S163358",
+"S817761",
+"S329422",
+"S088015",
+"S265547",
+"S172188",
+"S028614",
+"S447848",
+"S508539",
+"S956310",
+"S959246",
+"S400718",
+"S251669",
+"S920219",
+"S981526",
+"S533706",
+"S803944",
+"S706821",
+"S980293",
+"S879102",
+"S724160",
+"S697653",
+"S653330",
+"S275506",
+"S532525",
+"S946257",
+"S246355",
+"S415772",
+"S497840",
+"S954458",
+"S006107",
+"S880180",
+"S901929",
+"S000237",
+"S387937",
+"S293923",
+"S952427",
+"S858024",
+"S717776",
+"S662322",
+"S474226",
+"S257879",
+"S971411",
+"S901888",
+"S206887",
+"S075207",
+"S403795",
+"S329594",
+"S331107",
+"S363211",
+"S785039",
+"S369057",
+"S383520",
+"S457018",
+"S558819",
+"S066508",
+"S161850",
+"S408794",
+"S814522",
+"S843600",
+"S004910",
+"S690010",
+"S265663"
+]
+</script>
+</body>
+</html>

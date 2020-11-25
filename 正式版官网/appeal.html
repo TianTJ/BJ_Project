@@ -1,0 +1,686 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>逗看</title>
+<style>
+	body{
+		text-align:center
+	}
+	*{margin:0;padding:0}
+	.content{
+        position:relative;
+		width:60%;
+		margin:auto;
+		padding: 0;
+		text-align: center;
+		overflow:hidden;
+	}
+	.head{
+        position:relative;
+		width:100%;
+		text-align:center
+	}
+	.head p{
+        position:relative;
+		font-family: "Microsoft Yahei","仿宋",sans-serif;
+		font-weight:bold;
+		font-size:269%;
+		color:#eb6182;
+		top:100px;
+	}
+	.logo_img{
+		position:absolute;
+		top:5px;
+		left:10px;
+	}
+	.my_info_div{
+		position:relative;
+		width:1100px;height:500px;
+		margin:100px auto;
+		padding: 0;
+		text-align: center;
+		overflow:hidden;
+	}
+	.tx_1{
+		position:absolute;
+		top:160px;
+		left:480px;
+		width:150px;
+		text-align:center;
+		font-family: "Microsoft Yahei","仿宋",sans-serif;
+		font-weight:bold;
+		font-size:137.5%;
+		color:#ff829e;
+	}
+	.xingxing1{
+		position:absolute;
+		top:250px;
+		left:70px;
+		color:#ff829e;
+		font-size:137.5%;
+	}
+	.info_name{
+		position:absolute;
+		top:250px;
+		left:80px;
+		color:#6d6d6d;
+		font-size:137.5%;
+		text-align:right;
+	}
+	.info_name input{
+		height: 30px;
+		width: 700px;
+		
+		float: right;
+		zoom:1;
+		outline: medium;
+		font-size:100%;
+		color:#6d6d6d;
+	}
+	.xingxing2{
+		position:absolute;
+		top:350px;
+		left:170px;
+		color:#ff829e;
+		font-size:137.5%;
+	}
+	.info_phone{
+		position:absolute;
+		top:350px;
+		left:180px;
+		color:#6d6d6d;
+		font-size:137.5%;
+		text-align:right;
+	}
+	.info_phone input{
+		height: 30px;
+		width: 350px;
+		
+		float: right;
+		zoom:1;
+		outline: medium;
+		font-size:100%;
+		color:#6d6d6d;
+	}
+	.xingxing3{
+		position:absolute;
+		top:350px;
+		left:650px;
+		color:#ff829e;
+		font-size:137.5%;
+	}
+	.info_mail{
+		position:absolute;
+		top:350px;
+		left:660px;
+		color:#6d6d6d;
+		font-size:137.5%;
+		text-align:right;
+	}
+	.info_mail input{
+		height: 30px;
+		width: 270px;
+		
+		float: right;
+		zoom:1;
+		outline: medium;
+		font-size:100%;
+		color:#6d6d6d;
+	}
+	.xingxing4{
+		position:absolute;
+		top:450px;
+		left:170px;
+		color:#ff829e;
+		font-size:137.5%;
+	}
+	.info_address{
+		position:absolute;
+		top:450px;
+		left:180px;
+		color:#6d6d6d;
+		font-size:137.5%;
+		text-align:right;
+	}
+	.info_address input{
+		height: 30px;
+		width: 350px;
+		float: right;
+		outline: medium;
+		font-size:100%;
+		color:#6d6d6d;
+	}
+	.xingxing5{
+		position:absolute;
+		top:450px;
+		left:650px;
+		color:#ff829e;
+		font-size:137.5%;
+	}
+	.info_zipcode{
+		position:absolute;
+		top:450px;
+		left:660px;
+		color:#6d6d6d;
+		font-size:137.5%;
+		text-align:right;
+	}
+	.info_zipcode input{
+		height: 30px;
+		width: 270px;
+		
+		float: right;
+		zoom:1;
+		outline: medium;
+		font-size:100%;
+		color:#6d6d6d;
+	}
+	.works_info_div{
+		position:relative;
+		width:1100px;height:1050px;
+		margin:-100px auto;
+		padding: 0;
+		text-align: center;
+		overflow:hidden;
+	}
+	.works_info_div .tx_1{
+		position:absolute;
+		top:50px;
+		left:480px;
+		width:150px;
+		text-align:center;
+		font-family: "Microsoft Yahei","仿宋",sans-serif;
+		font-weight:bold;
+		font-size:137.5%;
+		color:#ff829e;
+	}
+	.works_info_div .xingxing1{
+		position:absolute;
+		top:150px;
+		left:170px;
+		color:#ff829e;
+		font-size:137.5%;
+	}
+	.works_info_div .info_phone{
+		position:absolute;
+		top:150px;
+		left:180px;
+		color:#6d6d6d;
+		font-size:137.5%;
+		text-align:right;
+	}
+	.works_info_div .info_phone input{
+		height: 30px;
+		width: 350px;
+		
+		float: right;
+		zoom:1;
+		outline: medium;
+		font-size:100%;
+		color:#6d6d6d;
+	}
+	.works_info_div .info_author{
+		position:absolute;
+		top:250px;
+		left:180px;
+		color:#6d6d6d;
+		font-size:137.5%;
+		text-align:right;
+	}
+	.works_info_div .info_author input{
+		height: 30px;
+		width: 350px;
+		
+		float: right;
+		zoom:1;
+		outline: medium;
+		font-size:100%;
+		color:#6d6d6d;
+	}
+	.works_info_div .xingxing2{
+		position:absolute;
+		top:350px;
+		left:128px;
+		color:#ff829e;
+		font-size:137.5%;
+	}
+	.works_info_div .info_evidence{
+		position:absolute;
+		top:350px;
+		left:138px;
+		color:#6d6d6d;
+		font-size:137.5%;
+		text-align:right;
+	}
+	.info_evidence_tx{
+		position:absolute;
+		top:385px;
+		left:120px;
+		color:#6d6d6d;
+		font-size:110.5%;
+		text-align:right;
+	}
+	.upload_img_1{
+		position:absolute;
+		top:350px;
+		left:320px;
+		width:200px;
+		height:200px;
+	}
+	.upload_img_2{
+		position:absolute;
+		top:350px;
+		left:550px;
+		width:200px;
+		height:200px;
+	}
+	.upload_img_3{
+		position:absolute;
+		top:350px;
+		left:780px;
+		width:200px;
+		height:200px;
+	}
+	.works_info_div .xingxing3{
+		position:absolute;
+		top:650px;left:128px;
+		color:#ff829e;
+		font-size:137.5%;
+	}
+	.works_info_div .info_summary{
+		position:absolute;
+		top:650px;
+		left:138px;
+		color:#6d6d6d;
+		font-size:137.5%;
+		text-align:right;
+	}
+	#summary_tx{
+		position:absolute;
+		top:700px;
+		left:300px;
+		color:#6d6d6d;
+		font-size:137.5%;
+		text-align:left;
+		font-weight:bold;
+	}
+	.info_summary_tx{
+		position:absolute;
+		top:650px;
+		left:300px;
+		color:#bfbfbf;
+		font-size:137.5%;
+	}
+	.mix_least{
+		position:absolute;
+		top:980px;
+		left:900px;
+		color:#bfbfbf;
+		font-size:137.5%;
+	}
+	.prove_info_div{
+		position:relative;
+		width:1100px;height:650px;
+		margin:150px auto;
+		padding: 0;
+		text-align: center;
+		overflow:hidden;
+	}
+	.prove_info_div .tx_1{
+		position:absolute;
+		top:10px;
+		left:480px;
+		width:150px;
+		text-align:center;
+		font-family: "Microsoft Yahei","仿宋",sans-serif;
+		font-weight:bold;
+		font-size:137.5%;
+		color:#ff829e;
+	}
+	.prove_info_div .xingxing1{
+		position:absolute;
+		top:230px;
+		left:128px;
+		color:#ff829e;
+		font-size:137.5%;
+	}
+	.prove_info_div .info_prove{
+		position:absolute;
+		top:230px;
+		left:138px;
+		color:#6d6d6d;
+		font-size:137.5%;
+		text-align:right;
+	}
+	.info_prove_tx{
+		position:absolute;
+		top:265px;
+		left:120px;
+		color:#6d6d6d;
+		font-size:110.5%;
+		text-align:right;
+	}
+	.prove_info_div .upload_img_1{
+		position:absolute;
+		top:265px;
+		left:320px;
+		width:200px;
+		height:200px;
+	}
+	#uploadForm .i1{
+		position:absolute;
+		top:350px;
+		left:320px;
+	}
+	#uploadForm1 .i2{
+		position:absolute;
+		top:350px;
+		left:550px;
+	}
+	#uploadForm2 .i3{
+		position:absolute;
+		top:350px;
+		left:780px;
+	}
+	#uploadForm3 .i4{
+		position:absolute;
+		top:265px;
+		left:320px;
+	}
+	#uploadForm4 .i5{
+		position:absolute;
+		top:265px;
+		left:550px;
+	}
+	#uploadForm5 .i6{
+		position:absolute;
+		top:265px;
+		left:780px;
+	}
+	.prove_info_div .upload_img_2{
+		position:absolute;
+		top:265px;
+		left:550px;
+		width:200px;
+		height:200px;
+	}
+	.prove_info_div .upload_img_3{
+		position:absolute;
+		top:265px;
+		left:780px;
+		width:200px;
+		height:200px;
+	}
+	.prove_info_div p{
+		position:relative;
+		text-align:center;
+		font-family: "Microsoft Yahei","仿宋",sans-serif;
+		font-weight:bold;
+		font-size:112.5%;
+		color:#eb6182;
+		line-height:30px;
+	}
+	.tt_1{
+		top:80px;
+	}
+	.tt_2{
+		top:80px;
+	}
+	.tt_3{
+		top:80px;
+	}
+	.sumbit{
+		position:relative;
+		bottom:180px;
+	}
+	.shensu_frame{
+		position:absolute;
+		top:250px;
+		left:0px;
+		width:100%;height:2200px;
+	}
+</style>
+<link rel="shortcut icon" type="image/x-icon" href="images/title_icon.ico" />
+</head>
+<script src="js/buttom_jump.js"></script>
+<body background = "images/bg.jpg" style=" background-repeat:no-repeat;background-size:100% 100%;">
+<div class="content">
+	<div class="head">
+		<a href="index.html"><img src="images/logo.png" style="cursor:pointer" class="logo_img"/></a>
+		<p>维权申诉书</p>
+		<img src="images/shensu_frame.png" alt="" class="shensu_frame"/>
+	</div>
+	<div class="my_info_div" id="my_info_div">
+		<a class="tx_1">贵方基本信息</a>
+		<a class="xingxing1">*</a>
+		<a class="info_name">公司名称/个人姓名: &ensp;<input type="text" maxlength="40" class="name" /></a>
+		<a class="xingxing2">*</a>
+		<a class="info_phone">手机号码:&ensp; <input type="text" onkeyup="value=value.replace(/[\u4e00-\u9fa5]/ig,'')" class="phone" /></a>
+		<a class="xingxing3">*</a>
+		<a class="info_mail">邮箱:&ensp; <input type="text" type="email" class="email" /></a>
+		<a class="xingxing4">*</a>
+		<a class="info_address">通信地址:&ensp; <input type="text" maxlength="40" class="adress" /></a>
+		<a class="xingxing5">*</a>
+		<a class="info_zipcode">邮编:&ensp; <input type="text" onkeyup="value=value.replace(/[^\d]/g,'')" class="postcode" /></a>
+	</div>
+	<div class="works_info_div" id="works_info_div">
+		<a class="tx_1">侵权作品信息</a>
+		<a class="xingxing1">*</a>
+		<a class="info_phone">作品名称:&ensp; <input type="text"  maxlength="40" class="work_name" /></a>
+		<a class="info_author">作者昵称:&ensp; <input type="text" maxlength="40" class="work_phone" /></a>
+		<a class="xingxing2">*</a>
+		<a class="info_evidence">侵权证据截图:&ensp; </a>
+		<img src="images/upload_img.png" class="upload_img_1" id="upload_img_1"/>
+		<img src="images/upload_img.png" class="upload_img_2" id="upload_img_2"/>
+		<img src="images/upload_img.png" class="upload_img_3" id="upload_img_3"/>
+		<a class="info_evidence_tx">（至少上传一张图片）</a>
+		<form id="uploadForm">
+			<input type="file" class="i1" name="file" style="width:200px;height:200px;opacity:0" onclick="change_id(0)">
+		</form>
+		<form id="uploadForm1">
+			<input type="file" class="i2" name="file" style="width:200px;height:200px;opacity:0" onclick="change_id(1)">
+		</form>
+		<form id="uploadForm2">
+			<input type="file" class="i3" name="file" style="width:200px;height:200px;opacity:0" onclick="change_id(2)">
+		</form>
+		<input type="file" id="input_upload_driver" style="display: none" accept="image/jpg, image/png, image/jpeg"  onChange="uploadImg(this,'img_driver');">
+		<a class="xingxing3">*</a>
+		<a class="info_summary">侵权情况概述:&ensp; </a>
+		<a class="info_summary_tx">指出具体人物，剧情等。 </a>
+		<textarea id="summary_tx" style="width:500px;height:300px;"></textarea>
+		<a class="mix_least">不少于20字 </a>
+	</div>
+	<div class="prove_info_div">
+		<a class="tx_1">权属证明材料</a>
+		<p class="tt_1">证明资料包括不限于版权证书，公开发表证明资料，创作手稿，累计时间戳，作品备案证书等。</p>
+		<p class="tt_2">资料可以拍照或者扫描，但要保证清晰可见哦！</p>
+		<p class="tt_3">请上传能证明版权的所需资料，以方便更好的维权！</p>
+		<a class="xingxing1">*</a>
+		<a class="info_prove">版权资料证明:&ensp; </a>
+		<a class="info_prove_tx">（至少上传一张图片）</a>
+		<img src="images/upload_img.png" class="upload_img_1" id="upload_img_4" onclick=""/>
+		<img src="images/upload_img.png" class="upload_img_2" id="upload_img_5" onclick=""/>
+		<img src="images/upload_img.png" class="upload_img_3" id="upload_img_6" onclick=""/>
+		<form id="uploadForm3">
+			<input type="file" class="i4" name="file" style="width:200px;height:200px;opacity:0" onclick="change_id(3)">
+		</form>
+		<form id="uploadForm4">
+			<input type="file" class="i5" name="file" style="width:200px;height:200px;opacity:0" onclick="change_id(4)">
+		</form>
+		<form id="uploadForm5">
+			<input type="file" class="i6" name="file" style="width:200px;height:200px;opacity:0" onclick="change_id(5)">
+		</form>
+	</div>
+	<img src="images/tijiao.png" alt="" class="sumbit" onclick="submission()"/>
+</div>
+<script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
+<script src="js/config.js"></script>
+<script type="text/javascript">
+	$('input[type="file"]').on('change',doupload)
+	function change_id(id){
+		img_id = id
+	}
+	function doupload(){
+		//判断文件类型
+		var file = $("#uploadForm .i1").val()
+		var fileend = file.substring(file.lastIndexOf("."));
+		var filetype = {1:".jpg",2:".bmp",3:".png",4:".gif"}
+		var zq = false
+		for(var i=1;i<=4;i++){
+			if(filetype[i] == fileend){zq = true;break}
+		}
+		if(!zq){alert("文件格式不支持");return}
+		var size = $("#uploadForm .i1")[0].files[0].size;
+		if((size/1024/1024) > 5){
+			alert("请上传5M大小以下的文件");return
+		}
+		
+		var load_img = document.getElementById("upload_img_"+(img_id+1))
+		var kk = null
+		if(img_id==0){
+			kk = $("#uploadForm" )[0]
+		}else if(img_id==1){
+			kk = $("#uploadForm1" )[0]
+		}else if(img_id==2){
+			kk = $("#uploadForm2" )[0]
+		}else if(img_id==3){
+			kk = $("#uploadForm3" )[0]
+		}else if(img_id==4){
+			kk = $("#uploadForm4" )[0]
+		}else if(img_id==5){
+			kk = $("#uploadForm5" )[0]
+		}
+		
+		var formData = new FormData(kk)
+		$.ajax({
+			url: server_location+'rights/uploadImg',
+			type: 'POST',
+			data: formData,
+			async: false,
+			cache: false,
+			contentType: false,
+			processData: false,
+			success: function (data) {
+				img_arr[img_id] = true
+				load_img.width = 200;
+				load_img.height = 200;
+				load_img.src = "http://"+data.data
+				if(img_id==0 || img_id==1 || img_id==2){
+					evidence.push(load_img.src)
+				}else{
+					summary.push(load_img.src)
+				}
+				if(img_arr[0]){
+					upload_img_2.style.display = ""
+					$("#uploadForm .i2").show()
+				}
+				if(img_arr[1]){
+					upload_img_3.style.display = ""
+					$("#uploadForm .i3").show()
+				}
+				if(img_arr[3]){
+					upload_img_5.style.display = ""
+					$("#uploadForm .i5").show()
+				}
+				if(img_arr[4]){
+					upload_img_6.style.display = ""
+					$("#uploadForm .i6").show()
+				}
+			},
+			error: function (data) {
+				console.log(data)
+			}
+		});
+	}
+	var img_id = 0
+	var evidence = []
+	var summary = []
+	var img_arr={0:false,1:false,2:false,3:false,4:false,5:false}
+	var upload_img_2 = document.getElementById("upload_img_2")
+	var upload_img_3 = document.getElementById("upload_img_3")
+	var upload_img_5 = document.getElementById("upload_img_5")
+	var upload_img_6 = document.getElementById("upload_img_6")
+	upload_img_2.style.display = "none"
+	upload_img_3.style.display = "none"
+	upload_img_5.style.display = "none"
+	upload_img_6.style.display = "none"
+	$("#uploadForm .i2").hide()
+	$("#uploadForm .i3").hide()
+	$("#uploadForm .i5").hide()
+	$("#uploadForm .i6").hide()
+	
+	function submission(){
+		var name1 = $("#my_info_div .name").val() ||""
+		var phone1 = $("#my_info_div .phone").val()||""
+		var email1 = $("#my_info_div .email").val()||""
+		var addr1 = $("#my_info_div .adress").val()||""
+		var postcode1 = $("#my_info_div .postcode").val()||""
+		var storyname1 = $("#works_info_div .work_name").val()||""
+		var authorname1 = $("#works_info_div .work_phone").val()||""
+		var detailed1 = $("#summary_tx").val()||""
+		if(name1=="" || phone1=="" || email1=="" || addr1=="" || postcode1=="" || storyname1=="" || detailed1=="" || evidence.length==0 || summary.length==0){
+			alert("请完善信息");return
+		}
+		if(!isPoneAvailable(phone1)){alert("手机号格式错误");return}
+		if(!checkEmail(email1)){alert("邮箱格式错误");return}
+		if(!is_postcode(postcode1)){alert("邮编格式错误");return}
+		var sdata = {
+			name:name1,
+			phone:parseInt(phone1),
+			email:email1,
+			addr:addr1,
+			postcode:parseInt(postcode1),
+			storyName:storyname1,
+			authorName:authorname1,
+			detailed:detailed1,
+			evidenceImg:evidence,
+			copyrightDataImg:summary
+		}
+		console.log(sdata)
+		$.ajax({
+			url: server_location+'rights/protectionSubmit',
+			type: 'POST',
+			data: sdata,
+			traditional:true,
+			dataType:"json",
+			success: function (data) {
+				if(data.code.code == 200){
+					window.location.reload()
+				}
+			},
+			error: function (data) {
+				console.log(data)
+			}
+		});
+	}
+	//检测手机号格式
+	function isPoneAvailable(str) {
+        var myreg=/^[1][3,4,5,7,8][0-9]{9}$/;
+        if (!myreg.test(str)) {
+            return false;
+        } else {
+            return true;
+        }
+	}
+	function checkEmail(str){
+		var re = /^(\w-*\.*)+@(\w-?)+(\.\w{2,})+$/
+		if(re.test(str)){
+			return true
+		}else{
+			return false;
+		}
+	}
+	function is_postcode(postcode) {
+		if ( postcode == "") {
+			return false;
+		} else {
+			if (! /^[0-9][0-9]{5}$/.test(postcode)) {
+				return false;
+			}	
+		}
+		 return true;
+	}
+</script>
+</body>
+</html>

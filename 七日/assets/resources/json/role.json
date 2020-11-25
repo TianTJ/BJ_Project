@@ -1,0 +1,42 @@
+[
+  {
+    "user_id": "1001",
+    "name": "沉星",
+    "icon": "1001",
+    "age": "10",
+    "height": "185",
+    "work": "魔王",
+    "blood": "O",
+    "constellation": "天蝎座"
+  },
+  {
+    "user_id": "1002",
+    "name": "江小诗",
+    "icon": "1002",
+    "age": "20",
+    "height": "175",
+    "work": "学生",
+    "blood": "A",
+    "constellation": "金牛座"
+  },
+  {
+    "user_id": "1003",
+    "name": "总裁",
+    "icon": "1003",
+    "age": "20",
+    "height": "180",
+    "work": "总裁",
+    "blood": "B",
+    "constellation": "天秤座"
+  },
+  {
+    "user_id": "1004",
+    "name": "智能少年",
+    "icon": "1004",
+    "age": "20",
+    "height": "170",
+    "work": "学生",
+    "blood": "AB",
+    "constellation": "双鱼座"
+  }
+]

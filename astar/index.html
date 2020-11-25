@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>逗看</title>
+<style>
+    body{
+        text-align:center;
+        background: #ffffff;
+        min-width: 750px;
+    }
+    #box{
+        position: absolute;
+        width: 740px;
+        height: 740px;
+        top: 50%;
+        left: 50%;
+        margin: -370px 0 0 -370px;
+    }
+    #box div{
+        border: 1px solid blue;
+        width: 70px;
+        height: 70px;
+    }
+</style>
+    <script src="js/AStar.js"></script>
+</head>
+<script src="js/AStar.js"></script>
+<script src="js/jquery-1.11.1.min.js"></script>
+<body>
+<div id="box"></div>
+<script type="text/javascript">
+    var map2d = Array2D(10, 10);
+    map2d.data = [
+        [0,0,0,0,0,0,1,0,0,0],
+        [0,1,0,0,1,0,0,1,0,1],
+        [0,1,0,0,1,1,0,1,0,0],
+        [0,1,0,0,1,0,0,0,0,0],
+        [1,1,1,1,1,1,1,0,1,0],
+        [0,0,0,0,1,0,0,0,0,0],
+        [0,1,0,0,1,0,0,0,0,0],
+        [0,1,0,0,1,0,1,0,1,0],
+        [0,1,0,1,1,0,0,1,0,0],
+        [0,0,0,0,0,0,0,1,0,0]
+    ];
+
+    map2d.showArray2D();
+    create_box(map2d.data,Point(0,0),Point(9,0))
+
+    aStar=AStar(map2d,Point(0,0),Point(9,0));
+    var pathList=aStar.start();
+    for (var point of pathList){
+        map2d.data[point.x][point.y]=8;
+    }
+    create_box(map2d.data,Point(0,0),Point(9,0))
+    map2d.showArray2D();
+</script>
+</body>
+</html>

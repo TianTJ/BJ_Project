@@ -1,0 +1,768 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8" vdd-123>
+<link rel="stylesheet" type="text/css" href="css/head.css"/>
+<title>逗看-关于我们</title>
+<style>
+	body{
+		text-align:center;
+	}
+	*{margin:0;padding:0}
+	.content{
+        position:relative;
+		width:100%;
+		margin:auto;
+		padding: 0;
+		text-align: center;
+		overflow:hidden;
+	}
+	#head_bg .title_head_di{
+		position: absolute;
+		bottom:1%;
+		left:46%;
+	}
+	.ddd{
+		position: fixed;
+		height:1156px;
+		width:100%;
+		min-width:1920px;
+	}
+	.ddd img{
+        position:relative;
+		top:-100px;
+	}
+	.title_div{
+		position:relative;
+		width:950px;height:630px;
+		margin:0px auto;
+		top:50px;
+		text-align: left;
+		overflow:hidden;
+		overflow:auto;
+	}
+	.shensu{
+		position:absolute;
+		margin:0px auto;
+		top:50px;
+	}
+	.left{
+		position:absolute;
+		margin:0px auto;
+		right: 0;top:70px
+	}
+	.jieshao{
+		position:absolute;
+		font-family: "Microsoft Yahei";
+		font-size:35px;
+		color:#eb6182;
+		left: 45%;top:0px;
+	}
+	.title_div p{
+		text-align:left;
+		font-family: "Microsoft Yahei";
+		color:#000000;
+		line-height:30px;
+		font-size:16px;
+		letter-spacing:1px;
+	}
+	.t_1{
+		position:absolute;
+		width: 470px;
+		left: 220px;
+		top: 130px;
+	}
+	.t_2{
+		position:absolute;
+		width: 700px;
+		left: 0;
+		top: 260px;
+	}
+	.t_3{
+		position:absolute;
+		width: 700px;
+		left: 0;
+		top: 360px;
+	}
+	.t_4{
+		position:absolute;
+		width: 700px;
+		left: 0;
+		top: 455px;
+	}
+	.t_5{
+		position:absolute;
+		width: 700px;
+		left: 0;
+		top:545px;
+	}
+	.frame_c{
+		position:relative;
+		overflow:hidden;
+		width:950px;height:780px;
+		margin:0px auto;
+		top:50px;
+		text-align:left;
+		overflow:auto;
+	}
+	.xueyuan{
+		position:absolute;
+		font-family: "Microsoft Yahei";
+		font-size:35px;
+		color:#eb6182;
+		left: 45%;top:30px;
+		border: 1px solid red;
+	}
+	.right{
+		position:absolute;
+		margin: 0 auto;
+		left: -10px;top:50px
+	}
+	.frame_c p{
+		text-align:left;
+		font-family: "Microsoft Yahei";
+		color:#000000;
+		line-height:30px;
+		font-size:16px;
+		letter-spacing:1px;
+	}
+	.p1{
+		position:absolute;
+		width: 670px;
+		top:150px;
+		right: 0;
+	}
+	.p2{
+		position:absolute;
+		width: 670px;
+		right: 0;
+		top:245px;
+	}
+	.p3{
+		position:absolute;
+		width: 670px;
+		right: 0;
+		top:305px;
+	}
+	.p4{
+		position:absolute;
+		width: 670px;
+		right: 0;
+		top:370px;
+	}
+	.p5{
+		position:absolute;
+		width: 670px;
+		right: 0;
+		top:465px;
+	}
+	.p6{
+		position:absolute;
+		width: 670px;
+		right: 0;
+		top:530px;
+	}
+	.p7{
+		position:absolute;
+		width: 670px;
+		right: 0;
+		top:625px;
+	}
+	.p8{
+		position:absolute;
+		right: 0;
+		bottom:0px;
+	}
+	.img_c{
+		position:relative;
+		overflow:hidden;
+		width:100%;height:450px;;
+		margin:0px auto;
+		top:120px;
+		text-align:center;overflow:auto;
+	}
+	.about{
+		position:relative;
+	}
+	#footerParts{
+		position:relative;
+		width:100%; 
+		bottom:0px;
+		height:100px; 
+		background-color:#171717;
+	}
+	.psc-cell-footer {
+	  display: inline-block;
+	  letter-spacing: normal;
+	  padding: 4px 8px;
+	}
+	.psc-cell-footer:last-child {
+	  background: none;
+	}
+	.psc-cell-footer a {
+	  font-weight: 400;
+	}
+	.psc-cell-footer a {
+	  color: #ffffff;
+	  font-size: 13px;
+	}
+	.psc-cell-footer a:link {
+	  text-decoration: none;
+	  color: #ffffff;
+	}
+	.psc-cell-footer a:visited {
+	  color: #ffffff;
+	}
+	.psc-cell-footer a:hover {
+	  color: #00a2ff;
+	}
+	.psc-row-footer p{
+		font-family: "Microsoft Yahei","仿宋",sans-serif;
+		
+		font-size:87.5%;
+		color:#444444;
+	}
+	.psc-align-center1 p{
+		color: #ffffff;
+		font-size: 13px;
+	}
+	.psc-footer-container{
+		width:100%;height:100px;
+		position:absolute;
+	}
+	.psc-footer-row{
+		width:100%;
+		position:absolute;
+		bottom:65px
+	}
+	.psc-row-footer{
+		width:100%;
+		position:absolute;
+		bottom:105px;
+	}
+	.psc-row-footer1{
+		position:relative;
+		width:100%;height:20px;
+		top:50px;
+	}
+	.psc-align-center1 {
+		position:relative;
+		width:1200px;height:20px;
+		margin:0px auto;
+		min-width:960px;
+		text-align: center;
+	}
+	.bntb{
+		position: absolute;
+		left:130px;
+		top:-2px;
+	}
+	.psc-copyrights0 {
+		position: absolute;
+		font-size: 75%;
+		color: #ffffff;
+		left:155px;
+	}
+	.psc-copyrights1 {
+		position:absolute;
+		font-size: 75%;
+		color: #ffffff;
+		left:380px;
+	}
+	.psc-copyrights2 {
+		position:absolute;
+		font-size: 75%;
+		color: #ffffff;
+		text-align:center;
+		left:695px;
+	}
+	.psc-copyrights3 {
+		position:absolute;
+		font-size: 75%;
+		color: #ffffff;
+		text-align:center;
+		left:885px;
+	}
+	#bottom_xf .register_tx_1{
+		position: absolute;
+		font-family: "Microsoft Yahei","仿宋",sans-serif;
+		font-size:93.75%;
+		color:#6d6d6d;
+		left:195px;top:310px;
+	}
+	#bottom_xf .register_tx_2{
+		position: absolute;
+		font-family: "Microsoft Yahei","仿宋",sans-serif;
+		font-size:93.75%;
+		color:#ff829e;
+		left:332px;top:310px;
+	}
+</style>
+<link rel="shortcut icon" type="image/x-icon" href="images/title_icon.ico" />
+</head>
+<script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
+<script type="text/javascript" src="js/buttom_jump.js"></script>
+<script type="text/javascript" src="js/common.js"></script>
+<script type="text/javascript" src="js/config.js"></script>
+<body background = "images/bg.jpg">
+<div class="ddd">
+	<img src="images/xn_di.png"  class="xn_di"/>
+</div>
+<div class="content">
+	<div id="head_bg">
+		<a href="index.html"><img src="images/logo.png" style="cursor:pointer" class="logo_img"/></a>
+		<font style="cursor:pointer" class="f1" onclick="open_page(0)">首页</font>
+		<font style="cursor:pointer" class="f2" onclick="open_page(10)">关于我们</font>
+		<font style="cursor:pointer" class="f3" onclick="open_page(1)">联系我们</font>
+		<font style="cursor:pointer" class="f4" onclick="open_page(4)">维权中心</font>
+		<img src="images/title_head_di.png"  class="title_head_di"/>
+		<a class="l1"> 
+			<font style="cursor:pointer" class="f5" onclick="show_login()">登录&ensp;</font>
+			<font style="cursor:pointer" class="f6" onclick="show_register()">|&ensp;注册</font>
+			<font style="cursor:pointer" class="f7" onclick="canle()">注销</font>
+		</a>
+	</div>
+	<div class="title_div">
+		<img src="images/c_logo.png"  class="shensu"/>
+		<img src="images/left.png"  class="left"/>
+		<a class="jieshao">公司介绍</a>
+		<p class="t_1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;北京神月创想文化有限公司于2016年7月构建成立，公司的宗旨为创造与改变。我们致力于完成每个动漫爱好者的梦想，于是，“逗看”诞生了！产品历时近两年的研发，于2018年12月25日开启公测。</p>
+		<p class="t_2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;通过逗看APP的虚拟偶像塑造和动画演算技术，每一位用户都可以创作动画。它独特的DIY动画功能，让每一位用户——“一个人，就是一家动画公司！”</p>
+		<p class="t_3">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;这种独特的DIY体验，让苦有无限想象力的你，能够超越时空限制，一步一个脚印的创造出自己的世界。</p>
+		<p class="t_4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 逗看目前开设有短剧、番剧两大板块，其中又细分为古风、现代、热血、同人、惊悚等8个题材分类。</p>
+		<p class="t_5">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;虽尚未正式开站，但已与腾讯动漫取得IP合作。更与不可能的世界、仙山映画等多家平台或公司签署了战略协议。</p>
+		
+	</div>
+	<div class="frame_c">
+		<a class="xueyuan">神月学府</a>
+		<img src="images/right.png"  class="right"/>
+		<p class="p1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;曾经，在苦苦追番的我们，都认为“制作动画”是一件离自己很遥远的事情，但也曾梦想过创作一部属于自己的动画……</p>
+		<p class="p2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;随着科技的进步，黑技术的迭代。</p>
+		<p class="p3">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;终于，“神月创想”要将这个不可能的梦想变为现实！！</p>
+		<p class="p4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;于是我们团结在一起做了这个项目，集合了众多行业顶尖人才，期望把“制作属于自己的动画”这个对动画爱好者颇为奢侈的梦想带进现实！！</p>
+		<p class="p5">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;大家都为了同一个目标而奋斗，让每一位用户——“一个人，就是一家动画公司！”</p>
+		<p class="p6">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;如果，你想创造一个世界，亦或许，你想作为一个指引者，指引大家创造自己的世界。那就快加入我们吧。</p>
+		<p class="p7">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;每一玩家，都可以在这里充分展示自己的才华，建立自己心中的小小世界。</p>
+		<p class="p8">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;逗看代表的是一种生活方式，让我们在这个忙碌而喧嚣的迷茫时代中，放慢脚步细细品味生活的真谛。逗看，让每一位用户——“一个人，就是一家动画公司！”在创造的海洋中尽情遨游</p>
+	</div>
+	<div class="img_c">
+		<img src="images/about.png"  class="about"/>
+	</div>
+	<div id="footerParts">
+		<div class="psc-footer-container">
+			<div class="psc-footer-row">
+				<ul class="psc-align-center">
+					<li class="psc-cell-footer"><a href="" class="psc-col-white" onclick="open_page(3)">帮助FAQ</a></li>
+					<li class="psc-cell-footer"><a href="" class="psc-col-white">|</a></li>
+					<li class="psc-cell-footer"><a href="" class="psc-col-white" onclick="open_page(2)">隐私政策</a></li>
+					<li class="psc-cell-footer"><a href="" class="psc-col-white">|</a></li>
+					<li class="psc-cell-footer"><a href="" class="psc-col-white" onclick="open_page(5)">法律声明</a></li>
+					<li class="psc-cell-footer"><a href="" class="psc-col-white">|</a></li>
+					<li class="psc-cell-footer"><a href="" class="psc-col-white" onclick="open_page(6)">用户协议</a></li>
+				</ul>
+			</div>
+			<div class="psc-row-footer">
+				<p class="psc-copyrights">全部信息 逗看DOKI&nbsp;IDOL&nbsp;&nbsp;·&nbsp;&nbsp;北京神月创想文化有限公司版权所有 未经许可 严禁转载</p>			
+			</div>
+			<div class="psc-row-footer1">
+				<div class="psc-align-center1">
+					<img src="images/bntb.png"  class="bntb"/>
+					<p class="psc-copyrights0" a href ="">京公网安备 11010802028169号</p>
+					<p class="psc-copyrights1" a href ="">网络文化经营许可证：京网文[2018]0105-021号</p>
+					<p class="psc-copyrights2" style="cursor:pointer" onclick="open_page(8)">京ICP证：京B2-20171308</p>
+					<p class="psc-copyrights3" style="cursor:pointer" onclick="open_page(9)">京ICP备：17028419号-4</p>
+				</div>
+			</div>
+		</div>
+	</div>	
+</div>
+<div id="black_div">
+
+</div>
+<div id="bottom_xf">
+	<div class="top_white">
+		<a><img src="images/popup/frame.png" class="frame"/></a>
+		<a><img src="images/popup/logo.png" class="logo"/></a>
+		<p class="dl">账号登陆</p>
+		<img src="images/popup/close.png"  class="close" onclick="hide_login()"/>
+		<a><img src="images/activity/admin_error.png" class="admin_error"/></a>
+		<a><img src="images/activity/yzmbpp.png" class="yzmbpp"/></a>
+		<a class="phone">
+			<input type="text" class="phone_text" name="phone_name" onkeyup="value=value.replace(/[\u4e00-\u9fa5]/ig,'')" placeholder="&ensp;&ensp;请输入手机号"/>
+		</a>
+		<a class="yz_code">
+			<input type="password" class="code_text" name="code_name" onkeyup="value=value.replace(/[\u4e00-\u9fa5]/ig,'')" placeholder="&ensp;&ensp;请输入密码"/>
+		</a>
+		<a class="graph_code">
+			<input type="text" class="graph_text" name="graph_name" onkeyup="value=value.replace(/[\u4e00-\u9fa5]/ig,'')" placeholder="&ensp;&ensp;请输入图形验证"/>
+			<img src="images/popup/yzm_img.png" class="graph_img" onclick="update_yzm1()"/>
+		</a>
+		<img src="images/popup/login_btn.png" class="login_btn" onclick="login_touch()"/>
+		<p class="register_tx_1">没有账号？点击这里</p>
+		<p class="register_tx_2" style="cursor:pointer" onclick="show_register()">注册></p>
+	</div>
+</div>
+<div id="register_info">
+	<div class="top_white">
+		<a><img src="images/popup/frame.png" class="frame"/></a>
+		<a><img src="images/popup/logo.png" class="logo"/></a>
+		<p class="dl">账号注册</p>
+		<img src="images/popup/close.png"  class="close" onclick="hide_register()"/>
+		<a><img src="images/activity/admin_error.png" class="admin_error"/></a>
+		<a><img src="images/activity/yhxycw.png" class="yhxycw"/></a>
+		<a><img src="images/activity/yzmbpp.png" class="yzmbpp"/></a>
+		<a><img src="images/activity/fwqzsl.png" class="fwqzsl"/></a>
+		<a><img src="images/activity/password_tip.png" id="password_tip_1"/></a>
+		
+		<a class="phone">
+			<input type="text" class="phone_text" name="phone_name" onkeyup="value=value.replace(/[\u4e00-\u9fa5]/ig,'')" placeholder="&ensp;&ensp;请输入手机号"/>
+		</a>
+		<a class="yz_code">
+			<input type="text" class="code_text" name="code_name" onkeyup="value=value.replace(/[\u4e00-\u9fa5]/ig,'')" placeholder="&ensp;&ensp;请输入密码"/>
+		</a>
+		<a class="graph_code">
+			<input type="text" class="graph_text" name="graph_name" onkeyup="value=value.replace(/[\u4e00-\u9fa5]/ig,'')" placeholder="&ensp;&ensp;请输入图形验证"/>
+			<img src="images/popup/yzm_img.png" class="graph_img" id="graph_img" onclick="update_yzm2()"/>
+		</a>
+		<img src="images/popup/next.png"  class="login_btn" onclick="show_register_2()"/>
+		<a class="red_tip" id="red_tip">此手机号已经注册，请前往登录</a>
+		<label class="radio_check"><input name="Fruit" type="checkbox" value="" id="checkbox_xy">我已经阅读并且同意逗看</label>
+		<u class="yhxy" style="cursor:pointer" onclick="open_page(6)">用户协议</u>
+		<a class="he">和</a>
+		<u class="ystk" style="cursor:pointer" onclick="open_page(2)">隐私条款</u>
+	</div>
+</div>
+<div id="register_info_2">
+	<div class="top_white">
+		<a><img src="images/popup/frame.png" class="frame"/></a>
+		<a><img src="images/popup/logo.png" class="logo"/></a>
+		<p class="dl">账号注册</p>
+		<img src="images/popup/close.png"  class="close" onclick="hide_register_2()"/>
+		<a><img src="images/activity/yzczhbf.png" class="admin_error"/></a>
+		<a><img src="images/activity/sjyzm.png" class="yzmbpp"/></a>
+		<a class="phone">
+			<input type="text" class="phone_text" name="phone_name" onkeyup="value=value.replace(/[\u4e00-\u9fa5]/ig,'')" placeholder="&ensp;&ensp;请输入手机号"/>
+		</a>
+		<a class="yz_code">
+			<input type="text" class="code_text" name="code_name" onkeyup="value=value.replace(/[\u4e00-\u9fa5]/ig,'')" placeholder="&ensp;&ensp;短信验证码"/>
+			<font style="cursor:pointer" class="send_yzm" onclick="send_yzmfun()">发送验证码</font>
+			<font class="time_down">60s</font>
+		</a>
+		<img src="images/popup/over.png" class="over_btn" onclick="register_all_over()"/>
+		<img src="images/popup/top.png" class="top_btn" onclick="register_back()"/>
+	</div>
+</div>
+<script type="text/javascript">
+	$("#bottom_xf").hide()
+	$("#bottom_xf .admin_error").hide()
+	$("#bottom_xf .yzmbpp").hide()
+	$("#register_info").hide()
+	$("#register_info .admin_error").hide()
+	$("#register_info .yhxycw").hide()
+	$("#register_info .yzmbpp").hide()
+	$("#register_info .fwqzsl").hide()
+	$("#password_tip_1").hide()
+	$("#red_tip").hide()
+	$("#register_info_2").hide()
+	$("#register_info_2 .time_down").hide()
+	$("#register_info_2 .admin_error").hide()
+	$("#register_info_2 .yzmbpp").hide()
+	$("#head_bg .f7").hide()
+	$("#black_div").hide()
+	var is_login = false
+
+	$('.xueyuan').click(function(){
+		console.log('fuck')
+	})
+
+
+	if(localStorage.getItem('token')){
+		send_data("post","share/shareIndex",{},function(data){
+			if(data.code.code == 200){
+				is_login = true
+				$("#head_bg .f5").text(show_name_head+data.data.nickname)
+				$("#head_bg .f6").hide()
+				$("#head_bg .f7").show()
+				$("#head_bg .f7").css({"opacity":"1"})
+			}
+		},function(err){
+			
+		})
+	}
+	function register_back(){
+		$("#black_div").css({"opacity":"0.7"})
+		$("#black_div").show()
+		$("#register_info_2").hide()
+		$("#register_info .graph_img").attr("src",server_location+"user/getVerification")
+		$("#bottom_xf").hide()
+		$("#register_info").css({"opacity":"1"})
+		$("#register_info").show()
+	}
+	function hide_login(){
+		$("#black_div").hide()
+		$("#bottom_xf").hide()
+	}
+	function show_login(){
+		if(is_login){return}
+		$("#black_div").css({"opacity":"0.7"})
+		$("#black_div").show()
+		$("#bottom_xf .graph_img").attr("src",server_location+"user/getVerification")
+		$("#bottom_xf").css({"opacity":"1"})
+		$("#bottom_xf").show()
+	}
+	function show_register(){
+		$("#black_div").css({"opacity":"0.7"})
+		$("#black_div").show()
+		$("#register_info .graph_img").attr("src",server_location+"user/getVerification")
+		$("#bottom_xf").hide()
+		$("#register_info").css({"opacity":"1"})
+		$("#register_info").show()
+	}
+	function hide_register(){
+		$("#black_div").hide()
+		$("#register_info").hide()
+	}
+	function show_register_2(){
+		$("#black_div").css({"opacity":"0.7"})
+		$("#black_div").show()
+		check_one_register()
+	}
+	function hide_register_2(){
+		$("#black_div").hide()
+		$("#register_info_2").hide()
+	}
+	function update_yzm1(){
+		$("#bottom_xf .graph_img").attr("src",server_location+"user/getVerification")
+	}
+	function update_yzm2(){
+		$("#register_info .graph_img").attr("src",server_location+"user/getVerification")
+	}
+	//登录账号
+	function login_touch(){
+		//点击登录
+		if($("#bottom_xf .phone_text").val() == "" || $("#bottom_xf .code_text").val() == ""){
+			$("#bottom_xf .admin_error").show()
+			setTimeout(function(){$("#bottom_xf .admin_error").hide();},1000);
+		}else{
+			//验证码
+			send_data("post","user/verification",{vrifyKey:$("#bottom_xf .graph_text").val()},function(data){
+				if(data.code.code == 200){
+					//登陆
+					send_data("post","user/login",{phone:$("#bottom_xf .phone_text").val(),password:$("#bottom_xf .code_text").val()},function(data){
+						if(data.code.code == 200){
+							localStorage.setItem('token',data.data)
+							hide_login()
+							send_data("post","share/shareIndex",{},function(data){
+								is_login = true
+								$("#head_bg .f5").text(show_name_head+data.data.nickname)
+								$("#head_bg .f6").hide()
+								$("#head_bg .f7").show()
+								$("#head_bg .f7").css({"opacity":"1"})
+							},function(err){
+							
+							})
+						}else{
+							if(data.code.code==403){
+								$("#bottom_xf .admin_error").show()
+								setTimeout(function(){$("#bottom_xf .admin_error").hide();},1000);
+							}else if(data.code.code == 500){
+								console.log("server error")
+							}
+						}
+					},function(err){
+						console.log(err)
+					})
+				}else{
+					$("#bottom_xf .yzmbpp").show()
+					setTimeout(function(){$("#bottom_xf .yzmbpp").hide();},1000);
+				}
+			},function(err){
+				console.log(err)
+			})
+		}
+	}
+	function canle(){
+		is_login = false
+		localStorage.setItem('token',"")
+		$("#head_bg .f5").text("登录 ")
+		$("#head_bg .f6").show()
+		$("#head_bg .f7").hide()
+	}
+
+	//注册账号
+	var is_register_sc = false	//账号是否注册
+	var register_data = {phone:"",passWord:"",smsCode:""}
+	var phone_over=false;var password_over=false
+	//密码input
+	$("#register_info .code_text").mouseover(function () {
+		$("#password_tip_1").show()
+	}).mouseout(function () {
+		register_data["passWord"] = $("#register_info .code_text").val();
+		var len = register_data["passWord"].replace(/[^\x00-\xff]/g,"01").length;
+		if(len<6 || len>16){$("#password_tip_1").show()
+			setTimeout(function(){$("#password_tip_1").hide()},500);
+		}else{$("#password_tip_1").hide();password_over=true}
+	})
+	$("#register_info .graph_text").mouseover(function(){
+	}).mouseout(function () {
+		register_data["smsCode"] = $("#register_info .graph_text").val();
+	})
+	//手机号input
+	$("#register_info .phone_text").mouseout(function () {
+		var tx = $("#register_info .phone_text").val();
+		is_register_sc = false
+		if(isPoneAvailable(tx)){
+			//服务器再次检测
+			send_data("POST","user/checkPhone",{phone:tx},function(data){
+				if(data.code.code == 200) {
+					//手机号正确
+					register_data["phone"] = tx
+					phone_over = true
+				}else{
+					//500 服务器走神
+					//401 手机号错误
+					//403 手机号已注册
+					if(data.code.code==500){
+						$("#register_info .fwqzsl").show();
+						setTimeout(function(){$("#register_info .fwqzsl").hide()},1000);
+					}else if(data.code.code==401){
+						$("#register_info .admin_error").show();
+						setTimeout(function(){$("#register_info .admin_error").hide()},1000);
+					}else if(data.code.code==403){
+						$("#red_tip").show()
+						setTimeout(function(){$("#red_tip").hide()},1000);
+						is_register_sc = true
+					}
+				}
+			},function(err){
+				console.log(err)
+			})
+		}else{
+			//手机号格式不正确
+			if(tx!=""){
+				$("#register_info .admin_error").show();
+				setTimeout(function(){$("#register_info .admin_error").hide()},1000);
+			}
+		}
+	})
+	//下一步检测信息
+	function check_one_register(){
+		if(is_register_sc){
+			$("#red_tip").show()
+			setTimeout(function(){$("#red_tip").hide()},1000);
+			return
+		}
+		var isChecked = $('#checkbox_xy').prop('checked'); 
+		if(register_data["passWord"] == ""){
+			register_data["passWord"] = $("#register_info .code_text").val();
+		}
+		if(register_data["phone"] == ""){
+			register_data["phone"] = $("#register_info .phone_text").val();
+		}
+		if(register_data["smsCode"] == ""){
+			register_data["smsCode"] = $("#register_info .graph_text").val()
+		}
+		if(register_data["passWord"] == '' || !password_over || !phone_over){
+			$("#register_info .admin_error").show();
+			setTimeout(function(){$("#register_info .admin_error").hide()},1000)
+		}else if(register_data["smsCode"] == '' ){
+			$("#register_info .yzmbpp").show()
+			setTimeout(function(){$("#register_info .yzmbpp").hide()},1000);
+		}else if(!isChecked){
+			$("#register_info .yhxycw").show()
+			setTimeout(function(){$("#register_info .yhxycw").hide()},1000);
+		}else{
+			//检测验证码
+			send_data("POST","user/verification",{vrifyKey :register_data["smsCode"]},function(data){
+				if (data.code.code==200) {
+					$("#register_info").hide()
+					$("#register_info_2").css({"opacity":"1"})
+					$("#register_info_2").show()
+				}else{
+					$("#register_info .yzmbpp").show()
+					setTimeout(function(){$("#register_info .yzmbpp").hide();},1000);
+				}
+			},function(err){
+				$("#register_info .fwqzsl").show();
+				setTimeout(function(){$("#register_info .fwqzsl").hide()},1000);
+			})
+		}
+	}
+	var phone2_over = false
+	$("#register_info_2 .phone_text").mouseout(function () {
+		var px = $("#register_info_2 .phone_text").val();
+		if(px != register_data["phone"]){
+			$("#register_info_2 .admin_error").show();
+			setTimeout(function(){$("#register_info_2 .admin_error").hide();},1000);
+		}else{
+			if(register_data["phone"]!=""){phone2_over=true}
+		}
+	})
+	//发送手机验证码
+	function send_yzmfun(){
+		if(!phone2_over){return}
+		send_data("post","user/sendRegisterNum",{phone:register_data["phone"]},function(data){
+			if(data.code.code == 200){
+				$("#register_info_2 .send_yzm").hide()
+				$("#register_info_2 .time_down").show()
+				count_down()
+			}else{
+				console.log(data)
+			}
+		},function(err){
+			console.log(err)
+		})
+	}
+	var count_time = null 	//计时器
+	var t_t = 60
+	function count_down(){
+		count_time = timer=setInterval(function(){
+			t_t--
+			if(t_t<0){
+				t_t = 60;
+				$("#register_info_2 .send_yzm").show()
+				$("#register_info_2 .time_down").hide()
+				stop_count_down()
+			}
+			$("#register_info_2 .time_down").text(t_t+"s")
+		},1000);
+	}
+	function stop_count_down(){
+		clearInterval(count_time)
+	}
+	function register_all_over(){
+		var codetx = $("#register_info_2 .code_text").val();
+		if(!phone2_over){
+			$("#register_info_2 .admin_error").show();
+			setTimeout(function(){$("#register_info_2 .admin_error").hide();},1000);
+		}else{
+			var share_id = localStorage.getItem("share_id")
+			send_data("POST","user/phoneRegister",{from:share_id,phone:register_data["phone"],smsCode:codetx,passWord:register_data["passWord"]},function(data){
+				if(data.code.code==200){
+					localStorage.setItem('token',data.data)
+					$("#register_info_2").hide()
+					//注册成功 获取页面数据
+					send_data("post","share/shareIndex",{},function(data){
+						if(data.code.code == 200){	
+							is_login = true
+							$("#head_bg .f5").text(show_name_head+data.data.nickname)
+							$("#head_bg .f6").hide()
+							$("#head_bg .f7").show()
+							$("#head_bg .f7").css({"opacity":"1"})
+						}
+					},function(err){
+						console.log(err)
+					})
+				}else if(data.code.code == 403){
+					$("#register_info_2 .yzmbpp").show();
+					setTimeout(function(){$("#register_info_2 .yzmbpp").hide();},1000);
+				}
+			},function(err){
+				console.log(err)
+			})
+		}
+	}
+
+</script>
+</body>
+</html>

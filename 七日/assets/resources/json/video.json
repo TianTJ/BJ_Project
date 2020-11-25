@@ -1,0 +1,42 @@
+[
+  {
+    "videoid": "1001001",
+    "role": "1001",
+    "chapter": "初次",
+    "introduce": "天上掉下个中二病。",
+    "need_lv": "1",
+    "unlockinggoods": "5101,8,5001,20",
+    "icon": "510010101",
+    "address": "5100101"
+  },
+  {
+    "videoid": "1002001",
+    "role": "1002",
+    "chapter": "初次",
+    "introduce": "江小诗，大明星？！",
+    "need_lv": "1",
+    "unlockinggoods": "5103,8,5001,20",
+    "icon": "510020101",
+    "address": "5100201"
+  },
+  {
+    "videoid": "1003001",
+    "role": "1003",
+    "chapter": "初次",
+    "introduce": "一车金枪鱼！？",
+    "need_lv": "1",
+    "unlockinggoods": "5102,8,5001,20",
+    "icon": "510030101",
+    "address": "5100301"
+  },
+  {
+    "videoid": "1004001",
+    "role": "1004",
+    "chapter": "初次",
+    "introduce": "外面的世界真美好",
+    "need_lv": "1",
+    "unlockinggoods": "5104,8,5001,20",
+    "icon": "510040101",
+    "address": "5100401"
+  }
+]

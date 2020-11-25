@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="renderer" content="webkit"/>
+<meta name="force-rendering" content="webkit"/>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+<title>逗看</title>
+<style type="text/css"> 
+	*{margin:0;padding:0}
+	body{
+		text-align:center;
+	} 
+	.p1{
+		position:relative;
+		margin: 0 auto;
+		width:100%;
+		text-align: center;
+	}
+	.p2{
+		position:relative;
+		margin: 0 auto;
+		width:100%;
+		text-align: center;
+	}
+	.p2 .go{
+		position: absolute;
+		bottom: 0px;
+		z-index: 1;
+	}
+	.p3{
+		position:relative;
+		margin: 0 auto;
+		width:100%;
+		top:-50px;
+		z-index: 0;
+		text-align: center;
+	}
+	.p3 .di{
+		position: absolute;
+		width: 100%;
+		left:0px
+	}
+	.p3 .djframe{
+		position: absolute;
+		left:-25px;
+		top: 50px;
+	}
+	.p3 .fjframe{
+		position: absolute;
+		left:-30px;
+		top: 50px;
+	}
+	.logo_img{
+		position:absolute;
+		width:100%;
+		left:0;
+	}
+	.cimg{
+		position:absolute;
+		pointer-events: none;
+		width:100%;
+		left:0;
+	}
+	.load{
+		position: absolute;
+		right: 17px;
+	}
+	.fj{
+		opacity: 1;
+	}
+	.f_test{
+		position: absolute;
+		width: 259px;
+		height: 124px;
+		left:10px;
+		top:170px;
+	}
+	.title{
+		position: absolute;
+		text-align: left;
+		font-family: "Microsoft Yahei","仿宋",sans-serif;
+		font-size:32px;
+		color:#726e6e;
+		width: 450px;
+		height: 50px;
+		left:410px;
+		overflow: hidden;
+		top:121px;
+	}
+	.name{
+		position: absolute;
+		text-align: left;
+		font-family: "Microsoft Yahei","仿宋",sans-serif;
+		font-size:36px;
+		color:#222222;
+		width: 450px;
+		height:50px;
+		left:410px;
+		top:171px;
+	}
+	.info{
+		position: absolute;
+		text-align: left;
+		font-family: "Microsoft Yahei","仿宋",sans-serif;
+		font-size:32px;
+		color:#726e6e;
+		width: 450px;
+		height: 50px;
+		left:410px;
+		overflow: hidden;
+		top:221px;
+	}
+	.fj .di1{
+		position: absolute;
+		left:410px;
+		top:271px;
+	}
+	.fj .di2{
+		position: absolute;
+		left:520px;
+		top:271px;
+	}
+	.t_1{
+		position: absolute;
+		text-align: left;
+		font-family: "Microsoft Yahei","仿宋",sans-serif;
+		font-size:27px;
+		color:#32d7df;
+		left:428px;
+		top:275px;
+		width:54px;
+		height: 30px;
+		overflow: hidden;
+	}
+	.t_2{
+		position: absolute;
+		text-align: left;
+		font-family: "Microsoft Yahei","仿宋",sans-serif;
+		font-size:27px;
+		color:#ff8ca1;
+		left:535px;
+		top:275px;
+		width:54px;
+		height: 30px;
+		overflow: hidden;
+	}
+	.d_test{
+		position: absolute;
+		width: 179px;
+		height: 262px;
+		left:90px;
+		top:90px;
+	}
+	.d_title{
+		position: absolute;
+		text-align: left;
+		font-family: "Microsoft Yahei","仿宋",sans-serif;
+		font-size:32px;
+		color:#726e6e;
+		width: 450px;
+		height: 50px;
+		left:410px;
+		overflow: hidden;
+		top:121px;
+	}
+	.d_name{
+		position: absolute;
+		text-align: left;
+		font-family: "Microsoft Yahei","仿宋",sans-serif;
+		font-size:36px;
+		color:#222222;
+		width: 450px;
+		height: 50px;
+		left:410px;
+		top:171px;
+		overflow: hidden;
+	}
+	.dj .di1{
+		position: absolute;
+		left:410px;
+		top:251px;
+	}
+	.dj .di2{
+		position: absolute;
+		left:520px;
+		top:251px;
+	}
+	.d_1{
+		position: absolute;
+		text-align: left;
+		font-family: "Microsoft Yahei","仿宋",sans-serif;
+		font-size:27px;
+		color:#32d7df;
+		left:428px;
+		top:255px;
+		width:54px;
+		height: 30px;
+		overflow: hidden;
+	}
+	.d_2{
+		position: absolute;
+		text-align: left;
+		font-family: "Microsoft Yahei","仿宋",sans-serif;
+		font-size:27px;
+		color:#ff8ca1;
+		left:535px;
+		top:255px;
+		width:54px;
+		height: 30px;
+		overflow: hidden;
+	}
+	.dj{
+		opacity: 1;
+	}
+	.p_c{
+		position:relative;
+		margin: 0 auto;
+	}
+	.b_info{
+		position: absolute;
+		text-align: center;
+		font-family: "Microsoft Yahei","仿宋",sans-serif;
+		font-size:35px;
+		width: 100%;
+		bottom: 20px;
+		color:#999999;
+	}
+</style>
+</head>
+<body>
+<div class="p1">
+	<img src="res/logo.png" class="logo_img"/>
+	<img src="res/load.png" class="load" onclick="load()"/>
+</div>
+<div class="p2">
+	<img src="res/cimg.png" class="cimg"/>
+	<img src="res/go.png" class="go" id="open_app"/>
+</div>
+<div class="p3">
+	<img src="res/di.png" class="di"/>
+	<img src="res/djframe.png" class="djframe">
+	<img src="res/fjframe.png" class="fjframe">
+	<a class="dj">
+		<img src="" class="d_test"/>
+		<p class="d_title">水电费事</p>
+		<p class="d_name">水电费事水电费事</p>
+		<img src="res/di1.png" class="di1"/>
+		<img src="res/di2.png" class="di2"/>
+		<p class="d_1"></p>
+		<p class="d_2"></p>
+	</a>
+	<a class="fj">
+		<img src="res/f_test.png" class="f_test"/>
+		<p class="title"></p>
+		<p class="name"></p>
+		<img src="res/di1.png" class="di1"/>
+		<img src="res/di2.png" class="di2"/>
+		<p class="info"></p>
+		<p class="t_1"></p>
+		<p class="t_2"></p>
+	</a>
+</div>
+<div class="p_c">
+	<p class="b_info">京ICP备：17028419号-4&ensp;http://www.doukan233.com</p>
+</div>
+<script type="text/javascript" src="../js/common.js"></script>
+<script type="text/javascript" src="http://f.moblink.mob.com/3.0.1/moblink.js?appkey=27df43c731620"></script>
+<script src="../js/jquery-1.11.1.min.js"></script>
+<script type="text/javascript">
+	
+	var h_sc = $(document.body).width()/1080
+	$(".p1").css({"height":186*h_sc})
+	$(".p2").css({"height":1236*h_sc})
+	$(".p3").css({"height":483*h_sc})
+	$(".p_c").css({"height":50*h_sc})
+	$(".p2 .go").css({"left":$(document.body).width()/2-379.5})
+
+	if((navigator.userAgent.match(/(phone|pad|pod|iPhone|iPod|ios|iPad|Android|Mobile|BlackBerry|IEMobile|MQQBrowser|JUC|Fennec|wOSBrowser|BrowserNG|WebOS|Symbian|Windows Phone)/i))) {
+		MobLink([
+			{
+				el: "#open_app",
+				path: "demo/a",
+				params: {
+					key1: "value1",
+					key2: "value2",
+				}
+			},
+		])
+	}else {
+		$("#open_app").click(function(){
+			window.open("www.doukan233.com")
+		})
+		var init = function(){
+			$("body").css({"width":"400px","height":$(document.body).width(),"margin":"0 auto"})
+			$(".p1").css({"width":"400px","height":"70px"})
+			$(".p1 .load").css({"width":"100px","height":"50px","top":"8px"})
+			$(".p1 .logo_img").css({"width":"400px","height":"70px"})
+			$(".p2").css({"width":"400px","height":"500px"})
+			$(".p2 .cimg").css({"width":"400px","height":"474px","top":"10px"})
+			$(".p2 .go").css({"width":"270px","height":"40px","left":"65px","bottom":"-20px"})
+			$(".p3").css({"width":"400px","height":"200px","top":"0"})
+			$(".p3 .di").css({"width":"400px","height":"179px","top":"0",})
+			$(".p3 .djframe").css({"width":"100px","height":"100px","left":"0","top":"40px"})
+			$(".p3 .fjframe").css({"width":"100px","height":"100px","left":"10px","top":"40px",})
+			$(".p_c").css({"width":"400px","height":"100px","text-align":"center"})
+			$(".b_info").css({"width":"400px","font-size":"12px"})
+
+			$(".dj .d_test").css({"width":"50px","height":"78px","left":"35px","top":"50px"})
+			$(".dj .d_title").css({"font-size":"12px","left":"42%","top":"30%","width":"45%","height":"7%",})
+			$(".dj .d_name").css({"font-size":"12px","left":"42%","top":"40%","width":"45%","height":"7%",})
+			$(".dj .di1").css({"width":"8%","height":"7%","left":"42%","top":"51%"})
+			$(".dj .di2").css({"width":"8%","height":"7%","left":"52%","top":"51%"})
+			$(".dj .d_1").css({"font-size":"30%","left":"43%","top":"51%","width":"7%","height":"7%",})
+			$(".dj .d_2").css({"font-size":"30%","left":"53%","top":"51%","width":"7%","height":"7%",})
+			$(".dj .di1").hide();$(".dj .di2").hide()
+
+			
+			$(".fj .f_test").css({"width":"75px","height":"40px","left":"22px","top":"70px"})
+			$(".fj .title").css({"font-size":"12px","left":"42%","top":"30%","width":"45%","height":"7%",})
+			$(".fj .name").css({"font-size":"12px","left":"42%","top":"40%","width":"45%","height":"7%",})
+			$(".fj .info").css({"font-size":"12px","left":"42%","top":"50%","width":"45%","height":"7%",})
+			$(".fj .di1").css({"width":"8%","height":"7%","left":"42%","top":"61%"})
+			$(".fj .di2").css({"width":"8%","height":"7%","left":"52%","top":"61%"})
+			$(".fj .t_1").css({"font-size":"30%","left":"43%","top":"61%","width":"7%","height":"7%",})
+			$(".fj .t_2").css({"font-size":"30%","left":"53%","top":"61%","width":"7%","height":"7%",})
+			$(".fj .di1").hide();$(".fj .di2").hide()
+			
+		}
+		init()
+		$(window).resize(function () {    
+			location.reload()  
+			init()
+		});
+	}
+	
+	$(".dj").hide();
+	$(".fj").hide()
+	$(".djframe").hide();
+	$(".fjframe").hide()
+	function load(){
+		var t = new Date().getTime()
+		window.open(Now_Load_Apk+"?t="+t)
+	}
+	function getQueryString(name) { 
+        var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)", "i"); 
+        var r = window.location.search.substr(1).match(reg); 
+        if (r != null) return unescape(r[2]); 
+        return null; 
+    }
+	//var id = getQueryString("id") || "TWAWON25SA3Z"
+	var id = getQueryString("id") || null
+	var type = getQueryString("type") || 1
+	if(id != null){
+		$.ajax({
+			type:"get",
+			url: "https://h5resource.xintiaoshijie.com/main/v0.0.1/story/getStoryByKey?key="+id,
+			beforeSend: function(xhr) {
+				xhr.setRequestHeader("Content-type", "application/x-www-form-urlencoded; charset=utf-8");
+			},
+			success:function(data, status, xhr){
+				if(data.code.code == 200){
+					update_ui(data.data)
+				}
+			},
+			error: function(err){
+			}
+		}) 
+	}
+	function update_ui(data){
+		var a = data.cover.split(",")
+		var str = "http://user-100.xintiaoshijie.com/"+a[0]+"_"+a[1]
+		if(data.author && data.author.length>=13){
+			data.author = data.author.substring(0,13)+"..."
+		}
+		if(data.name && data.name.length>=13){
+			data.name = data.name.substring(0,13)+"..."
+		}
+		if(data.info && data.info.length>=13){
+			data.info = data.info.substring(0,13)+"..."
+		}
+		if(data.tags[0] && data.tags[0].length>2){
+			data.tags[0] = data.tags[0].substring(0,13)+"..."
+		}
+		if(data.tags[1] && data.tags[1].length>2){
+			data.tags[1] = data.tags[1].substring(0,13)+"..."
+		}
+		if(type == 0){
+			// 0短局  1 番剧
+			$(".dj").show()
+			$(".djframe").show();
+			$(".dj").css({"opacity":"1"})
+			$(".dj .d_title").text(data.author)
+			$(".dj .d_name").text(data.name)
+			$(".dj .d_test").attr("src",str)
+			$(".dj .d_1").text(data.tags[0])
+			$(".dj .d_2").text(data.tags[1])
+			if(data.tags[0] == ""){
+				$(".dj .di1").hide()
+			}
+			if(data.tags[1] == ""){
+				$(".dj .di2").hide()
+			}
+		}else if(type == 1){
+			$(".fj").show()
+			$(".fjframe").show();
+			$(".fj").css({"opacity":"1"})
+			$(".fj .title").text(data.author)
+			$(".fj .name").text(data.name)
+			$(".fj .info").text(data.intro)
+			$(".fj .f_test").attr("src",str)
+			$(".fj .t_1").text(data.tags[0])
+			$(".fj .t_2").text(data.tags[1])
+
+			if(data.tags[0] == ""){
+				$(".fj .di1").hide()
+			}
+			if(data.tags[1] == ""){
+				$(".fj .di2").hide()
+			}
+		}
+	}
+</script>
+</body>
+</html>

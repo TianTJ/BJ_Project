@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="renderer" content="webkit"/>
+<meta name="force-rendering" content="webkit"/>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+<title>逗看</title>
+<style type="text/css"> 
+</style>
+<link rel="shortcut icon" type="image/x-icon" href="images/title_icon.ico" />
+</head>
+<body>
+<script type="text/javascript" src="js/common.js"></script>
+<script type="text/javascript">
+	var is_ios = null
+	var u = navigator.userAgent, app = navigator.appVersion;
+	var isAndroid = u.indexOf('Android') > -1 || u.indexOf('Linux') > -1; //g
+	var isIOS = !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/); //ios终端
+	if (isAndroid) {
+		 window.location.href=APK_URL
+	}
+	if (isIOS) {
+		 window.location.href=IOS_APK_URL
+	}
+</script>
+</body>
+</html>

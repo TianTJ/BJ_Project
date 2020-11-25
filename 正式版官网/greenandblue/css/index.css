@@ -1,0 +1,254 @@
+
+*{margin:0;padding:0}
+body{
+	text-align:center;
+    background: #000000;
+}
+#all{
+    margin: 0 auto;
+    width:700px;
+    height: 4913px;
+    text-align: center;
+    border: 4px solid black
+}
+#all .bg{
+    width:100%;height: 100%;
+}
+#all .logo{
+    position: absolute;
+    left:0px;
+    top:770px;
+}
+#all .play{
+    position: absolute;
+    left:0px;
+    top:1150px;
+}
+#all a{
+    width: 700px;
+    font-size: 27px;
+    color:#000000;
+    text-indent:62px;
+    letter-spacing:9px;
+    line-height:40px;
+    text-align: left;
+}
+#all .a1{
+    position: absolute;
+    width: 650px;
+    margin-left:25px;
+    top:1350px;
+}
+#all .a2{
+    position: absolute;
+    width: 650px;
+    margin-left:25px;
+    top:1430px;
+}
+#all p{
+    width: 700px;
+    font-size: 32px;
+    text-indent:17px;
+    letter-spacing:5px;
+    line-height:40px;
+    text-align: left;
+}
+#all .p1{
+    position: absolute;
+    left:0px;
+    top:2600px;
+}
+#all .p2{
+    position: absolute;
+    left:0px;
+    top:2661px;
+}
+#all .p3{
+    position: absolute;
+    left:0px;
+    top:2722px;
+}
+#all .p4{
+    position: absolute;
+    left:0px;
+    top:2763px;
+}
+#all .ewm_d{
+    position:absolute;
+    width: 700px;
+    height: 200px;
+    top:2820px;
+}
+#all .ewm{
+    position: absolute;
+    left:50px;
+    top:2px;
+}
+#all .ewm_d p{
+    width: 450px;
+    font-size: 24px;
+    letter-spacing:2px;
+    text-align: left;
+    color: rgba(0, 0, 0, 0.74)
+}
+#all .ewm_d .e_p1{
+    position:absolute;
+    right: 15px;
+    top:0px
+}
+#all .ewm_d .e_p2{
+    position:absolute;
+    right: 15px;
+    top:40px
+}
+#all .ewm_d .e_p3{
+    position:absolute;
+    right: 15px;
+    top:80px
+}
+#all .ewm_d .e_p4{
+    position:absolute;
+    right: 15px;
+    top:120px
+}
+#all .ewm_d .e_p5{
+    position:absolute;
+    color: rgba(110, 255, 253, 0.74);
+    right: 15px;
+    top:160px
+}
+#all .p5{
+    position: absolute;
+    left:0px;
+    top:3063px;
+}
+#all .p6{
+    position: absolute;
+    left:0px;
+    top:3110px;
+}
+#all .p7{
+    position: absolute;
+    left:0px;
+    top:3210px;
+}
+#all .show_img{
+    position:absolute;
+    width: 700px;
+    height: 950px;
+    top:3600px;
+    text-align: center;
+}
+#all .show_img .img1{
+    position:absolute;
+    left:26px;
+    top:0px;
+}
+#all .show_img .img2{
+    position:absolute;
+    right:26px;
+    top:0px;
+}
+#all .show_img .img3{
+    position:absolute;
+    left:248.5px;
+    top:0px;
+}
+#all .show_img .img4{
+    position:absolute;
+    left:26px;
+    top:307px;
+}
+#all .show_img .img5{
+    position:absolute;
+    left:248.5px;
+    top:307px;
+}
+#all .show_img .img6{
+    position:absolute;
+    right:26px;
+    top:307px;
+}
+#all .show_img .img7{
+    position:absolute;
+    left:26px;
+    top:614px;
+}
+#all .show_img .img8{
+    position:absolute;
+    left:248.5px;
+    top:614px;
+}
+#all .show_img .img9{
+    position:absolute;
+    right:26px;
+    top:614px;
+}
+#all .bottom{
+    position:absolute;
+    width: 700px;
+    height: 150px;
+    top:4710px;
+    text-align: center;
+}
+#all .bottom a{
+    font-size: 24px;
+    letter-spacing:1px;
+    text-decoration : none;
+    color: #ffffff
+}
+#all .bottom .l1{
+    position:absolute;
+    top:0px;
+    left:-50px
+}
+#all .bottom .l2{
+    position:absolute;
+    top:0px;
+    left:70px
+}
+#all .bottom .l3{
+    position:absolute;
+    top:0px;
+    left:95px
+}
+#all .bottom .l4{
+    position:absolute;
+    top:0px;
+    left:215px
+}
+#all .bottom .l5{
+    position:absolute;
+    top:0px;
+    left:240px
+}
+#all .bottom .l6{
+    position:absolute;
+    top:0px;
+    left:362px
+}
+#all .bottom .l7{
+    position:absolute;
+    top:30px;
+    left:-50px
+}
+#all .bottom .l8{
+    position:absolute;
+    top:35px;
+    left:70px
+}
+#all .bottom .l9{
+    position:absolute;
+    top:35px;
+    left:95px
+}
+#all .bottom .tx1{
+    position:absolute;
+    top:65px;
+    left:-50px
+}
+#all .bottom .tx2{
+    position:absolute;
+    top:95px;
+    left:-50px
+}

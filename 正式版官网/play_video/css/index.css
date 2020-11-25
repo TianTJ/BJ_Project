@@ -1,0 +1,273 @@
+
+*{margin:0;padding:0}
+body{
+	text-align:center;
+	width:900px;
+	height: auto;
+	margin: 0 auto;
+	background-color: white
+}
+#video{
+	position:absolute;
+	width:900px;
+	height: 1601px;
+	top:0px;
+	z-index: 98;
+}
+#video_play{
+	position:absolute;
+	width:100%;
+	height: 100%;
+	margin: 0 auto;
+	left:0px;
+	top: 0px;
+	z-index: 1;
+	object-fit: fill;
+    object-position: center center;
+}
+#cn{
+	position:absolute;
+	width:900px;
+	height:1601px;
+	margin: 0 auto;
+	left:0px;
+	top: 0px;
+	right: 0;
+	z-index: 101;
+}
+#cn .music{
+	position:absolute;
+	top:20px;
+	left: 637px;
+}
+#cn .m_tx{
+	position:absolute;
+	top:20px;
+	width: 200px;
+	left: 690px;
+	top:15px;
+	font-size: 29px;
+	text-align: left;
+	color: #ffffff
+}
+#cn .touxiangwaikuang{
+	position:absolute;
+	top:649px;
+	left: 779px;
+}
+#cn .icon{
+	position:absolute;
+	top:649px;
+	left: 779px;
+	width: 106px;
+	height: 106px;
+	border-radius:50%
+}
+#cn .yiguanzhu{
+	position:absolute;
+	top:736px;
+	left: 798px;
+}
+#cn .dianzan{
+	position:absolute;
+	top:842px;
+	left: 790px;
+}
+#cn .d_tx{
+	position:absolute;
+	width: 100px;
+	top:922px;
+	left: 785px;
+	font-size: 29px;
+	text-align: center;
+	color: #ffffff;
+}
+#cn .pinglun{
+	position:absolute;
+	top:982px;
+	left: 790px;
+}
+#cn .p_tx{
+	position:absolute;
+	width: 100px;
+	top:1082px;
+	left: 785px;
+	font-size: 29px;
+	text-align: center;
+	color: #ffffff;
+}
+#cn .shoucang{
+	position:absolute;
+	left: 790px;
+	top:1122px;
+}
+#cn .s_tx{
+	position:absolute;
+	width: 100px;
+	top:1202px;
+	left: 785px;
+	font-size: 29px;
+	text-align: center;
+	color: #ffffff;
+}
+#cn .fenxiang{
+	position:absolute;
+	left: 790px;
+	top:1262px;
+}
+#cn .f_tx{
+	position:absolute;
+	width: 100px;
+	top:1342px;
+	left: 785px;
+	font-size: 29px;
+	text-align: center;
+	color: #ffffff;
+}
+#cn .qudoukan{
+	position:absolute;
+	left:49px;
+	top:1498px;
+}
+#cn .mimi{
+	position:absolute;
+	left:45px;
+	top:1121px;
+	display: none;
+}
+#cn .fensebiaoqian{
+	position:absolute;
+	left:46px;
+	top:1240px;
+	height: 40px;
+}
+#cn .blue_t{
+	position:absolute;
+	left:226px;
+	top:1240px;
+	height: 40px;
+}
+#cn .fs_tx{
+	position:absolute;
+	width: 90px;
+	height: 40px;
+	left:46px;
+	top:1238px;
+	font-size:34px;
+	text-align: center;
+	color: #ff82a1;
+}
+#cn .bl_tx{
+	position:absolute;
+	width: 90px;
+	height: 40px;;
+	left:226px;
+	top:1238px;
+	font-size: 34px;
+	text-align: center;
+	color: #4cbcf8;
+}
+#cn .jujimingdi{
+	position:absolute;
+	left:45px;
+	top:1296px;
+	width: 650px;
+	height: 48px;
+}
+#cn .fanjutubiao{
+	position:absolute;
+	left:60px;
+	top:1306px;
+} 
+#cn .name_tx{
+	position:absolute;
+	width: 570px;
+	height: 48px;;
+	left:100px;
+	top:1295px;
+	font-size: 32px;
+	text-align: left;
+	color: #ffffff;
+}
+#cn .cnt_tx{
+	position:absolute;
+	width: 660px;
+	height: 85px;;
+	left:46px;
+	top:1361px;
+	font-size: 29px;
+	text-align: left;
+	color: #ffffff;
+	overflow:hidden;
+}
+#cn .wanzheng{
+	position:absolute;
+	left:460px;
+	top:1407px;
+	display: none;
+} 
+#cn .video_time{
+	position:absolute;
+	width: 140px;
+	height: 28px;;
+	left:486px;
+	top:1407px;
+	font-size: 23px;
+	text-align: left;
+	color: #555555;
+	overflow:hidden;
+	display: none;
+} 
+#cn .wuming{
+	position:absolute;
+	width: 350px;
+	height: 40px;;
+	left:46px;
+	top:1182px;
+	font-size: 36px;
+	text-align: left;
+	color: #ffffff;
+	overflow:hidden;
+}
+#cn .paly_btn{
+	position:absolute;
+	width: 143px;
+	height: 159px;
+	margin:auto;
+	left:0px;
+	top: 0px;
+	right: 0;
+	bottom: 0;
+	display: none
+}
+#progress{
+	position:absolute;
+	margin: 0 auto;
+	left: 0;
+	right: 0;
+	bottom: 20px;
+	width:900px;
+	height:6px;
+	background:#888888;
+	z-index: 99999;
+	display: none;
+}
+progress::-webkit-progress-bar{
+    background-color:#888888;
+}
+progress::-webkit-progress-value{
+     background-color:rgb(240, 236, 236);
+}
+#error{
+	position:absolute;
+	width: 100%;
+	height: 50px;
+	font-family: "Microsoft Yahei","仿宋",sans-serif;
+	font-size:40px;
+	color:#ffffff;
+	margin:auto;
+	left:0px;
+	top: 0px;
+	right: 0;
+	bottom: 0;
+}

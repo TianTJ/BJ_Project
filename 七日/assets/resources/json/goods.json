@@ -1,0 +1,452 @@
+[
+  {
+    "goodsid": "5001",
+    "nameitem": "猫爪",
+    "role": "",
+    "type": "货币",
+    "level": "-1",
+    "quality": "",
+    "iconid": "5001",
+    "describe": "通用货币"
+  },
+  {
+    "goodsid": "5101",
+    "nameitem": "小蛋糕（沉星）",
+    "role": "1001",
+    "type": "道具消耗",
+    "level": "-1",
+    "quality": "",
+    "iconid": "5101",
+    "describe": ""
+  },
+  {
+    "goodsid": "5102",
+    "nameitem": "爆米花（总裁）",
+    "role": "1003",
+    "type": "道具消耗",
+    "level": "-1",
+    "quality": "",
+    "iconid": "5102",
+    "describe": ""
+  },
+  {
+    "goodsid": "5103",
+    "nameitem": "甜甜圈（ 小僵尸）",
+    "role": "1002",
+    "type": "道具消耗",
+    "level": "-1",
+    "quality": "",
+    "iconid": "5103",
+    "describe": ""
+  },
+  {
+    "goodsid": "5104",
+    "nameitem": "棒棒糖（AI）",
+    "role": "1004",
+    "type": "道具消耗",
+    "level": "-1",
+    "quality": "",
+    "iconid": "5104",
+    "describe": ""
+  },
+  {
+    "goodsid": "5105",
+    "nameitem": "钻石10",
+    "role": "",
+    "type": "抽奖道具",
+    "level": "",
+    "quality": "",
+    "iconid": "5105",
+    "describe": ""
+  },
+  {
+    "goodsid": "5106",
+    "nameitem": "钻石50",
+    "role": "",
+    "type": "抽奖道具",
+    "level": "",
+    "quality": "",
+    "iconid": "5106",
+    "describe": ""
+  },
+  {
+    "goodsid": "5107",
+    "nameitem": "再来一次",
+    "role": "",
+    "type": "抽奖道具",
+    "level": "",
+    "quality": "",
+    "iconid": "5107",
+    "describe": ""
+  },
+  {
+    "goodsid": "5108",
+    "nameitem": "谢谢惠顾",
+    "role": "",
+    "type": "抽奖道具",
+    "level": "",
+    "quality": "",
+    "iconid": "5108",
+    "describe": ""
+  },
+  {
+    "goodsid": "5109",
+    "nameitem": "沉星套装",
+    "role": "",
+    "type": "抽奖道具",
+    "level": "",
+    "quality": "",
+    "iconid": "5109",
+    "describe": ""
+  },
+  {
+    "goodsid": "5110",
+    "nameitem": "江小诗套装",
+    "role": "",
+    "type": "抽奖道具",
+    "level": "",
+    "quality": "",
+    "iconid": "5110",
+    "describe": ""
+  },
+  {
+    "goodsid": "5111",
+    "nameitem": "总裁套装",
+    "role": "",
+    "type": "抽奖道具",
+    "level": "",
+    "quality": "",
+    "iconid": "5111",
+    "describe": ""
+  },
+  {
+    "goodsid": "5112",
+    "nameitem": "智能少年套装",
+    "role": "",
+    "type": "抽奖道具",
+    "level": "",
+    "quality": "",
+    "iconid": "5112",
+    "describe": ""
+  },
+  {
+    "goodsid": "52101",
+    "nameitem": "电话卡1_1",
+    "role": "1003",
+    "type": "电话卡",
+    "level": "R",
+    "quality": "3",
+    "iconid": "52101",
+    "describe": "总裁"
+  },
+  {
+    "goodsid": "52102",
+    "nameitem": "电话卡1_2",
+    "role": "1003",
+    "type": "电话卡",
+    "level": "R",
+    "quality": "3",
+    "iconid": "52102",
+    "describe": ""
+  },
+  {
+    "goodsid": "52103",
+    "nameitem": "电话卡1_3",
+    "role": "1003",
+    "type": "电话卡",
+    "level": "R",
+    "quality": "3",
+    "iconid": "52103",
+    "describe": ""
+  },
+  {
+    "goodsid": "52104",
+    "nameitem": "电话卡1_4",
+    "role": "1003",
+    "type": "电话卡",
+    "level": "R",
+    "quality": "3",
+    "iconid": "52104",
+    "describe": ""
+  },
+  {
+    "goodsid": "52105",
+    "nameitem": "电话卡1_5",
+    "role": "1003",
+    "type": "电话卡",
+    "level": "R",
+    "quality": "3",
+    "iconid": "52105",
+    "describe": ""
+  },
+  {
+    "goodsid": "52106",
+    "nameitem": "电话卡1_6",
+    "role": "1003",
+    "type": "电话卡",
+    "level": "SR",
+    "quality": "2",
+    "iconid": "52106",
+    "describe": ""
+  },
+  {
+    "goodsid": "52107",
+    "nameitem": "电话卡1_7",
+    "role": "1003",
+    "type": "电话卡",
+    "level": "SR",
+    "quality": "2",
+    "iconid": "52107",
+    "describe": ""
+  },
+  {
+    "goodsid": "52108",
+    "nameitem": "电话卡1_8",
+    "role": "1003",
+    "type": "电话卡",
+    "level": "SR",
+    "quality": "2",
+    "iconid": "52108",
+    "describe": ""
+  },
+  {
+    "goodsid": "52201",
+    "nameitem": "电话卡2_1",
+    "role": "1004",
+    "type": "电话卡",
+    "level": "R",
+    "quality": "3",
+    "iconid": "52201",
+    "describe": "智能少年"
+  },
+  {
+    "goodsid": "52202",
+    "nameitem": "电话卡2_2",
+    "role": "1004",
+    "type": "电话卡",
+    "level": "R",
+    "quality": "3",
+    "iconid": "52202",
+    "describe": ""
+  },
+  {
+    "goodsid": "52203",
+    "nameitem": "电话卡2_3",
+    "role": "1004",
+    "type": "电话卡",
+    "level": "R",
+    "quality": "3",
+    "iconid": "52203",
+    "describe": ""
+  },
+  {
+    "goodsid": "52204",
+    "nameitem": "电话卡2_4",
+    "role": "1004",
+    "type": "电话卡",
+    "level": "R",
+    "quality": "3",
+    "iconid": "52204",
+    "describe": ""
+  },
+  {
+    "goodsid": "52205",
+    "nameitem": "电话卡2_5",
+    "role": "1004",
+    "type": "电话卡",
+    "level": "R",
+    "quality": "3",
+    "iconid": "52205",
+    "describe": ""
+  },
+  {
+    "goodsid": "52206",
+    "nameitem": "电话卡2_6",
+    "role": "1004",
+    "type": "电话卡",
+    "level": "SR",
+    "quality": "2",
+    "iconid": "52206",
+    "describe": ""
+  },
+  {
+    "goodsid": "52207",
+    "nameitem": "电话卡2_7",
+    "role": "1004",
+    "type": "电话卡",
+    "level": "SR",
+    "quality": "2",
+    "iconid": "52207",
+    "describe": ""
+  },
+  {
+    "goodsid": "52208",
+    "nameitem": "电话卡2_8",
+    "role": "1004",
+    "type": "电话卡",
+    "level": "SR",
+    "quality": "2",
+    "iconid": "52208",
+    "describe": ""
+  },
+  {
+    "goodsid": "52301",
+    "nameitem": "电话卡3_1",
+    "role": "1001",
+    "type": "电话卡",
+    "level": "R",
+    "quality": "3",
+    "iconid": "52301",
+    "describe": "沉星"
+  },
+  {
+    "goodsid": "52302",
+    "nameitem": "电话卡3_2",
+    "role": "1001",
+    "type": "电话卡",
+    "level": "R",
+    "quality": "3",
+    "iconid": "52302",
+    "describe": ""
+  },
+  {
+    "goodsid": "52303",
+    "nameitem": "电话卡3_3",
+    "role": "1001",
+    "type": "电话卡",
+    "level": "R",
+    "quality": "3",
+    "iconid": "52303",
+    "describe": ""
+  },
+  {
+    "goodsid": "52304",
+    "nameitem": "电话卡3_4",
+    "role": "1001",
+    "type": "电话卡",
+    "level": "R",
+    "quality": "3",
+    "iconid": "52304",
+    "describe": ""
+  },
+  {
+    "goodsid": "52305",
+    "nameitem": "电话卡3_5",
+    "role": "1001",
+    "type": "电话卡",
+    "level": "R",
+    "quality": "3",
+    "iconid": "52305",
+    "describe": ""
+  },
+  {
+    "goodsid": "52306",
+    "nameitem": "电话卡3_6",
+    "role": "1001",
+    "type": "电话卡",
+    "level": "SR",
+    "quality": "2",
+    "iconid": "52306",
+    "describe": ""
+  },
+  {
+    "goodsid": "52307",
+    "nameitem": "电话卡3_7",
+    "role": "1001",
+    "type": "电话卡",
+    "level": "SR",
+    "quality": "2",
+    "iconid": "52307",
+    "describe": ""
+  },
+  {
+    "goodsid": "52308",
+    "nameitem": "电话卡3_8",
+    "role": "1001",
+    "type": "电话卡",
+    "level": "SR",
+    "quality": "2",
+    "iconid": "52308",
+    "describe": ""
+  },
+  {
+    "goodsid": "52401",
+    "nameitem": "电话卡4_1",
+    "role": "1002",
+    "type": "电话卡",
+    "level": "R",
+    "quality": "3",
+    "iconid": "52401",
+    "describe": "小僵尸"
+  },
+  {
+    "goodsid": "52402",
+    "nameitem": "电话卡4_2",
+    "role": "1002",
+    "type": "电话卡",
+    "level": "R",
+    "quality": "3",
+    "iconid": "52402",
+    "describe": ""
+  },
+  {
+    "goodsid": "52403",
+    "nameitem": "电话卡4_3",
+    "role": "1002",
+    "type": "电话卡",
+    "level": "R",
+    "quality": "3",
+    "iconid": "52403",
+    "describe": ""
+  },
+  {
+    "goodsid": "52404",
+    "nameitem": "电话卡4_4",
+    "role": "1002",
+    "type": "电话卡",
+    "level": "R",
+    "quality": "3",
+    "iconid": "52404",
+    "describe": ""
+  },
+  {
+    "goodsid": "52405",
+    "nameitem": "电话卡4_5",
+    "role": "1002",
+    "type": "电话卡",
+    "level": "R",
+    "quality": "3",
+    "iconid": "52405",
+    "describe": ""
+  },
+  {
+    "goodsid": "52406",
+    "nameitem": "电话卡4_6",
+    "role": "1002",
+    "type": "电话卡",
+    "level": "SR",
+    "quality": "2",
+    "iconid": "52406",
+    "describe": ""
+  },
+  {
+    "goodsid": "52407",
+    "nameitem": "电话卡4_7",
+    "role": "1002",
+    "type": "电话卡",
+    "level": "SR",
+    "quality": "2",
+    "iconid": "52407",
+    "describe": ""
+  },
+  {
+    "goodsid": "52408",
+    "nameitem": "电话卡4_8",
+    "role": "1002",
+    "type": "电话卡",
+    "level": "SR",
+    "quality": "2",
+    "iconid": "52408",
+    "describe": ""
+  }
+]

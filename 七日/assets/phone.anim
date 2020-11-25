@@ -1,0 +1,43 @@
+{
+  "__type__": "cc.AnimationClip",
+  "_name": "phone",
+  "_objFlags": 0,
+  "_rawFiles": null,
+  "_duration": 0.8,
+  "sample": 20,
+  "speed": 1,
+  "wrapMode": 2,
+  "curveData": {
+    "comps": {
+      "cc.Sprite": {
+        "spriteFrame": [
+          {
+            "frame": 0,
+            "value": {
+              "__uuid__": "2ceb0440-b136-47ac-9116-5fc9c584ab91"
+            }
+          },
+          {
+            "frame": 0.25,
+            "value": {
+              "__uuid__": "dda57d69-0ade-4052-8efa-6adc8777d80e"
+            }
+          },
+          {
+            "frame": 0.5,
+            "value": {
+              "__uuid__": "0748b826-0736-4e43-acc7-970f2aa96c7c"
+            }
+          },
+          {
+            "frame": 0.75,
+            "value": {
+              "__uuid__": "2ceb0440-b136-47ac-9116-5fc9c584ab91"
+            }
+          }
+        ]
+      }
+    }
+  },
+  "events": []
+}

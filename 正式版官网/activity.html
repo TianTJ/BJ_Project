@@ -1,0 +1,2022 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="renderer" content="webkit"/>
+<meta name="force-rendering" content="webkit"/>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+<script>/*@cc_on window.location.href="http://support.dmeng.net/upgrade-your-browser.html?referrer="+encodeURIComponent(window.location.href); @*/</script>	
+<script type="text/javascript" src="http://static.runoob.com/assets/jquery/2.0.3/jquery.min.js"></script>
+<link rel="stylesheet" type="text/css" href="css/head.css"/>
+<title>逗看</title>
+<style type="text/css">
+	*{margin:0;padding:0}
+	.body{
+		text-align:center;
+		background-image: url('images/bg.jpg');
+        background-size: 100%;
+        background-repeat:no-repeat;
+	}
+	#head{
+		position:relative;
+		top: 0px;;
+		width: 100%;
+		height:120px;
+		min-width: 960px;
+	}
+	.logo_img{
+		position:absolute;
+		left:50px;
+		top:20px;
+	}
+	.jqqd_img{
+		position:absolute;
+		left:0px;
+		top:0px;
+		opacity:0;
+		z-index:9999
+	}
+	.login_text{
+		position:absolute;
+		top:30px;
+		right:220px;
+		text-align:left;
+		color:#717171; 
+		z-index: 999;
+	}
+	.register_text{
+		position:absolute;
+		top:30px;
+		right:180px;
+		text-align:left;
+		color:#717171; 
+	}
+	.canle_text{
+		position:absolute;
+		top:30px;
+		right:160px;
+		text-align:left;
+		color:red;
+		opacity:0
+	}
+	.record_text{
+		position:absolute;
+		top:30px;
+		right:60px;
+		text-align:left;
+		color:red;
+		opacity:0
+	}
+	#contents{
+		position:relative;
+		width:1190px;height: auto;
+		margin: 0px auto;
+		padding: 0;
+		text-align: center;
+		overflow:hidden;
+	}
+	.t1{
+		position: absolute;
+		left:320px;
+		top:150px;
+	}
+	.load_div{
+		width:100%;height:600px;
+		position: relative;
+		top:160px;
+		overflow:hidden;
+	}
+	.load{
+		position: absolute;
+		left:20px;
+		top:20px;
+	}
+	.load_sm_img{
+		position: absolute;
+		left:380px;
+		top:150px;
+	}
+	.load_img{
+		width:369px;height:180px;
+		background-size: 369px 180px;
+		background-repeat: no-repeat;
+		background-image: url(images/activity/ewm_di.png);
+		margin: auto; 
+		position: absolute; 
+		top: 80px; 
+		left: 0px; 
+		bottom: 0; 
+		right: 0;
+		text-align:center;
+	}
+	.qrcode{
+		margin: auto;
+		position: absolute;
+		top:0%;
+		left: -90px;
+		bottom: 0;
+		right: 0;
+	}
+	.android{
+		position: absolute;
+		top:10%;
+		left: 180px;
+		bottom: 0px;
+		right: 0;
+		z-index: 9;
+	}
+	.appstore{
+		position: absolute;
+		top:52%;
+		left: 180px;
+		bottom: 0px;
+		right: 0;
+		z-index: 9;
+	}
+	.receive{
+		position: absolute;
+		left:510px;
+		top:480px;
+	}
+	.invitation_div{
+		width:100%;height:1000px;
+		position: relative;
+		top:160px;
+		overflow:hidden;
+	}
+	.invitation{
+		position: absolute;
+		left:20px;
+		top:20px;
+	}
+	.invitation_text1{
+		position: absolute;
+		left:440px;
+		top:140px;
+		font-family: "Microsoft Yahei","仿宋",sans-serif;
+		font-weight:bold;
+		font-size:144%;
+		color:#6d6d6d;
+	}
+	.invitation_text2{
+		position: absolute;
+		left:520px;
+		top:180px;
+		font-family: "Microsoft Yahei","仿宋",sans-serif;
+		font-weight:bold;
+		font-size:200%;
+		color:#ff829e;
+	}
+	.prize1{
+		position: absolute;
+		top:280px;
+		left:70px
+	}
+	.receive_yq_1{
+		position: absolute;
+		top:740px;
+		left:110px
+	}
+	.prize2{
+		position: absolute;
+		top:280px;
+		left:336px
+	}
+	.receive_yq_2{
+		position: absolute;
+		top:740px;
+		left:380px
+	}
+	.prize3{
+		position: absolute;
+		top:280px;	
+		right:336px
+	}
+	.receive_yq_3{
+		position: absolute;
+		top:740px;
+		right:380px
+	}
+	.font1{
+		position: absolute;
+		top:700px;
+		left:132px;
+		font-family: "Microsoft Yahei","仿宋",sans-serif;
+		font-weight:bold;
+		font-size:100%;
+		color:#6d6d6d;
+		margin-left:0%;
+	}
+	.font2{
+		position: absolute;
+		top:700px;
+		left:397px;
+		font-family: "Microsoft Yahei","仿宋",sans-serif;
+		font-weight:bold;
+		font-size:100%;
+		color:#6d6d6d;
+		margin-left:0%
+	}
+	.font3{
+		position: absolute;
+		top:700px;
+		right:397px;
+		font-family: "Microsoft Yahei","仿宋",sans-serif;
+		font-weight:bold;
+		font-size:100%;
+		color:#6d6d6d;
+		margin-left:0%
+	}
+	.prize4{
+		position: absolute;
+		top:280px;
+		right:70px
+	}
+	.receive_yq_4{
+		position: absolute;
+		top:740px;
+		right:110px
+	}
+	.wdcmub{
+		position: fixed; 
+		margin:auto;
+		left:0;
+		right:0;
+		top:0;
+		bottom:0;
+		opacity:0
+	}
+	.font4{
+		position: absolute;
+		top:700px;
+		right:132px;
+		font-family: "Microsoft Yahei","仿宋",sans-serif;
+		font-weight:bold;
+		font-size:100%;
+		color:#6d6d6d;
+		margin-left:0%
+	}
+	.invitation_receive{
+		position: absolute;
+		top:880px;
+		left:44%;
+	}
+	.share_div{
+		height:800px;
+		position: relative;
+		text-align: center;
+		top:160px;
+		overflow:hidden;
+	}
+	.share{
+		position: absolute;
+		left:20px;
+		top:20px;
+	}
+	#share_wx_code{
+		position: absolute;
+		top:360px;
+		left:150px;
+		opacity:0;
+	}
+	.share_wx{
+		position: absolute;
+		top:120px;
+		left:150px;
+	}
+	.wx_d{
+		position: absolute;
+		top:284px;
+		left:50px;
+	}
+	.share_wb{
+		position: absolute;
+		top:120px;
+		left:513px;
+	}
+	.wb_d{
+		position: absolute;
+		top:284px;
+		left:413px;
+	}
+	.share_qq{
+		position: absolute;
+		top:120px;
+		right:150px;
+	}
+	.qq_d{
+		position: absolute;
+		top:284px;
+		right:50px;
+	}
+	.share_receive{
+		position: absolute;
+		top:720px;
+		left:43.5%
+	}
+	.question_div{
+		height:1400px;
+		position: relative;
+		top:160px;
+		overflow:hidden;
+		text-align: center;
+	}
+	.question{
+		position: absolute;
+		left:20px;
+		top:20px;
+	}
+	.question_1{
+		position: absolute;
+		left:90px;
+		top:180px;
+	}
+	.question_2{
+		position: absolute;
+		top:180px;
+		left:445px;
+	}
+	.question_3{
+		position: absolute;
+		right:90px;
+		top:180px;
+	}
+	.question_buttom{
+		margin-top:230px;
+		margin-left:0%;
+	}
+	.question_btn_div{
+		position: absolute;
+		top:580px;
+		left:40%;
+	}
+	.question_text4{
+		position: absolute;
+		top:780px;
+		left:510px;
+	}
+	.introduce{
+		position: absolute;
+		width:90%;
+		top:900px;
+		left:0%;
+	}
+	.introduce_t1{
+		margin-left:15%;
+		margin-top:0px;
+		text-align:left;
+	}
+	.introduce_t2{
+		margin-left:15%;
+		margin-top:10px;
+		text-align:left;
+	}
+	.introduce_t3{
+		margin-left:15%;
+		margin-top:10px;
+		text-align:left;
+	}
+	.introduce_t4{
+		margin-left:15%;
+		margin-top:10px;
+		text-align:left;
+	}
+	.introduce_t5{
+		margin-left:15%;
+		margin-top:10px;
+		text-align:left;
+	}
+	.introduce_t6{
+		margin-left:15%;
+		margin-top:10px;
+		text-align:left;
+	}
+	.introduce_t1_1{
+		font-family: "Microsoft Yahei","仿宋",sans-serif;
+		font-weight:bold;
+		font-size:112.5%;
+		color:#6d6d6d;
+	}
+	.introduce_t1_2{
+		font-family: "Microsoft Yahei","仿宋",sans-serif;
+		font-weight:bold;
+		font-size:112.5%;;
+		color:#6d6d6d;
+	}
+	.introduce_t1_3{
+		font-family: "Microsoft Yahei","仿宋",sans-serif;
+		font-weight:bold;
+		font-size:112.5%;
+		color:#6d6d6d;
+	}
+	.introduce_t1_4{
+		font-family: "Microsoft Yahei","仿宋",sans-serif;
+		font-weight:bold;
+		font-size:112.5%;
+		color:#6d6d6d;
+	}
+	.introduce_t1_5{
+		font-family: "Microsoft Yahei","仿宋",sans-serif;
+		font-weight:bold;
+		font-size:112.5%;
+		color:#6d6d6d;
+	}
+	.introduce_t1_6{
+		font-family: "Microsoft Yahei","仿宋",sans-serif;
+		font-weight:bold;
+		font-size:112.5%;
+		color:#6d6d6d;
+	}
+	#footerParts{
+		position:relative;
+		width:100%; 
+		height:120px; 
+		background-color:#171717;
+		text-align:center;
+	}
+	.psc-cell-footer {
+	  display: inline-block;
+	  letter-spacing: normal;
+	  padding: 4px 8px;
+	}
+	.psc-cell-footer:last-child {
+	  background: none;
+	}
+	.psc-cell-footer a {
+	  font-weight: 400;
+	}
+	.psc-cell-footer a {
+	  color: #ffffff;
+	  font-size: 13px;
+	}
+	.psc-cell-footer a:link {
+	  text-decoration: none;
+	  color: #ffffff;
+	}
+	.psc-cell-footer a:visited {
+	  color: #ffffff;
+	}
+	.psc-cell-footer a:hover {
+	  color: #00a2ff;
+	}
+	.psc-row-footer p{
+		font-family: "Microsoft Yahei","仿宋",sans-serif;
+		font-size:87.5%;
+		color:#444444;
+	}
+	.psc-align-center1 p{
+		color: #ffffff;
+		font-size: 13px;
+	}
+	.psc-footer-container{
+		width:100%;height:100px;
+		position:absolute;
+	}
+	.psc-footer-row{
+		width:100%;
+		position:absolute;
+		bottom:65px
+	}
+	.psc-row-footer{
+		width:100%;
+		position:absolute;
+		bottom:105px;
+	}
+	.psc-row-footer1{
+		position:relative;
+		width:100%;height:20px;
+		top:60px;
+	}
+	.psc-align-center1 {
+		position:relative;
+		width:1200px;height:20px;
+		margin:0px auto;
+		min-width:960px;
+		text-align: center;
+	}
+	.bntb{
+		position: absolute;
+		left:130px;
+		top:-2px;
+	}
+	.psc-copyrights0 {
+		position: absolute;
+		font-size: 75%;
+		color: #ffffff;
+		left:155px;
+	}
+	.psc-copyrights1 {
+		position:absolute;
+		font-size: 75%;
+		color: #ffffff;
+		left:380px;
+	}
+	.psc-copyrights2 {
+		position:absolute;
+		font-size: 75%;
+		color: #ffffff;
+		text-align:center;
+		left:695px;
+		text-decoration:none;
+		z-index: 99999;
+	}
+	.psc-copyrights3 {
+		position:absolute;
+		font-size: 75%;
+		color: #ffffff;
+		text-align:center;
+		left:885px;
+		text-decoration:none;
+		z-index: 99999;
+	}
+	.questionnaire_div{
+		width:70%; 
+		min-width:50%;
+		height:70%; 
+		margin:0px auto; 
+		overflow:hidden; 
+		position: fixed; 
+		bottom:20%;
+		left:15%;
+		opacity:0.95;
+		border:1px solid black;
+		z-index:999999;
+		opacity:0;
+		background-color: #ffffff
+	}
+	#questionnaire_div .q_head{
+		background-color:white; 
+		width:100%; 
+		height:50px; 
+	}
+	#questionnaire_div .close{
+		position: absolute;
+		right:20px;
+		top:15px;
+	}
+	#cdk_div{
+		width:40%; 
+		height:60%; 
+		min-width: 500px;
+		margin:0px auto; 
+		overflow:hidden; 
+		position: fixed; 
+		bottom:20%;
+		left:30%;
+		opacity:0;
+		border:1px solid #ff829e;
+		z-index:999999;
+		background-color:white
+	}
+	#cdk_div .red_line{
+		width:94%;
+		height:1px;
+		position: absolute;
+		top:65px;
+		left:3%;
+	}
+	#cdk_div .close{
+		position: absolute;
+		top:15px;
+		right:5%;
+	}
+	#cdk_div .lbdhm{
+		position: absolute;
+		top:15px;
+		left:35%;
+	}
+	#cdk_div .font{
+		width:260px;height:30px;
+		font-family: "Microsoft Yahei","仿宋",sans-serif;
+		font-weight:bold;
+		font-size:125%;
+		color:#6d6d6d;
+		text-align:left;
+		position: absolute;
+		top:50%;
+		left:20%;
+		border:none;
+		resize:none;
+	}
+	#cdk_div .copy{
+		height:30px;
+		font-family: "Microsoft Yahei","仿宋",sans-serif;
+		font-weight:bold;
+		font-size:125%;
+		color:#ff829e;
+		text-align:left;
+		position: absolute;
+		top:50%;
+		left:70%;
+	}
+	#cdk_div .img{
+		position: absolute;
+		width:74%;height:100px;
+		top:35%;left:12%;
+		opacity:0;text-align:center
+	}
+	#cdk_div .img .t1{
+		position: absolute;
+		top:10px;left:0;
+	}
+	#cdk_div .img .t2{
+		position: absolute;
+		top:30px;left:95px;
+	}
+	#cdk_div .img .t3{
+		position: absolute;
+		top:0;left:140px;
+	}
+	#cdk_div .img .t4{
+		position: absolute;
+		top:30px;left:235px;
+	}
+	#cdk_div .img .t5{
+		position: absolute;
+		top:10px;left:280px;
+	}
+	#cdk_div .img .t6{
+		position: absolute;
+		top:30px;left:375px;
+	}
+	#cdk_div .img .t7{
+		position: absolute;
+		top:0;left:420px;
+	}
+	#cdk_div .img .t8{
+		position: absolute;
+		top:30px;left:515px;
+	}
+	#bottom_xf .register_tx_1{
+		position: absolute;
+		font-family: "Microsoft Yahei","仿宋",sans-serif;
+		font-size:93.75%;
+		color:#6d6d6d;
+		left:195px;top:310px;
+	}
+	#bottom_xf .register_tx_2{
+		position: absolute;
+		font-family: "Microsoft Yahei","仿宋",sans-serif;
+		font-size:93.75%;
+		color:#ff829e;
+		left:332px;top:310px;
+	}
+	#black_share{
+		position: fixed; 
+		width:564px; 
+		height:349px; 
+		overflow:hidden; 
+		margin:auto;
+		left:0;
+		right:0;
+		top:0;
+		bottom:0;
+		z-index: 201;
+		opacity:0
+	}
+	#black_share .frame{
+		position: absolute;
+		left:2px;
+		top:2px;
+		text-align: center;
+	}
+	#black_share .logo{
+		position: absolute;
+		left:195px;
+		top:15px;
+	}
+	#black_share .close_img{
+		position: absolute;
+		right:30px;
+		top:25px;
+	}
+	#black_share .title{
+		position: absolute;
+		left:295px;
+		top:20px;
+		text-align:center;
+		font-family: "Microsoft Yahei","仿宋",sans-serif;
+		font-size:112.5%;
+		color:#252525;
+	}
+	#black_share .tx_1{
+		position: absolute;
+		left:140px;
+		top:105px;
+		text-align:center;
+		font-family: "Microsoft Yahei","仿宋",sans-serif;
+		font-size:93.75%;
+		color:#6d6d6d;
+	}
+	#black_share .tx_2{
+		position: absolute;
+		left:200px;
+		top:130px;
+		text-align:center;
+		font-family: "Microsoft Yahei","仿宋",sans-serif;
+		font-size:93.75%;
+		color:#6d6d6d;
+	}
+	#black_share .tx_3{
+		position: absolute;
+		left:243px;
+		top:155px;
+		text-align:center;
+		font-family: "Microsoft Yahei","仿宋",sans-serif;
+		font-size:93.75%;
+		color:#6d6d6d;
+	}
+	#black_share .wx_ewm{
+		position: absolute;
+		left:136px;
+		top:230px;
+	}
+	#black_share .wb_ewm{
+		position: absolute;
+		left:250px;
+		top:230px;
+	}
+	#black_share .qq_ewm{
+		position: absolute;
+		left:364px;
+		top:230px;
+	}
+	#black_share .wx_left_code_s{
+		position: absolute;
+		width: 20%;height: 30%;
+		left:15px;
+		top:210px;
+		opacity:0
+	}
+	#record_div{
+		position: fixed; 
+		width:564px; 
+		height:349px; 
+		overflow:hidden; 
+		margin:auto;
+		left:25px;
+		right:0;
+		top:0;
+		bottom:0;
+		z-index: 201;
+		opacity:0;
+		text-align: center
+	}
+	#record_div .frame{
+		position: absolute;
+		left:2px;
+		top:2px;
+	}
+	#record_div .tx_1{
+		position: absolute;
+		width:100%;
+		font-family: "Microsoft Yahei","仿宋",sans-serif;
+		font-size:112.5%;
+		color:#eb6182;
+		left:0px;top:25px;
+	}
+	#record_div .tx_2{
+		position: absolute;
+		font-family: "Microsoft Yahei","仿宋",sans-serif;
+		font-size:93.75%;
+		color:#252525;
+		left:73px;top:75px;
+	}
+	#record_div .tx_3{
+		position: absolute;
+		font-family: "Microsoft Yahei","仿宋",sans-serif;
+		font-size:93.75%;
+		color:#252525;
+		left:215px;top:75px;
+	}
+	#record_div .tx_4{
+		position: absolute;
+		font-family: "Microsoft Yahei","仿宋",sans-serif;
+		font-size:93.75%;
+		color:#252525;
+		right:150px;top:75px;
+	}
+	#record_div .t_d{
+		position: absolute;
+		width:560px;height: 235px;	
+		bottom: 5px;
+		left: 2px;
+		overflow:auto;
+		text-align: center;
+		border-top: 1px solid #6d6d6d
+	}
+	#record_div .t_d .d_1{
+		position: absolute;
+		width:540px;height: 30px;
+		top:20px;
+	}
+	#record_div .t_d .d_2{
+		position: absolute;
+		width:540px;height: 30px;
+		top:60px;
+	}
+	#record_div .t_d .d_3{
+		position: absolute;
+		width:540px;height: 30px;
+		top:100px;
+	}
+	#record_div .t_d .d_4{
+		position: absolute;
+		width:540px;height: 30px;
+		top:140px;
+	}
+	#record_div .t_d .d_5{
+		position: absolute;
+		width:540px;height: 30px;
+		top:180px;
+	}
+	#record_div .t_d .d_6{
+		position: absolute;
+		width:540px;height: 30px;
+		top:220px;
+	}
+	#record_div .t_d .d_7{
+		position: absolute;
+		width:540px;height: 30px;
+		top:260px;
+	}
+	#record_div .t_d .d_8{
+		position: absolute;
+		width:540px;height: 30px;
+		top:300px;
+	}
+	#record_div .t_d .d_9{
+		position: absolute;
+		width:540px;height: 30px;
+		top:340px;
+	}
+	#record_div .t_d .d_10{
+		position: absolute;
+		width:540px;height: 30px;
+		top:380px;
+	}
+	#record_div .t_d .d_11{
+		position: absolute;
+		width:540px;height: 30px;
+		top:420px;
+	}
+	#record_div .t_d .a1{
+		position: absolute;
+		font-family: "Microsoft Yahei","仿宋",sans-serif;
+		font-size:93.75%;
+		color:#6d6d6d;	
+		top:5px;left:30px;
+		text-align: center
+	}
+	#record_div .t_d .a2{
+		position: absolute;
+		font-family: "Microsoft Yahei","仿宋",sans-serif;
+		font-size:93.75%;
+		color:#6d6d6d;	
+		top:5px;left:200px;
+		text-align: center
+	}
+	#record_div .t_d .a3{
+		position: absolute;
+		font-family: "Microsoft Yahei","仿宋",sans-serif;
+		font-size:93.75%;
+		color:#6d6d6d;	
+		top:5px;right:80px;
+		text-align: center
+	}
+	#record_div .t_d .i1{
+		position: absolute;
+		top:3px;right:5px;
+	}
+	#record_div .close{
+		position: absolute;
+		top:20px;right: 20px;
+	}
+	#textarea{
+		opacity: 0;
+		display: none;
+	}	
+</style>
+<link rel="shortcut icon" type="image/x-icon" href="images/title_icon.ico" />
+</head>
+<body>
+	<div id="contents">
+		<div id="head">
+			<a href="index.html"><img src="images/logo.png" style="cursor:pointer" class="logo_img"/></a>
+			<p class="login_text" style="cursor:pointer" onclick="login()">登录&ensp;|</p>
+			<p class="register_text" style="cursor:pointer" onclick="register()">&ensp;注册</p>
+			<p class="canle_text" style="cursor:pointer" onclick="canle()">&ensp;注销</p>
+			<p class="record_text" style="cursor:pointer" onclick="show_record()">&ensp;领取记录</p>
+		</div>
+		<div class="activity_title">
+			<img src="images/activity/activity_1.png" alt="Introduction" class="t1"/>
+		</div>
+		<div class="load_div">
+			<img src="images/activity/load.png" alt="" class="load"/>
+			<img src="images/activity/load_sm_img.png" alt="" class="load_sm_img"/>
+		
+			<div class="load_img">
+				<a class="qrcode"><img src="images/activity/test_ewm.png" alt="" class="qrcode"/></a>
+				<a class=""><img src="images/activity/load_ios.png" alt="" class="android" onclick="load_app(2)"/></a>
+				<a class=""><img src="images/activity/load_android.png" alt="" class="appstore" onclick="load_app(1)"/></a>
+				<img src="images/jqqd.png" alt="" class="jqqd_img"/>
+			</div>
+			<img src="images/activity/receive_gray.png" alt="" class="receive" id="load_receive_btn" onclick="load_receive()"/>
+		</div>
+		<div class="invitation_div">
+			<img src="images/activity/invitation.png" alt="" class="invitation"/>
+			<p class="invitation_text1">邀请好友参与公测，集结福利！</p>
+			<p class="invitation_text2" id="invitation_text2">已邀请0人</p>
+			<img src="images/activity/invite_1.png" alt="" class="prize1"/>
+			<img src="images/activity/receive_gray.png" alt="" style="cursor:pointer" class="receive_yq_1" onclick="invite_receive(1)"/>
+			<img src="images/activity/invite_2.png" alt="" class="prize2"/>
+			<img src="images/activity/receive_gray.png" alt="" style="cursor:pointer" class="receive_yq_2" onclick="invite_receive(2)"/>
+			<img src="images/activity/invite_3.png" alt="" class="prize3"/>
+			<img src="images/activity/receive_gray.png" alt="" style="cursor:pointer" class="receive_yq_3" onclick="invite_receive(3)"/>
+			<img src="images/activity/invite_4.png" alt="" class="prize4"/>
+			<img src="images/activity/receive_gray.png" style="cursor:pointer" alt="" class="receive_yq_4" onclick="invite_receive(4)"/>
+			<font class="font1">成功邀请3位好友</font>
+			<font class="font2">成功邀请5位好友</font>
+			<font class="font3">成功邀请8位好友</font>
+			<font class="font4">成功邀请10位好友</font>
+			<img src="images/activity/yqhy.png" style="cursor:pointer" class="invitation_receive" onclick="show_share()"/>
+			<img src="images/activity/wdcmub.png" alt="" class="wdcmub"/>
+		</div>
+		<div class="share_div">
+			<img src="images/activity/share.png" class="share"/>
+			<img src="images/wx_left_code.png" id="share_wx_code"/>
+			<img src="images/activity/wx.png" class="share_wx" onclick="share_wx_1('wechat')"/>
+			<img src="images/activity/wb.png" class="share_wb" onclick="share_wb('weibo')"/>
+			<img src="images/activity/qq.png" class="share_qq" onclick="share_qzone('qq')"/>
+			<img src="images/activity/wx_d.png" class="wx_d"/>
+			<img src="images/activity/wb_d.png" class="wb_d"/>
+			<img src="images/activity/qq_d.png" class="qq_d"/>
+			<img src="images/activity/receive_gray.png" class="share_receive" id="share_receive_btn" onclick="share_receive()"/>
+		</div>
+		<div class="question_div">
+			<img src="images/activity/question.png" alt="" class="question"/>
+			<img src="images/activity/question_1.png" alt="" class="question_1"/>
+			<img src="images/activity/question_2.png" alt="" class="question_2"/>
+			<img src="images/activity/question_3.png" alt="" class="question_3"/>
+			<img src="images/activity/question_btn.png" class="question_btn_div" id="question_btn_lq" onclick="show_questionnaire_div()"/>
+			<p class="question_text4">
+				<img src="images/activity/guize.png" alt="" class="question_btn"/>
+			</p>
+			<div class="introduce">
+				<p class="introduce_t1">
+					<font class="introduce_t1_1">1&ensp;&ensp;活动时间：2018年11月22日-2019年1月31日；</font>
+				</p>
+				<p class="introduce_t2">
+					<font class="introduce_t1_2">2&ensp;&ensp;2018年11月22日起，在本活动页面完成下载并注册App的用户，即可获“下载礼包”一份；</font>
+				</p>
+				<p class="introduce_t3">
+					<font class="introduce_t1_3">3&ensp;&ensp;活动期间，用户邀请人数到达3人，5人，8人，10人时分别可获得邀请有礼的升级福利；</font>
+				</p>
+				<p class="introduce_t4">
+					<font class="introduce_t1_4">4&ensp;&ensp;在活动页面进行分享的用户可获得礼包，三个平台各一份</font>
+				</p>
+				<p class="introduce_t5">
+					<font class="introduce_t1_5">5&ensp;&ensp;填写调查问卷可获取大礼包一份；</font>
+				</p>
+				<p class="introduce_t6">
+					<font class="introduce_t1_6">6&ensp;&ensp;所有活动礼包获取均为CDK码，需要登录App进入我的里面领取，本活动的一切解释权归逗看官方所有。</font>
+				</p>
+			</div>
+		</div>	
+	</div>
+<div id="footerParts">
+	<div class="psc-footer-container">
+		<div class="psc-footer-row">
+			<ul class="psc-align-center">
+				<li class="psc-cell-footer"><a href="help.html"  target="_blank" class="psc-col-white">帮助FAQ</a></li>
+				<li class="psc-cell-footer"><a href="" class="psc-col-white">|</a></li>
+				<li class="psc-cell-footer"><a href="privacy.html"  target="_blank" class="psc-col-white">隐私政策</a></li>
+				<li class="psc-cell-footer"><a href="" class="psc-col-white">|</a></li>
+				<li class="psc-cell-footer"><a href="law.html"  target="_blank" class="psc-col-white">法律声明</a></li>
+				<li class="psc-cell-footer"><a href="" class="psc-col-white">|</a></li>
+				<li class="psc-cell-footer"><a href="service.html"  target="_blank" class="psc-col-white">用户协议</a></li>
+			</ul>
+		</div>
+		<div class="psc-row-footer">
+			<p class="psc-copyrights">全部信息 逗看DOKI&nbsp;IDOL&nbsp;&nbsp;·&nbsp;&nbsp;北京神月创想文化有限公司版权所有 未经许可 严禁转载</p>			
+		</div>
+		<div class="psc-row-footer1">
+			<div class="psc-align-center1">
+				<img src="images/bntb.png"  class="bntb"/>
+				<p class="psc-copyrights0" a href ="">京公网安备 11010802028169号</p>
+				<p class="psc-copyrights1" a href ="">网络文化经营许可证：京网文[2018]0105-021号</p>
+				<a class="psc-copyrights2" style="cursor:pointer" a href="http://www.miibeian.gov.cn" target="_blank">京ICP证：京B2-20171308</a>
+				<a class="psc-copyrights3" style="cursor:pointer" a href="http://www.miitbeian.gov.cn/publish/query/indexFirst.action" target="_blank">京ICP备：17028419号-4</a>
+			</div>
+		</div>
+	</div>
+</div>
+<div id="black_div">
+
+</div>
+<div id="bottom_xf">
+	<div class="top_white">
+		<a><img src="images/popup/frame.png" class="frame"/></a>
+		<a><img src="images/popup/logo.png" class="logo"/></a>
+		<p class="dl">账号登陆</p>
+		<img src="images/popup/close.png" alt="" class="close" onclick="hide_login()"/>
+		<a><img src="images/activity/admin_error.png" class="admin_error"/></a>
+		<a><img src="images/activity/yzmbpp.png" class="yzmbpp"/></a>
+		<a class="phone">
+			<input type="text" class="phone_text" name="phone_name" onkeyup="value=value.replace(/[\u4e00-\u9fa5]/ig,'')" placeholder="&ensp;&ensp;请输入手机号"/>
+		</a>
+		<a class="yz_code">
+			<input type="password" class="code_text" name="code_name" onkeyup="value=value.replace(/[\u4e00-\u9fa5]/ig,'')" placeholder="&ensp;&ensp;请输入密码"/>
+		</a>
+		<a class="graph_code">
+			<input type="text" class="graph_text" name="graph_name" onkeyup="value=value.replace(/[\u4e00-\u9fa5]/ig,'')" placeholder="&ensp;&ensp;请输入图形验证"/>
+			<img src="images/popup/yzm_img.png" class="graph_img" onclick="update_yzm1()"/>
+		</a>
+		<img src="images/popup/login_btn.png" class="login_btn" onclick="login_touch()"/>
+		<p class="register_tx_1">没有账号？点击这里</p>
+		<p class="register_tx_2" style="cursor:pointer" onclick="show_register()">注册></p>
+	</div>
+</div>
+<div id="register_info">
+	<div class="top_white">
+		<a><img src="images/popup/frame.png" class="frame"/></a>
+		<a><img src="images/popup/logo.png" class="logo"/></a>
+		<p class="dl">账号注册</p>
+		<img src="images/popup/close.png" alt="" class="close" onclick="hide_register()"/>
+		<a><img src="images/activity/admin_error.png" class="admin_error"/></a>
+		<a><img src="images/activity/yhxycw.png" class="yhxycw"/></a>
+		<a><img src="images/activity/yzmbpp.png" class="yzmbpp"/></a>
+		<a><img src="images/activity/fwqzsl.png" class="fwqzsl"/></a>
+		<a><img src="images/activity/password_tip.png" id="password_tip_1"/></a>
+		
+		<a class="phone">
+			<input type="text" class="phone_text" name="phone_name" onkeyup="value=value.replace(/[\u4e00-\u9fa5]/ig,'')" placeholder="&ensp;&ensp;请输入手机号"/>
+		</a>
+		<a class="yz_code">
+			<input type="text" class="code_text" name="code_name" onkeyup="value=value.replace(/[\u4e00-\u9fa5]/ig,'')" placeholder="&ensp;&ensp;请输入密码"/>
+		</a>
+		<a class="graph_code">
+			<input type="text" class="graph_text" name="graph_name" onkeyup="value=value.replace(/[\u4e00-\u9fa5]/ig,'')" placeholder="&ensp;&ensp;请输入图形验证"/>
+			<img src="images/popup/yzm_img.png" class="graph_img" id="graph_img" onclick="update_yzm2()"/>
+		</a>
+		<img src="images/popup/next.png" alt="" class="login_btn" onclick="show_register_div_2()"/>
+		<a class="red_tip" id="red_tip">此手机号已经注册，请前往登录</a>
+		<label class="radio_check"/><input name="Fruit" type="checkbox" value="" id="checkbox_xy">我已经阅读并且同意逗看</label>
+		<u class="yhxy" style="cursor:pointer" onclick="open_page(6)">用户协议</u>
+		<a class="he">和</a>
+		<u class="ystk" style="cursor:pointer" onclick="open_page(2)">隐私条款</u>
+	</div>
+</div>
+<div id="register_info_2">
+	<div class="top_white">
+		<a><img src="images/popup/frame.png" class="frame"/></a>
+		<a><img src="images/popup/logo.png" class="logo"/></a>
+		<p class="dl">账号注册</p>
+		<img src="images/popup/close.png" alt="" class="close" onclick="hide_register_2()"/>
+		<a><img src="images/activity/yzczhbf.png" class="admin_error"/></a>
+		<a><img src="images/activity/sjyzm.png" class="yzmbpp"/></a>
+		<a class="phone">
+			<input type="text" class="phone_text" name="phone_name" onkeyup="value=value.replace(/[\u4e00-\u9fa5]/ig,'')" placeholder="&ensp;&ensp;请输入手机号"/>
+		</a>
+		<a class="yz_code">
+			<input type="text" class="code_text" name="code_name" onkeyup="value=value.replace(/[\u4e00-\u9fa5]/ig,'')" placeholder="&ensp;&ensp;短信验证码"/>
+			<font style="cursor:pointer" class="send_yzm" onclick="send_yzmfun()">发送验证码</font>
+			<font class="time_down">60s</font>
+		</a>
+		<img src="images/popup/over.png" class="over_btn" onclick="register_all_over()"/>
+		<img src="images/popup/top.png" class="top_btn" onclick="register_back()"/>
+	</div>
+</div>
+<div id="questionnaire_div" class="questionnaire_div" style="overflow:scroll">
+	<div class="q_head">
+		<a><img src="images/popup/close.png" class="close" onclick="hide_questionnaire_div()"/></a>
+	</div>
+	<script type='text/javascript' src='https://www.wjx.cn/handler/jqemed.ashx?activity=31237237&width=760&source=iframe'></script>
+</div>
+<div id="black_share">
+	<a><img src="images/popup/frame.png" class="frame"/></a>
+	<a><img src="images/popup/logo.png" class="logo"/></a>
+	<a><img src="images/popup/close.png" class="close_img" onclick="hide_share_div()"/></a>
+	<a class="title">邀请好友</a>
+	<a class="tx_1">分享到您的圈子和小伙伴一起参与进来吧！</a>
+	<a class="tx_2">分享还可以领取精美奖励</a>
+	<a class="tx_3">快快行动吧~~</a>
+	<a><img src="images/wx_ewm.png" class="wx_ewm" onclick="share_wx('share')"/></a>
+	<a><img src="images/wb_ewm.png" class="wb_ewm" onclick="share_wb('share')"/></a>
+	<a><img src="images/qq_ewm.png" class="qq_ewm" onclick="share_qq('share')"/></a>
+	 <img src="images/wx_left_code.png" class="wx_left_code_s"/>
+ </div>
+<div id="cdk_div">
+	<div class="img">
+		<img src="images/activity/g_1.png" class="t1"/>
+		<img src="images/activity/g_x.png" class="t2"/>
+		<img src="images/activity/g_2.png" class="t3"/>
+		<img src="images/activity/g_x.png" class="t4"/>
+		<img src="images/activity/g_3.png" class="t5"/>
+		<img src="images/activity/g_x.png" class="t6"/>
+		<img src="images/activity/g_4.png" class="t7"/>
+		<img src="images/activity/g_x.png" class="t8"/>
+	</div>
+	<a><img src="images/red_line.png" class="red_line"/></a>
+	<a><img src="images/popup/close.png" class="close" onclick="close_cdk()"/></a>
+	<a><img src="images/activity/lbdhm.png" class="lbdhm"/></a>
+	<textarea class="font" id="cdk_tx"></textarea>
+	<font style="cursor:pointer" class="copy" onclick="copy_sdk()">复制</font>
+</div>
+<div id="record_div">
+	<a><img src="images/popup/frame.png" class="frame"/></a>
+	<a class="tx_1">领取记录查询</a>
+	<p class="tx_2">时间</p>
+	<p class="tx_3">礼包名称</p>
+	<p class="tx_4">兑换码</p>
+	<a><img src="images/popup/close.png" class="close" onclick="close_record()"/></a>
+	<div class="t_d">
+		<div class="d_1">
+			<a class="a1"></a>
+			<a class="a2"></a>
+			<a class="a3"></a>
+			<img class="i1" src="images/activity/copy_1.png" onclick="sdk_list_copy(1)"/>
+		</div>
+		<div class="d_2">
+			<a class="a1"></a>
+			<a class="a2"></a>
+			<a class="a3"></a>
+			<img class="i1" src="images/activity/copy_1.png" onclick="sdk_list_copy(2)"/>
+		</div>
+		<div class="d_3">
+			<a class="a1"></a>
+			<a class="a2"></a>
+			<a class="a3"></a>
+			<img class="i1" src="images/activity/copy_1.png" onclick="sdk_list_copy(3)"/>
+		</div>
+		<div class="d_4">
+			<a class="a1"></a>
+			<a class="a2"></a>
+			<a class="a3"></a>
+			<img class="i1" src="images/activity/copy_1.png" onclick="sdk_list_copy(4)"/>
+		</div>
+		<div class="d_5">
+			<a class="a1"></a>
+			<a class="a2"></a>
+			<a class="a3"></a>
+			<img class="i1" src="images/activity/copy_1.png" onclick="sdk_list_copy(5)"/>
+		</div>
+		<div class="d_6">
+			<a class="a1"></a>
+			<a class="a2"></a>
+			<a class="a3"></a>
+			<img class="i1" src="images/activity/copy_1.png" onclick="sdk_list_copy(6)"/>
+		</div>
+		<div class="d_7">
+			<a class="a1"></a>
+			<a class="a2"></a>
+			<a class="a3"></a>
+			<img class="i1" src="images/activity/copy_1.png" onclick="sdk_list_copy(7)"/>
+		</div>
+		<div class="d_8">
+			<a class="a1"></a>
+			<a class="a2"></a>
+			<a class="a3"></a>
+			<img class="i1" src="images/activity/copy_1.png" onclick="sdk_list_copy(8)"/>
+		</div>
+		<div class="d_9">
+			<a class="a1"></a>
+			<a class="a2"></a>
+			<a class="a3"></a>
+			<img class="i1" src="images/activity/copy_1.png" onclick="sdk_list_copy(9)"/>
+		</div>
+		<div class="d_10">
+			<a class="a1"></a>
+			<a class="a2"></a>
+			<a class="a3"></a>
+			<img class="i1" src="images/activity/copy_1.png" onclick="sdk_list_copy(10)"/>
+		</div>
+		<div class="d_11">
+			<a class="a1"></a>
+			<a class="a2"></a>
+			<a class="a3"></a>
+			<img class="i1" src="images/activity/copy_1.png" onclick="sdk_list_copy(11)"/>
+		</div>
+	</div>
+	<textarea id="textarea"></textarea>
+</div>
+<script src="js/config.js"></script>
+<script src="js/buttom_jump.js"></script>
+<script type="text/javascript" src="js/common.js"></script>
+<script src="js/jquery-1.11.1.min.js"></script>
+<script type="text/javascript">
+	if((navigator.userAgent.match(/(phone|pad|pod|iPhone|iPod|ios|iPad|Android|Mobile|BlackBerry|IEMobile|MQQBrowser|JUC|Fennec|wOSBrowser|BrowserNG|WebOS|Symbian|Windows Phone)/i))) {
+		$("#footerParts").width("122.5%")
+	}else {
+		$("#footerParts").width("100%")
+	}
+	var is_register_sc = false	//账号是否注册
+	var type = getQueryString("type")
+	var server_data = null //当前页面所有数据
+	var is_login = false //是否登录账户
+	if(localStorage.getItem('token')){
+		send_data("post","share/shareIndex",{},function(data){
+			if(data.code.code == 200){
+				server_data = data.data
+				update_layer()
+				is_login = true
+			}
+		},function(err){
+			
+		})
+	}
+	$("#black_share .wx_ewm").hover(function () {
+		$("#black_share .wx_ewm").attr("src","images/wx_ewm_2.png")
+	},function(){
+		$("#black_share .wx_ewm").attr("src","images/wx_ewm.png")
+	})
+	$("#black_share .wb_ewm").hover(function () {
+		$("#black_share .wb_ewm").attr("src","images/wb_ewm_2.png")
+	},function(){
+		$("#black_share .wb_ewm").attr("src","images/wb_ewm.png")
+	})
+	$("#black_share .qq_ewm").hover(function () {
+		$("#black_share .qq_ewm").attr("src","images/qq_ewm_2.png")
+	},function(){
+		$("#black_share .qq_ewm").attr("src","images/qq_ewm.png")
+	})
+	var invite_speed = 0 	//当前领取进度
+	
+	function show_record(){
+		send_data("post","share/getGetedCdkeyLog",{pageNumber:1,pageSize:11},function(data){
+			if(data.code.code==200){
+				for(var i=0;i<=11;i++){
+					var img = "#record_div .d_"+(i+1)+" .i1"
+					$(img).attr("src","images/activity/copy_1.png")
+					if(parseInt(i) >= data.data.list.length){
+						var aa = "#record_div .d_"+(i+1)
+						$(aa).hide()
+					}else{
+						var a1 = "#record_div .d_"+(i+1)+" .a1"
+						var a2 = "#record_div .d_"+(i+1)+" .a2"
+						var a3 = "#record_div .d_"+(i+1)+" .a3"
+						var date = new Date(data.data.list[i].createTime)
+						var y = date.getFullYear();var m = date.getMonth()+1;var d = date.getDate()
+						var h = date.getHours(); var mm = date.getMinutes(); var s = date.getSeconds()
+						var str = y+"."+m+"."+d+"  "+h+":"+mm+":"+s
+						$(a1).text(str)
+						$(a2).text(data.data.list[i].cdKey.describe)
+						$(a3).text(data.data.list[i].cdKey.cdkey)
+						var aa = "#record_div .d_"+(i+1)
+						$(aa).show()
+					}
+				}
+				$("#black_div").css({"opacity":"0.7"})
+				$("#black_div").show()
+				$("#record_div").css({"opacity":"1"})
+				$("#record_div").show()
+			}else if(data.code.code){
+				alert("server error!")
+			}
+		},function(err){})
+	}
+	function sdk_list_copy(type){
+		var tx = "#record_div .d_"+type+" .a3"
+		for(var i=1;i<=11;i++){
+			var img = "#record_div .d_"+i+" .i1"
+			if(i==type){
+				$(img).attr("src","images/activity/copy_2.png")
+			}else{
+				$(img).attr("src","images/activity/copy_1.png")
+			}
+		}
+		var text = $(tx).text();  
+		textarea_copy = document.getElementById("textarea");
+		textarea_copy.value = text
+		textarea_copy.select(); 
+      	document.execCommand("copy"); 
+	}
+	function close_record(){
+		$("#black_div").hide()
+		$("#record_div").hide()
+	}
+	function hide_share_div(){
+		$("#black_share").hide();
+		$("#black_div").hide()
+	}
+	function register(){
+		$("#black_div").css({"opacity":"0.7"})
+		$("#black_div").show()
+		register_div.style.display = ""
+		$("#register_info .graph_img").attr("src",server_location+"user/getVerification")
+	}
+	function close_cdk(){
+		$("#cdk_div").hide()
+	}
+	function canle(){
+		is_login = false
+		localStorage.setItem('token',"")
+		window.location.reload();
+	}
+	function show_share(){
+		if(!is_login){login();return}
+		$("#black_div").css({"opacity":"0.7"})
+		$("#black_div").show()
+		$("#black_share").show()	
+		$("#black_share").css({"opacity":"1"})
+	}
+	//问卷调查
+	var questionnaire_div = document.getElementById('questionnaire_div');
+	questionnaire_div.style.display = "none"
+	//系统选择图标
+	var ios = document.getElementById('login_ios');
+	var android = document.getElementById('login_android');
+	//默认不显示
+	$("#password_tip_1").hide();$("#register_info .admin_error").hide()
+	$("#register_info .yhxycw").hide();$("#register_info .yzmbpp").hide()
+	$("#register_info .fwqzsl").hide();$("#register_info_2 .admin_error").hide();
+	$("#register_info_2 .yzmbpp").hide();$("#cdk_div").hide()
+	$("#bottom_xf .admin_error").hide();$("#bottom_xf .yzmbpp").hide();
+	$(".canle_text").hide();$("#register_info_2 .time_down").hide()
+	$(".jqqd_img").hide();$(".wdcmub").hide();$(".wx_left_code_s").hide()
+	$("#share_wx_code").hide();$("#black_share").hide();$("#record_div").hide()
+	$("#record_div .textarea").hide();$(".record_text").hide()
+	var red_tip = document.getElementById("red_tip")
+	red_tip.style.display = "none"
+	var register_div = document.getElementById("register_info")
+	register_div.style.display = "none"
+	var register_div_2 = document.getElementById("register_info_2")
+	register_div_2.style.display = "none"
+	var login_div = document.getElementById("bottom_xf")
+	login_div.style.display = "none"
+	var yzm_img = document.getElementById("graph_img")
+	function load_app(type){
+		//type==1 android  type==2 ios
+		if(type==1){
+			var t = new Date().getTime()
+			window.open(Now_Load_Apk+"?t="+t)
+			
+		}else if(type==2){
+			$(".jqqd_img").show();$(".jqqd_img").css({"opacity":"1"})
+			$(".jqqd_img").animate({top:-200},700,null,function(){
+				$(".jqqd_img").css({top:0});
+				$(".jqqd_img").hide()
+			});
+		}
+	}
+	var icon_time = new Date().getTime()
+	function load_receive(){
+		if(!is_login){
+			login()
+		}else{
+			if(server_data.firstCheckInGiftType == 2){
+				alert("已领取，请进入页面最上方的领取记录查看！")
+				return
+			}
+			if(server_data.firstCheckInGiftType == 0){
+				alert("请下载app并登陆！")
+				return
+			}
+			send_data("post","share/getFirstCheckInGift",{},function(data){
+				if(data.code.code==200){
+					server_data.firstCheckInGiftType == 2
+					$("#load_receive_btn").attr('src',"images/activity/question_btn.png")
+					//展示cdk
+					$("#cdk_tx").text(data.data)
+					$("#cdk_div .img").css({"opacity":"1"})
+					$("#cdk_tx").css({"top":"70%"})
+					$("#cdk_div .copy").css({"top":"70%"})
+					$("#cdk_div").show();$("#cdk_div").css({"opacity":"1"})
+					update_layer()
+				}else if(data.code.code){
+					alert("server error!")
+				}
+			},function(err){})
+		}
+	}
+	function copy_sdk(){
+		var textarea_copy = document.getElementById("cdk_tx");
+		textarea_copy.select(); 
+		document.execCommand("copy");
+	}
+	function share_wx(type){
+		if(!is_login){alert("请登录账号！！！");return}
+		send_data("post","share/getShareUrl",{shareTag:type},function(data){
+			if(data.code.code == 200){
+				if(type=="wechat"){
+					$(".wx_left_code_s").show()
+					$(".wx_left_code_s").css({"opacity":"1"})
+					setTimeout(function(){
+						$(".wx_left_code_s").css({"opacity":"0"})
+						$(".wx_left_code_s").hide()
+					},5000);
+				}else{
+					$("#black_share .wx_left_code_s").show()
+					$("#black_share .wx_left_code_s").css({"opacity":1})
+					setTimeout(function(){
+						$("#black_share .wx_left_code_s").css({"opacity":"0"})
+						$("#black_share .wx_left_code_s").hide()
+					},5000);
+				}
+			}
+		},function(err){})
+	}
+	function share_wb(type){
+		if(!is_login){alert("请登录账号！！！");return}
+		send_data("post","share/getShareUrl",{shareTag:type},function(data){
+			if(data.code.code==200){
+				var wbWindow = window.open();
+				var p={
+					url:GW+'?type='+type+'&id='+data.data,
+					title:"#逗看DOKI IDOL#国内首款手机端动画制作编辑器震撼发布！@逗看dokiidol 开启全民制片人时代！",
+					description:"",
+					reason:"",
+					pic:"http://data-100.xintiaoshijie.com/逗看icon.png?t="+icon_time
+				}
+				var s = [];
+				for(var i in p){
+					s.push(i + '=' + encodeURIComponent(p[i]||''));
+				}
+				var paramStr = s.join('&')
+				var qhref = "http://service.weibo.com/share/share.php?"+paramStr;
+				wbWindow.location.href = qhref;
+			}
+		},function(err){})
+	}
+	function share_qq(){
+		if(!is_login){alert("请登录账号！！！");return}
+		send_data("post","share/getShareUrl",{shareTag:"share"},function(data){
+			if(data.code.code==200){
+				var p ={
+					url : GW+'?type=share&id='+data.data,
+					desc:"#逗看DOKI IDOL#国内首款手机端动画制作编辑器震撼发布！@逗看dokiidol 开启全民制片人时代！",
+					title:'', 
+					summary : "",
+					pics:"http://data-100.xintiaoshijie.com/逗看icon.png?t="+icon_time, 
+				}
+				var s = [];
+				for(var i in p){
+					s.push(i + '=' + encodeURIComponent(p[i]||''));
+				}
+				var paramStr = s.join('&')
+				var qqWindow = window.open();
+				var shareqqzonestring='http://connect.qq.com/widget/shareqq/index.html?'+paramStr
+				qqWindow.location.href = shareqqzonestring;
+			}
+		},function(){})
+	}
+	function share_qzone(type){
+		if(!is_login){alert("请登录账号！！！");return}
+		send_data("post","share/getShareUrl",{shareTag:type},function(data){
+			var p = {
+				url:GW+'?type=qq&id='+data.data, /*获取URL，可加上来自分享到QQ标识，方便统计*/
+				desc:'#逗看DOKI IDOL#国内首款手机端动画制作编辑器震撼发布！@逗看dokiidol 开启全民制片人时代！', 
+				title:'逗看', /*分享标题(可选)*/
+				summary:'', /*分享摘要(可选)*/
+				pics:"http://data-100.xintiaoshijie.com/逗看icon.png?t="+icon_time, /*分享图片(可选)*/
+				flash: '', /*视频地址(可选)*/
+				site:'', /*分享来源(可选) 如：QQ分享*/
+				style:'203',
+				width:16,
+				height:16
+			};
+			var s = [];
+			for(var i in p){
+				s.push(i + '=' + encodeURIComponent(p[i]||''));
+			}
+			var paramStr = s.join('&')
+			var qzWindow = window.open();
+			var qhref = "http://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?"+paramStr;
+			qzWindow.location.href = qhref;
+			return false
+		},function(err){})
+	}
+	function share_wx_1(type){
+		if(!is_login){alert("请登录账号！！！");return}
+		send_data("post","share/getShareUrl",{shareTag:type},function(data){
+			if(data.code.code == 200){
+				$("#share_wx_code").show()
+				$("#share_wx_code").css({"opacity":1})
+				setTimeout(function(){
+					$("#share_wx_code").hide()
+					$("#share_wx_code").css({"opacity":0})
+				},5000);
+			}
+		},function(err){})
+	}
+	function share_receive(){
+		if(!is_login){
+			login()
+		}else{
+			if(server_data.weiboShare.gifExist == 2 ||server_data.wechatShare.gifExist == 2||server_data.qqShare.gifExist == 2){
+				//可领取
+				share_send()
+			}F
+		}
+	}
+	function share_send(){
+		send_data("post","share/getShareUrlGift",{},function(data){
+			if(data.code.code==200){
+				//显示cdk
+				$("#cdk_tx").text(data.data)
+				$("#cdk_div").show();$("#cdk_div").css({"opacity":"1"})
+				$("#cdk_div .img").css({"opacity":"0"})
+				$("#cdk_tx").css({"top":"50%"})
+				$("#cdk_div .copy").css({"top":"50%"})
+				send_data("post","share/shareIndex",{},function(data){
+					if(data.code.code == 200){
+						server_data = data.data
+						update_layer()
+					}
+				},function(err){
+					console.log(err)
+				})		
+			}
+		},function(err){})
+	}
+	function login(){
+		if(is_login){return}
+		$("#black_div").css({"opacity":"0.7"})
+		$("#black_div").show()
+		login_div.style.display = ""
+		$("#bottom_xf .graph_img").attr("src",server_location+"user/getVerification")
+	}
+	function update_yzm1(){
+		$("#bottom_xf .graph_img").attr("src",server_location+"user/getVerification")
+	}
+	function update_yzm2(){
+		$("#register_info .graph_img").attr("src",server_location+"user/getVerification")
+	}
+	function show_register(){
+		$("#black_div").css({"opacity":"0.7"})
+		$("#black_div").show()
+		$("#register_info .graph_img").attr("src",server_location+"user/getVerification")
+		$("#bottom_xf").hide()
+		$("#register_info").css({"opacity":"1"})
+		$("#register_info").show()
+	}
+	function hide_login(){
+		$("#black_div").hide()
+		login_div.style.display = "none"
+	}
+	function change_type(type){
+		//type==1 ios type==2 android
+		if(type==1){
+			ios.src = "images/popup/ios_red.png"
+			android.src = "images/popup/android_gray.png"
+		}else{
+			android.src = "images/popup/android_red.png"
+			ios.src = "images/popup/ios_gray.png"
+		}
+	}
+	function show_register_div(){
+		$("#black_div").css({"opacity":"0.7"})
+		$("#black_div").show()
+		login_div.style.display = "none"
+		$("#register_info .graph_img").attr("src",server_location+"user/getVerification")
+		register_div.style.display = ""
+	}
+	function hide_register(){
+		$("#black_div").hide()
+		register_div.style.display = "none"
+	}
+	function show_register_div_2(){
+		check_one_register()
+	}
+	function hide_register_2(){
+		$("#black_div").hide()
+		register_div_2.style.display = "none"
+	}
+	function register_back(){
+		$("#black_div").css({"opacity":"0.7"})
+		$("#black_div").show()
+		register_div_2.style.display = "none"
+		register_div.style.display = ""
+	}
+	function show_questionnaire_div(type){
+		if(!is_login){
+			login()
+		}else{
+			//待领取
+			if(server_data && server_data.questionnaire == 1){
+				send_data("post","share/getQuestionnaireGift",{},function(data){
+					if(data.code.code==200){
+						server_data.questionnaire = 2
+						$("#question_btn_lq").attr('src',"images/activity/question_btn.png")
+						//展示cdk
+						$("#cdk_tx").text(data.data)
+						$("#cdk_div .img").css({"opacity":"0"})
+						$("#cdk_tx").css({"top":"50%"})
+						$("#cdk_div .copy").css({"top":"50%"})
+						$("#cdk_div").show();$("#cdk_div").css({"opacity":"1"})
+						update_layer()
+					}else if(data.code.code){
+						alert("server error!")
+					}
+				},function(err){})
+			}else if(server_data && server_data.questionnaire == 2){
+				alert("已领取，请进入页面最上方的领取记录查看！")
+			}else if(server_data && server_data.questionnaire == 0){
+				questionnaire_div.style.display = ""
+			}
+		}
+	}
+	function hide_questionnaire_div(){
+		//第一次填写
+		if(server_data && server_data.questionnaire == 0){
+			send_data("post","share/writeQuestionnaire",{},function(data){
+				if(data.code.code == 200){
+					questionnaire_div.style.display = "none"
+					server_data.questionnaire = 1
+					update_layer()
+				}else if(data.code.code == 500){
+					alert("server error!")
+				}
+			},function(err){})
+		}
+	}
+	//登录账号
+	function login_touch(){
+		//点击登录
+		if($("#bottom_xf .phone_text").val() == "" || $("#bottom_xf .code_text").val() == ""){
+			$("#bottom_xf .admin_error").show()
+			setTimeout(function(){$("#bottom_xf .admin_error").hide();},1000);
+		}else{
+			//验证码
+			send_data("post","user/verification",{vrifyKey:$("#bottom_xf .graph_text").val()},function(data){
+				if(data.code.code == 200){
+					//登陆
+					send_data("post","user/login",{phone:$("#bottom_xf .phone_text").val(),password:$("#bottom_xf .code_text").val()},function(data){
+						if(data.code.code == 200){
+							localStorage.setItem('token',data.data)
+							login_div.style.display = "none"
+							send_data("post","share/shareIndex",{},function(data){
+								$("#black_div").hide()
+								server_data = data.data
+								is_login = true
+								update_layer()
+							},function(err){
+							
+							})
+						}else{
+							if(data.code.code==403){
+								$("#bottom_xf .admin_error").show()
+								setTimeout(function(){$("#bottom_xf .admin_error").hide();},1000);
+							}else if(data.code.code == 500){
+								console.log("server error")
+							}
+						}
+					},function(err){
+						console.log(err)
+					})
+				}else{
+					$("#bottom_xf .yzmbpp").show()
+					setTimeout(function(){$("#bottom_xf .yzmbpp").hide();},1000);
+				}
+			},function(err){
+				console.log(err)
+			})
+		}
+	}
+	//注册账号
+	var register_data = {phone:"",passWord:"",smsCode:""}
+	var phone_over=false;var password_over=false
+
+	//手机号input
+	$("#register_info .phone_text").mouseout(function () {
+		var tx = $("#register_info .phone_text").val();
+		is_register_sc = false
+		if(isPoneAvailable(tx)){
+			//服务器再次检测
+			send_data("POST","user/checkPhone",{phone:tx},function(data){
+				if(data.code.code == 200) {
+					//手机号正确
+					register_data["phone"] = tx
+					phone_over = true
+				}else{
+					//500 服务器走神
+					//401 手机号错误
+					//403 手机号已注册
+					if(data.code.code==500){
+						$("#register_info .fwqzsl").show();
+						setTimeout(function(){$("#register_info .fwqzsl").hide()},1000);
+					}else if(data.code.code==401){
+						$("#register_info .admin_error").show();
+						setTimeout(function(){$("#register_info .admin_error").hide()},1000);
+					}else if(data.code.code==403){
+						$("#red_tip").show()
+						setTimeout(function(){$("#red_tip").hide()},1000);
+						is_register_sc = true
+					}
+				}
+			},function(err){
+				console.log(err)
+			})
+		}else{
+			//手机号格式不正确
+			if(tx!=""){
+				$("#register_info .admin_error").show();
+				setTimeout(function(){$("#register_info .admin_error").hide()},1000);
+			}
+		}
+    })
+	//密码input
+	$("#register_info .code_text").mouseover(function () {
+        $("#password_tip_1").show()
+	}).mouseout(function () {
+		register_data["passWord"] = $("#register_info .code_text").val();
+		var len = register_data["passWord"].replace(/[^\x00-\xff]/g,"01").length;
+		if(len<6 || len>16){$("#password_tip_1").show()
+			setTimeout(function(){$("#password_tip_1").hide()},500);
+		}else{$("#password_tip_1").hide();password_over=true}
+	})
+	$("#register_info .graph_text").mouseover(function(){
+	}).mouseout(function () {
+		register_data["smsCode"] = $("#register_info .graph_text").val();
+	})
+	//下一步检测信息
+	function check_one_register(){
+		if(is_register_sc){
+			$("#red_tip").show()
+			setTimeout(function(){$("#red_tip").hide()},1000);
+			return
+		}
+		var isChecked = $('#checkbox_xy').prop('checked'); 
+		if(register_data["passWord"] == ""){
+			register_data["passWord"] = $("#register_info .code_text").val();
+		}
+		if(register_data["phone"] == ""){
+			register_data["phone"] = $("#register_info .phone_text").val();
+		}
+		if(register_data["smsCode"] == ""){
+			register_data["smsCode"] = $("#register_info .graph_text").val()
+		}
+		if(register_data["passWord"] == '' || !password_over || !phone_over){
+			$("#register_info .admin_error").show();
+			setTimeout(function(){$("#register_info .admin_error").hide()},1000)
+		}else if(register_data["smsCode"] == '' ){
+			$("#register_info .yzmbpp").show()
+			setTimeout(function(){$("#register_info .yzmbpp").hide()},1000);
+		}else if(!isChecked){
+			$("#register_info .yhxycw").show()
+			setTimeout(function(){$("#register_info .yhxycw").hide()},1000);
+		}else{
+			//检测验证码
+			send_data("POST","user/verification",{vrifyKey :register_data["smsCode"]},function(data){
+				if (data.code.code==200) {
+					$("#black_div").css({"opacity":"0.7"})
+					$("#black_div").show()
+					register_div.style.display = "none"
+					register_div_2.style.display = ""
+				}else{
+					$("#register_info .yzmbpp").show()
+					setTimeout(function(){$("#register_info .yzmbpp").hide();},1000);
+				}
+			},function(err){
+				$("#register_info .fwqzsl").show();
+				setTimeout(function(){$("#register_info .fwqzsl").hide()},1000);
+			})
+		}
+	}
+	var phone2_over = false
+	$("#register_info_2 .phone_text").mouseout(function () {
+		var px = $("#register_info_2 .phone_text").val();
+		if(px != register_data["phone"]){
+			$("#register_info_2 .admin_error").show();
+		}else{
+			if(register_data["phone"]!=""){phone2_over=true}
+		}
+	})
+	function send_yzmfun(){
+		if(!phone2_over){return}
+		send_data("post","user/sendRegisterNum",{phone:register_data["phone"]},function(data){
+			if(data.code.code == 200){
+				$("#register_info_2 .send_yzm").hide()
+				$("#register_info_2 .time_down").show()
+				count_down()
+			}else{
+				console.log(data)
+			}
+		},function(err){
+			console.log(err)
+		})
+	}
+	var count_time = null 	//计时器
+	var t_t = 60
+	function count_down(){
+		count_time = timer=setInterval(function(){
+            t_t--
+			if(t_t<0){
+				t_t = 60;
+				$("#register_info_2 .send_yzm").show()
+				$("#register_info_2 .time_down").hide()
+				stop_count_down()
+			}
+			$("#register_info_2 .time_down").text(t_t+"s")
+        },1000);
+	}
+	function stop_count_down(){
+		clearInterval(count_time)
+	}
+	function register_all_over(){
+		var codetx = $("#register_info_2 .code_text").val();
+		if(!phone2_over){
+			$("#register_info_2 .admin_error").show();
+			setTimeout(function(){$("#register_info_2 .admin_error").hide();},1000);
+		}else{
+			var share_id = localStorage.getItem("share_id")
+			send_data("POST","user/phoneRegister",{from:share_id,phone:register_data["phone"],smsCode:codetx,passWord:register_data["passWord"]},function(data){
+				if(data.code.code==200){
+					localStorage.setItem('token',data.data)
+					register_div_2.style.display = "none"
+					$("#black_div").hide()
+					//注册成功 获取页面数据
+					send_data("post","share/shareIndex",{},function(data){
+						if(data.code.code == 200){
+							server_data = data.data
+							is_login = true
+							update_layer()
+						}
+					},function(err){
+						console.log(err)
+					})
+				}else if(data.code.code == 403){
+					$("#register_info_2 .yzmbpp").show();
+					setTimeout(function(){$("#register_info_2 .yzmbpp").hide();},1000);
+				}
+			},function(err){
+				console.log(err)
+			})
+		}
+	}
+	function invite_receive(type,num){
+		if(!is_login){
+			login()
+		}else{
+			if(type==1){
+				if(invite_1==0){
+					s_w()
+				}else if(invite_1==2){alert("已领取，请进入页面最上方的领取记录查看！")}else{
+					//可领取
+					invite_lq(3)
+				}
+			}else if(type==2){
+				if(invite_2==0){
+					s_w()
+				}else if(invite_2==2){alert("已领取，请进入页面最上方的领取记录查看！")}else{
+					//可领取
+					invite_lq(5)
+				}
+			}else if(type==3){
+				if(invite_3==0){
+					s_w()
+				}else if(invite_3==2){alert("已领取，请进入页面最上方的领取记录查看！")}else{
+					//可领取
+					invite_lq(8)
+				}
+			}else if(type==4){
+				if(invite_4==0){
+					s_w()
+				}else if(invite_4==2){alert("已领取，请进入页面最上方的领取记录查看！")}else{
+					//可领取
+					invite_lq(10)
+				}
+			}
+		}
+	}
+	function s_w(){
+		$(".wdcmub").show()
+		$(".wdcmub").css({"opacity":1})
+		setTimeout(function(){
+			$(".wdcmub").hide()
+			$(".wdcmub").css({"opacity":0})
+		},2000);
+	}
+	function invite_lq(num){
+		send_data("post","share/getSucceedRegisterGift",{count:num},function(data){
+			if(data.code.code == 200){
+				//显示cdk
+				$("#cdk_tx").text(data.data)
+				$("#cdk_div .img").css({"opacity":"0"})
+				$("#cdk_tx").css({"top":"50%"})
+				$("#cdk_div .copy").css({"top":"50%"})
+				$("#cdk_div").show();$("#cdk_div").css({"opacity":"1"})
+				send_data("post","share/shareIndex",{},function(data){
+					if(data.code.code == 200){
+						is_login = true
+						server_data = data.data
+						update_layer()
+					}
+				},function(err){
+							
+				})
+			}
+		},function(err){})	
+	}
+	var invite_1 = 0,invite_2=0,invite_3=0,invite_4=0;	//0 未完成  1可领取  2已领取
+	var lq_data= {1:false,2:false,3:false,4:false}
+	function update_layer(){
+		if(server_data && server_data.getedGif){
+			for(var k in server_data.getedGif){
+				if(server_data.getedGif[k].shareGiftType == 1){
+					if(server_data.getedGif[k].succeedShare == 3){
+						lq_data[1] = true
+					}
+					if(server_data.getedGif[k].succeedShare == 5){
+						lq_data[2] = true
+					}	
+					if(server_data.getedGif[k].succeedShare == 8){
+						lq_data[3] = true
+					}
+					if(server_data.getedGif[k].succeedShare == 10){
+						lq_data[4] = true
+					}
+				}
+			}
+		}
+		if(server_data){
+			$("#head .login_text").text(show_name_head+server_data.nickname)
+			$("#head .login_text").css("color","#6d6d6d");
+			$("#contents .canle_text").css({opacity:1});
+			$("#contents .canle_text").show()
+			$("#contents .register_text").hide()
+			$("#contents .record_text").css({opacity:1});
+			$("#contents .record_text").show()
+			if(server_data.questionnaire == 1){
+				$("#question_btn_lq").attr('src',"images/activity/receive.png")
+				$(".question_btn_div").css({"margin-left":"3%"})
+			}else if(server_data.questionnaire == 2){
+				$("#question_btn_lq").attr('src',"images/activity/yjlq.png")
+				$(".question_btn_div").css({"margin-left":"3%"})
+			}else{
+				$("#question_btn_lq").attr('src',"images/activity/question_btn.png")
+				$(".question_btn_div").css({"margin-left":"0%"})
+			}
+			if(server_data.firstCheckInGiftType==1){
+				$("#load_receive_btn").attr('src',"images/activity/receive.png")
+			}else{
+				$("#load_receive_btn").attr('src',"images/activity/receive_gray.png")
+			}
+			$("#invitation_text2").text("已邀请"+server_data.succeedNum+"人")
+			
+			if(server_data.weiboShare.gifExist == 2 ||server_data.wechatShare.gifExist == 2||server_data.qqShare.gifExist == 2) {
+				$("#share_receive_btn").attr('src',"images/activity/receive.png")
+			}else{
+				$("#share_receive_btn").attr('src',"images/activity/receive_gray.png")
+			}
+			/*
+			if(server_data.shareUrlType == 2){
+				$("#share_receive_btn").attr('src',"images/activity/receive.png")
+			}else{
+				$("#share_receive_btn").attr('src',"images/activity/receive_gray.png")
+			}*/
+			if(server_data.succeedNum >= 10){
+				invite_1=1;invite_2=1;invite_3=1;invite_4=1;
+				$(".receive_yq_1").attr('src',"images/activity/receive.png")
+				$(".receive_yq_2").attr('src',"images/activity/receive.png")
+				$(".receive_yq_3").attr('src',"images/activity/receive.png")
+				$(".receive_yq_4").attr('src',"images/activity/receive.png")
+			}else if(server_data.succeedNum >= 8){
+				invite_1=1;invite_2=1;invite_3=1;
+				$(".receive_yq_1").attr('src',"images/activity/receive.png")
+				$(".receive_yq_2").attr('src',"images/activity/receive.png")
+				$(".receive_yq_3").attr('src',"images/activity/receive.png")
+			}else if(server_data.succeedNum >= 5){
+				invite_1=1;invite_2=1;
+				$(".receive_yq_1").attr('src',"images/activity/receive.png")
+				$(".receive_yq_2").attr('src',"images/activity/receive.png")
+			}else if(server_data.succeedNum >= 3){
+				invite_1=1;
+				$(".receive_yq_1").attr('src',"images/activity/receive.png")
+			} 
+			if(lq_data[1] || lq_data[2] || lq_data[3] || lq_data[4]){
+				if(lq_data[1]){
+					invite_1=2;
+					$(".receive_yq_1").attr('src',"images/activity/yjlq.png")
+				}
+				if(lq_data[2]){
+					invite_2=2;
+					$(".receive_yq_2").attr('src',"images/activity/yjlq.png")
+				}
+				if(lq_data[3]){
+					invite_3=2;
+					$(".receive_yq_3").attr('src',"images/activity/yjlq.png")
+				}
+				if(lq_data[4]){
+					invite_4=2;
+					$(".receive_yq_4").attr('src',"images/activity/yjlq.png")
+				}
+			}
+		}
+	}
+	function getQueryString(name) { 
+        var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)", "i"); 
+        var r = window.location.search.substr(1).match(reg); 
+        if (r != null) return unescape(r[2]); 
+        return null; 
+    }
+	$(window).bind("load", function(){
+		$("#questionnaire_div").css({opacity:1})
+		$("#register_info_2").css({opacity:1});
+		$("#register_info").css({opacity:1});
+		$("#bottom_xf").css({opacity:1});
+	})
+</script>
+</body>
+
+</html>

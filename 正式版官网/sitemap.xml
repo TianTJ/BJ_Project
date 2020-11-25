@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+xmlns:mobile="http://www.baidu.com/schemas/sitemap-mobile/1/">
+<url>
+ <loc>http://www.doukan233.com/pc.html</loc>
+ <mobile:mobile type="htmladapt" />
+ <priority>0.5</priority>
+ <lastmod>2019/3/11</lastmod>
+ <changefreq>weekly</changefreq>
+</url>
+<url>
+<loc>http://www.doukan233.com/about.html</loc>
+ <mobile:mobile type="htmladapt" />
+ <priority>0.5</priority>
+ <lastmod>2019/3/11</lastmod>
+ <changefreq>weekly</changefreq>
+</url>
+<url>
+<loc>http://www.doukan233.com/contact.html</loc>
+ <mobile:mobile type="htmladapt" />
+ <priority>0.5</priority>
+ <lastmod>2019/3/11</lastmod>
+ <changefreq>weekly</changefreq>
+</url>
+<url>
+<loc>http://www.doukan233.com/droit.html</loc>
+ <mobile:mobile type="htmladapt" />
+ <priority>0.5</priority>
+ <lastmod>2019/3/11</lastmod>
+ <changefreq>weekly</changefreq>
+</url>
+<url>
+<loc>http://www.doukan233.com/help.html</loc>
+ <mobile:mobile type="htmladapt" />
+ <priority>0.5</priority>
+ <lastmod>2019/3/11</lastmod>
+ <changefreq>weekly</changefreq>
+</url>
+<url>
+<loc>http://www.doukan233.com/law.html</loc>
+ <mobile:mobile type="htmladapt" />
+ <priority>0.5</priority>
+ <lastmod>2019/3/11</lastmod>
+ <changefreq>weekly</changefreq>
+</url>
+<url>
+<loc>http://www.doukan233.com/privacy.html</loc>
+ <mobile:mobile type="htmladapt" />
+ <priority>0.5</priority>
+ <lastmod>2019/3/11</lastmod>
+ <changefreq>weekly</changefreq>
+</url>
+<url>
+<loc>http://www.doukan233.com/service.html</loc>
+ <mobile:mobile type="htmladapt" />
+ <priority>0.5</priority>
+ <lastmod>2019/3/11</lastmod>
+ <changefreq>weekly</changefreq>
+</url>
+<url>
+<loc>http://www.doukan233.com/index.html</loc>
+ <mobile:mobile type="htmladapt" />
+ <priority>0.5</priority>
+ <lastmod>2019/3/11</lastmod>
+ <changefreq>weekly</changefreq>
+</url>
+</urlset>

@@ -1,0 +1,82 @@
+
+*{margin:0;padding:0}
+body{
+	text-align:center;
+    background: #fdf0f7;
+}
+#head_div{
+    position: relative;
+    width: 1125px;
+    text-align: center;
+    margin: 0 auto;
+}
+#head_div .head_img{
+    position: relative;
+    width: 100%;height: auto;
+}
+#all{
+    position: relative;
+    width: 1125px;height: auto;
+    top:-4px;
+    margin: 0 auto;
+} 
+#all .head{
+    background: #ffffff;
+    height: 174px;
+}
+#all .one{
+    position: relative;
+    width: 100%;height: auto;
+}
+#all .one .content {
+    position: relative;
+    width: 100%;height: auto;
+}
+#all .one .img{
+    position: relative;
+    width: 100%;left:0px;
+}
+#top{
+    position: fixed;
+    bottom: 120px;
+    right: 50px;
+}
+#all .one .bottom{
+    position: absolute;
+    margin: 0 auto;
+    bottom: 250px;
+    height: 150px;
+    width: 100%;
+    transform:scale(1);
+}
+#all .one .copy{
+    position: absolute;
+    margin: 0 auto;
+    top: 3px;
+}
+#all .one .tx{
+    position: absolute;
+    margin: 0 auto;
+    top: 27px;
+    font-size: 48px;
+    color: #ffffff;
+    width: 300px;
+    height: 96px;
+    pointer-events: none
+}
+#tip{
+    position: relative;
+    margin: 0 auto;
+    width: 100%;height: 60px;
+    z-index: 999;
+    bottom: 500px;
+    display: none;
+}
+#tip font{
+    position: absolute;
+    margin: 0 auto;
+    font-size: 27pt;
+    color: #ffffff;
+    width: 100%;
+    left:0;
+}

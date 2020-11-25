@@ -1,0 +1,362 @@
+[
+  {
+    "pokedexid": "100101",
+    "role": "1001",
+    "address": "71001001",
+    "explain": "1-6,2.这是什么体质，让人羡慕。"
+  },
+  {
+    "pokedexid": "100102",
+    "role": "1001",
+    "address": "71001002",
+    "explain": "2-4,2.虽然不想承认，但感觉你说的确实有些道理……"
+  },
+  {
+    "pokedexid": "100103",
+    "role": "1001",
+    "address": "71001003",
+    "explain": "3-3,2.路西法长得还蛮可爱的。"
+  },
+  {
+    "pokedexid": "100104",
+    "role": "1001",
+    "address": "71001004",
+    "explain": "4-5,2.交给我吧"
+  },
+  {
+    "pokedexid": "100105",
+    "role": "1001",
+    "address": "71001005",
+    "explain": "5-3,1.你还真是矛盾"
+  },
+  {
+    "pokedexid": "100106",
+    "role": "1001",
+    "address": "71001006",
+    "explain": "6-6,3.我还是选择相信路西法"
+  },
+  {
+    "pokedexid": "100107",
+    "role": "1001",
+    "address": "71001007",
+    "explain": "7-5,1.总之，他平安回来了"
+  },
+  {
+    "pokedexid": "100108",
+    "role": "1001",
+    "address": "752301",
+    "explain": "拨打完R电话卡获得"
+  },
+  {
+    "pokedexid": "100109",
+    "role": "1001",
+    "address": "752302",
+    "explain": "拨打完R电话卡获得"
+  },
+  {
+    "pokedexid": "100110",
+    "role": "1001",
+    "address": "752303",
+    "explain": "拨打完R电话卡获得"
+  },
+  {
+    "pokedexid": "100111",
+    "role": "1001",
+    "address": "752304",
+    "explain": "拨打完R电话卡获得"
+  },
+  {
+    "pokedexid": "100112",
+    "role": "1001",
+    "address": "752305",
+    "explain": "拨打完R电话卡获得"
+  },
+  {
+    "pokedexid": "100113",
+    "role": "1001",
+    "address": "752306",
+    "explain": "拨打完SR电话卡获得"
+  },
+  {
+    "pokedexid": "100114",
+    "role": "1001",
+    "address": "752307",
+    "explain": "拨打完SR电话卡获得"
+  },
+  {
+    "pokedexid": "100115",
+    "role": "1001",
+    "address": "752308",
+    "explain": "拨打完SR电话卡获得"
+  },
+  {
+    "pokedexid": "100201",
+    "role": "1002",
+    "address": "71002001",
+    "explain": "1-7,2.突然有点心疼你了"
+  },
+  {
+    "pokedexid": "100202",
+    "role": "1002",
+    "address": "71002002",
+    "explain": "2-7,2.我们是朋友，而且你是人啊"
+  },
+  {
+    "pokedexid": "100203",
+    "role": "1002",
+    "address": "71002003",
+    "explain": "3-4,2.加油，一定要演好路西法啊。"
+  },
+  {
+    "pokedexid": "100204",
+    "role": "1002",
+    "address": "71002004",
+    "explain": "4-1,1.（摸摸江小诗）你放心，我会记住你的"
+  },
+  {
+    "pokedexid": "100205",
+    "role": "1002",
+    "address": "71002005",
+    "explain": "5-4,1.没事，江小诗就算你不是活人也一样可爱。"
+  },
+  {
+    "pokedexid": "100206",
+    "role": "1002",
+    "address": "71002006",
+    "explain": "6-3,3.我相信你，江小诗"
+  },
+  {
+    "pokedexid": "100207",
+    "role": "1002",
+    "address": "71002007",
+    "explain": "7-1,2.总觉得江小诗更可爱了"
+  },
+  {
+    "pokedexid": "100208",
+    "role": "1002",
+    "address": "752401",
+    "explain": "拨打完R电话卡获得"
+  },
+  {
+    "pokedexid": "100209",
+    "role": "1002",
+    "address": "752402",
+    "explain": "拨打完R电话卡获得"
+  },
+  {
+    "pokedexid": "100210",
+    "role": "1002",
+    "address": "752403",
+    "explain": "拨打完R电话卡获得"
+  },
+  {
+    "pokedexid": "100211",
+    "role": "1002",
+    "address": "752404",
+    "explain": "拨打完R电话卡获得"
+  },
+  {
+    "pokedexid": "100212",
+    "role": "1002",
+    "address": "752405",
+    "explain": "拨打完R电话卡获得"
+  },
+  {
+    "pokedexid": "100213",
+    "role": "1002",
+    "address": "752406",
+    "explain": "拨打完SR电话卡获得"
+  },
+  {
+    "pokedexid": "100214",
+    "role": "1002",
+    "address": "752407",
+    "explain": "拨打完SR电话卡获得"
+  },
+  {
+    "pokedexid": "100215",
+    "role": "1002",
+    "address": "752408",
+    "explain": "拨打完SR电话卡获得"
+  },
+  {
+    "pokedexid": "100301",
+    "role": "1003",
+    "address": "71003001",
+    "explain": "1-5,1.鱼？挺喜欢的。"
+  },
+  {
+    "pokedexid": "100302",
+    "role": "1003",
+    "address": "71003002",
+    "explain": "2-5,2.聊天室里这些人呢？"
+  },
+  {
+    "pokedexid": "100303",
+    "role": "1003",
+    "address": "71003003",
+    "explain": "3-7,2.总裁你遗忘的高冷形象的确是崩了一些呢。"
+  },
+  {
+    "pokedexid": "100304",
+    "role": "1003",
+    "address": "71003004",
+    "explain": "4-6,3.总裁真的很宠路西法呢"
+  },
+  {
+    "pokedexid": "100305",
+    "role": "1003",
+    "address": "71003005",
+    "explain": "5-6,2.生活，只能面对现实了啊"
+  },
+  {
+    "pokedexid": "100306",
+    "role": "1003",
+    "address": "71003006",
+    "explain": "6-2,2.羡慕~~"
+  },
+  {
+    "pokedexid": "100307",
+    "role": "1003",
+    "address": "71003007",
+    "explain": "7-2,2.总裁就是嘴硬心软呢"
+  },
+  {
+    "pokedexid": "100308",
+    "role": "1003",
+    "address": "752101",
+    "explain": "拨打完R电话卡获得"
+  },
+  {
+    "pokedexid": "100309",
+    "role": "1003",
+    "address": "752102",
+    "explain": "拨打完R电话卡获得"
+  },
+  {
+    "pokedexid": "100310",
+    "role": "1003",
+    "address": "752103",
+    "explain": "拨打完R电话卡获得"
+  },
+  {
+    "pokedexid": "100311",
+    "role": "1003",
+    "address": "752104",
+    "explain": "拨打完R电话卡获得"
+  },
+  {
+    "pokedexid": "100312",
+    "role": "1003",
+    "address": "752105",
+    "explain": "拨打完R电话卡获得"
+  },
+  {
+    "pokedexid": "100313",
+    "role": "1003",
+    "address": "752106",
+    "explain": "拨打完SR电话卡获得"
+  },
+  {
+    "pokedexid": "100314",
+    "role": "1003",
+    "address": "752107",
+    "explain": "拨打完SR电话卡获得"
+  },
+  {
+    "pokedexid": "100315",
+    "role": "1003",
+    "address": "752108",
+    "explain": "拨打完SR电话卡获得"
+  },
+  {
+    "pokedexid": "100401",
+    "role": "1004",
+    "address": "71004001",
+    "explain": "1-3,2.感觉AI好博学啊……"
+  },
+  {
+    "pokedexid": "100402",
+    "role": "1004",
+    "address": "71004002",
+    "explain": "2-1,1.AI平时都不能出门吗？"
+  },
+  {
+    "pokedexid": "100403",
+    "role": "1004",
+    "address": "71004003",
+    "explain": "3-5,1.感觉AI突然干星期来"
+  },
+  {
+    "pokedexid": "100404",
+    "role": "1004",
+    "address": "71004004",
+    "explain": "4-2,1.当然可以"
+  },
+  {
+    "pokedexid": "100405",
+    "role": "1004",
+    "address": "71004005",
+    "explain": "5-7,1.AI君你别难过，肯定有别的方法的。"
+  },
+  {
+    "pokedexid": "100406",
+    "role": "1004",
+    "address": "71004006",
+    "explain": "6-7,1.我相信你"
+  },
+  {
+    "pokedexid": "100407",
+    "role": "1004",
+    "address": "71004007",
+    "explain": "7-3,2.谁会这么害AI呢"
+  },
+  {
+    "pokedexid": "100408",
+    "role": "1004",
+    "address": "752201",
+    "explain": "拨打完R电话卡获得"
+  },
+  {
+    "pokedexid": "100409",
+    "role": "1004",
+    "address": "752202",
+    "explain": "拨打完R电话卡获得"
+  },
+  {
+    "pokedexid": "100410",
+    "role": "1004",
+    "address": "752203",
+    "explain": "拨打完R电话卡获得"
+  },
+  {
+    "pokedexid": "100411",
+    "role": "1004",
+    "address": "752204",
+    "explain": "拨打完R电话卡获得"
+  },
+  {
+    "pokedexid": "100412",
+    "role": "1004",
+    "address": "752205",
+    "explain": "拨打完R电话卡获得"
+  },
+  {
+    "pokedexid": "100413",
+    "role": "1004",
+    "address": "752206",
+    "explain": "拨打完SR电话卡获得"
+  },
+  {
+    "pokedexid": "100414",
+    "role": "1004",
+    "address": "752207",
+    "explain": "拨打完SR电话卡获得"
+  },
+  {
+    "pokedexid": "100415",
+    "role": "1004",
+    "address": "752208",
+    "explain": "拨打完SR电话卡获得"
+  }
+]
